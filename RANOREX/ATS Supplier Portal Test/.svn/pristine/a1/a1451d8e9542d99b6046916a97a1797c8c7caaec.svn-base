@@ -1,0 +1,17 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <string>{8EF47CEE-9C41-45F0-AB7B-5D4320A0C865}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>{47BC91D6-9716-4901-97FB-536F5057808D}</string>
+      <string>Modules</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution ATS Supplier Portal Test[Solution Items[]ATS Supplier Portal Test[Test.rxrec[]]Ranorex Automation Helpers[Modules[]]]]&#xD;&#xA;Solution ATS Supplier Portal Test\ATS Supplier Portal Test\ATS_Supplier_Portal_Test.rxtst&#xD;&#xA;Solution ATS Supplier Portal Test" />
+  <StartupProject value="{8EF47CEE-9C41-45F0-AB7B-5D4320A0C865}" />
+</Properties>

@@ -1,0 +1,2000 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{8EF47CEE-9C41-45F0-AB7B-5D4320A0C865}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ATS_Supplier_Portal_Test</RootNamespace>
+    <AssemblyName>ATS Supplier Portal Test</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>975c26a6-accd-44d9-8264-cf7f2875c5d2</projectdefaultrepository>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+    <Prefer32Bit>False</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Apache.NMS">
+      <HintPath>..\packages\Apache.NMS.1.7.1\lib\net40\Apache.NMS.dll</HintPath>
+    </Reference>
+    <Reference Include="Apache.NMS.ActiveMQ">
+      <HintPath>..\packages\Apache.NMS.ActiveMQ.1.7.2\lib\net40\Apache.NMS.ActiveMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="ATSCodeLibrary, Version=1.0.1.0, Culture=neutral, PublicKeyToken=dff0e8d3c8bebbea">
+      <HintPath>..\packages\ATSCodeLibrary.1.0.0.15\lib\net472\ATSCodeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a">
+      <HintPath>..\packages\log4net.2.0.12\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.CognitiveServices.Vision.ComputerVision">
+      <HintPath>..\packages\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.7.0.1\lib\net461\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel" />
+    <Reference Include="Microsoft.Rest.ClientRuntime">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.3.20\lib\net461\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.Azure.3.3.18\lib\net452\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core" />
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddVendor.cs">
+      <BoundTo>43956164-ba40-4914-8ec1-8414dddda38f</BoundTo>
+      <DependentUpon>AddVendor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fc09c191-faad-4cae-b17c-233cfea25b07</id>
+    </Compile>
+    <Compile Include="AddVendor.UserCode.cs">
+      <BoundTo>43956164-ba40-4914-8ec1-8414dddda38f</BoundTo>
+      <DependentUpon>AddVendor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b410040d-3070-4b7f-bf20-f8750fe13d62</id>
+    </Compile>
+    <Compile Include="AnypointPlatform.cs">
+      <id>65904de8-4e6a-478d-bf2d-8c33ab36b249</id>
+    </Compile>
+    <Compile Include="ApprovePOChange.cs">
+      <BoundTo>9fb01724-16b2-489c-a83c-275666e4d56d</BoundTo>
+      <DependentUpon>ApprovePOChange.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d4b7809a-b676-48a2-b282-c2dd0c1fc82a</id>
+    </Compile>
+    <Compile Include="ApprovePOChange.UserCode.cs">
+      <BoundTo>9fb01724-16b2-489c-a83c-275666e4d56d</BoundTo>
+      <DependentUpon>ApprovePOChange.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f266b9c7-2438-4af2-a0da-51fd211965c0</id>
+    </Compile>
+    <Compile Include="ApprovePOChangePROD.cs">
+      <BoundTo>4007437f-5a1b-4f2e-948e-b7e3a7ee5ec1</BoundTo>
+      <DependentUpon>ApprovePOChangePROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>33b9ed57-0fc3-4b6b-8b7d-e0581cd208c1</id>
+    </Compile>
+    <Compile Include="ApprovePOChangePROD.UserCode.cs">
+      <BoundTo>4007437f-5a1b-4f2e-948e-b7e3a7ee5ec1</BoundTo>
+      <DependentUpon>ApprovePOChangePROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>725e0546-2873-4cea-9f35-f484d078001e</id>
+    </Compile>
+    <Compile Include="ChangeCurrencyPreferences.cs">
+      <BoundTo>59f63b7c-3dcf-4a70-81de-8fbb197e56a2</BoundTo>
+      <DependentUpon>ChangeCurrencyPreferences.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6a71af78-bab3-4a76-b82e-f78e2007bbe6</id>
+    </Compile>
+    <Compile Include="ChangeCurrencyPreferences.UserCode.cs">
+      <BoundTo>59f63b7c-3dcf-4a70-81de-8fbb197e56a2</BoundTo>
+      <DependentUpon>ChangeCurrencyPreferences.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9d6832a3-2beb-43e5-a24c-fdbd12265740</id>
+    </Compile>
+    <Compile Include="CheckSupplierPortalForReqNumber.cs">
+      <BoundTo>488836ca-561c-4d1d-b0cc-43ab6f4e051e</BoundTo>
+      <DependentUpon>CheckSupplierPortalForReqNumber.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e9d78c8-2f73-4085-b046-ddb28a73de8c</id>
+    </Compile>
+    <Compile Include="CheckSupplierPortalForReqNumber.UserCode.cs">
+      <BoundTo>488836ca-561c-4d1d-b0cc-43ab6f4e051e</BoundTo>
+      <DependentUpon>CheckSupplierPortalForReqNumber.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a8bf0bb4-1b26-4f62-8132-ec9cb3374cc5</id>
+    </Compile>
+    <Compile Include="CleanupJDEPROD.cs">
+      <BoundTo>4c246a07-8a5a-41c2-b3c9-5ae6af7fe09c</BoundTo>
+      <DependentUpon>CleanupJDEPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b2fb0687-652a-44c3-bcb4-bcf252f3f743</id>
+    </Compile>
+    <Compile Include="CleanupJDEPROD.UserCode.cs">
+      <BoundTo>4c246a07-8a5a-41c2-b3c9-5ae6af7fe09c</BoundTo>
+      <DependentUpon>CleanupJDEPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b42cc52e-652f-43f3-9460-915bdc032b80</id>
+    </Compile>
+    <Compile Include="CleanupSupplierPortalPROD.cs">
+      <BoundTo>b40ce34d-c2a0-4bf7-bf8d-63dbc7feaf9a</BoundTo>
+      <DependentUpon>CleanupSupplierPortalPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>63e5bf4a-72ce-45d7-ad16-da453acb82ae</id>
+    </Compile>
+    <Compile Include="CleanupSupplierPortalPROD.UserCode.cs">
+      <BoundTo>b40ce34d-c2a0-4bf7-bf8d-63dbc7feaf9a</BoundTo>
+      <DependentUpon>CleanupSupplierPortalPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>179c6cab-26fb-45fc-beba-9e395b4d38ca</id>
+    </Compile>
+    <Compile Include="CloseRxAgntUI.cs">
+      <BoundTo>a1183842-51b0-41e3-9bb7-6dddcd0a867a</BoundTo>
+      <DependentUpon>CloseRxAgntUI.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1a8b1d5f-5436-48c2-aaf3-8c8e50771576</id>
+    </Compile>
+    <Compile Include="CloseRxAgntUI.UserCode.cs">
+      <BoundTo>a1183842-51b0-41e3-9bb7-6dddcd0a867a</BoundTo>
+      <DependentUpon>CloseRxAgntUI.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cb2524ec-8da4-4310-bdb8-788ca4047046</id>
+    </Compile>
+    <Compile Include="CloseSPWeb.cs">
+      <BoundTo>2c6af451-d6f0-4029-9a28-d4d68bd327df</BoundTo>
+      <DependentUpon>CloseSPWeb.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>82851ea5-0183-4bde-a602-1ef561d85f59</id>
+    </Compile>
+    <Compile Include="CloseSPWeb.UserCode.cs">
+      <BoundTo>2c6af451-d6f0-4029-9a28-d4d68bd327df</BoundTo>
+      <DependentUpon>CloseSPWeb.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a609cea3-2407-4dd5-a8b4-b068f8ad74e0</id>
+    </Compile>
+    <Compile Include="CogServ.cs">
+      <id>8efc8b98-07e6-4120-872e-c556aca61775</id>
+    </Compile>
+    <Compile Include="ConfirmPOinJDE.cs">
+      <BoundTo>342f6d01-425e-49cd-bba6-78ccace13dde</BoundTo>
+      <DependentUpon>ConfirmPOinJDE.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>69de9c5f-1656-4642-a7e4-94693a1b8fbb</id>
+    </Compile>
+    <Compile Include="ConfirmPOinJDE.UserCode.cs">
+      <BoundTo>342f6d01-425e-49cd-bba6-78ccace13dde</BoundTo>
+      <DependentUpon>ConfirmPOinJDE.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7c93a18b-ac05-46ce-9c98-79e7f65e91da</id>
+    </Compile>
+    <Compile Include="ConfirmReportCode3.cs">
+      <BoundTo>d7367841-06d1-483d-8d01-a677d6190ceb</BoundTo>
+      <DependentUpon>ConfirmReportCode3.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>762744ff-50dc-4f8a-a2c3-7f01b13e4615</id>
+    </Compile>
+    <Compile Include="ConfirmReportCode3.UserCode.cs">
+      <BoundTo>d7367841-06d1-483d-8d01-a677d6190ceb</BoundTo>
+      <DependentUpon>ConfirmReportCode3.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>502c491b-1f9b-49f3-bc2a-9852f1c02ddf</id>
+    </Compile>
+    <Compile Include="CreateRFQforSelectWinner.cs">
+      <BoundTo>8aa24c4b-72d5-4ddc-b33a-bf87e4793abb</BoundTo>
+      <DependentUpon>CreateRFQforSelectWinner.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>bc90408a-e96e-426a-a1fb-573ddbdb520f</id>
+    </Compile>
+    <Compile Include="CreateRFQforSelectWinner.UserCode.cs">
+      <BoundTo>8aa24c4b-72d5-4ddc-b33a-bf87e4793abb</BoundTo>
+      <DependentUpon>CreateRFQforSelectWinner.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>86ec5e5b-5593-42ee-82fa-bc36bcd2e9a9</id>
+    </Compile>
+    <Compile Include="CreateRFQPROD.cs">
+      <BoundTo>234d8ab1-104f-429c-bac9-f3b0b6624587</BoundTo>
+      <DependentUpon>CreateRFQPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e0c348e-26d8-41c5-9122-637f14ea0b16</id>
+    </Compile>
+    <Compile Include="CreateRFQPROD.UserCode.cs">
+      <BoundTo>234d8ab1-104f-429c-bac9-f3b0b6624587</BoundTo>
+      <DependentUpon>CreateRFQPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad0bfa67-6c7d-4771-86e0-0d1e4f7eec52</id>
+    </Compile>
+    <Compile Include="DeleteShippingMethod.cs">
+      <BoundTo>7be4cb33-3e7c-4a8c-aa7f-03ed9d2b27ab</BoundTo>
+      <DependentUpon>DeleteShippingMethod.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>567ef473-f987-4f22-a459-65eafb052b6b</id>
+    </Compile>
+    <Compile Include="DeleteShippingMethod.UserCode.cs">
+      <BoundTo>7be4cb33-3e7c-4a8c-aa7f-03ed9d2b27ab</BoundTo>
+      <DependentUpon>DeleteShippingMethod.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>154a091d-33b4-4ea1-83ec-c0921850baeb</id>
+    </Compile>
+    <Compile Include="DeleteVendor.cs">
+      <BoundTo>895b798c-a068-4dad-bff4-6dc06ca75923</BoundTo>
+      <DependentUpon>DeleteVendor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f29e804f-f106-4717-82a2-bb37809ac350</id>
+    </Compile>
+    <Compile Include="DeleteVendor.UserCode.cs">
+      <BoundTo>895b798c-a068-4dad-bff4-6dc06ca75923</BoundTo>
+      <DependentUpon>DeleteVendor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>35342a9a-e509-439b-9515-5cc9a0249cb6</id>
+    </Compile>
+    <Compile Include="AddVendorToRFQ.cs">
+      <BoundTo>d2b9bcbf-d453-46ce-bea1-20274f309218</BoundTo>
+      <DependentUpon>AddVendorToRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5db1e732-dfb6-4663-a1b5-914081c04e62</id>
+    </Compile>
+    <Compile Include="AddVendorToRFQ.UserCode.cs">
+      <BoundTo>d2b9bcbf-d453-46ce-bea1-20274f309218</BoundTo>
+      <DependentUpon>AddVendorToRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8e665de2-a2ee-40f8-8931-ad2a75ec4447</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>c065c57e-c6a7-4508-b4b4-fb0005e1632f</id>
+    </Compile>
+    <Compile Include="AssignDetails.cs">
+      <BoundTo>f473a220-4043-48e1-a72f-9f39f9eed060</BoundTo>
+      <DependentUpon>AssignDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8833d727-85b5-446b-aeb3-6d3f15727e98</id>
+    </Compile>
+    <Compile Include="AssignDetails.UserCode.cs">
+      <BoundTo>f473a220-4043-48e1-a72f-9f39f9eed060</BoundTo>
+      <DependentUpon>AssignDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6294a15c-7374-4b44-ae7f-da44ea76553d</id>
+    </Compile>
+    <Compile Include="ATSEmail.cs">
+      <id>25a699b4-d901-4fc8-9d26-dce8e27222e8</id>
+    </Compile>
+    <Compile Include="ATS_Supplier_Portal_TestRepository.cs">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <DependentUpon>ATS_Supplier_Portal_TestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>50eb4759-e481-4095-a475-1307ee92449b</id>
+    </Compile>
+    <Compile Include="BulkAssignDetails.cs">
+      <BoundTo>3559f9a1-d383-4cdf-8796-fa99860ab45a</BoundTo>
+      <DependentUpon>BulkAssignDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9bb5671e-feff-499e-b40d-a0da94a9eec3</id>
+    </Compile>
+    <Compile Include="BulkAssignDetails.UserCode.cs">
+      <BoundTo>3559f9a1-d383-4cdf-8796-fa99860ab45a</BoundTo>
+      <DependentUpon>BulkAssignDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>affb5322-f628-4f56-8b59-af990ddbba8a</id>
+    </Compile>
+    <Compile Include="BulkModifyReqDate.cs">
+      <BoundTo>2036fa4b-84e0-4724-b7ed-e7613baff8a2</BoundTo>
+      <DependentUpon>BulkModifyReqDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>20903fac-9d78-43fc-b47e-a9bc3f69fa11</id>
+    </Compile>
+    <Compile Include="BulkModifyReqDate.UserCode.cs">
+      <BoundTo>2036fa4b-84e0-4724-b7ed-e7613baff8a2</BoundTo>
+      <DependentUpon>BulkModifyReqDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>612c20e6-1b72-41a9-b516-fba79a0f5114</id>
+    </Compile>
+    <Compile Include="CheckSite.cs">
+      <BoundTo>131f8bb6-db93-4d31-924c-98e8c76a42c7</BoundTo>
+      <DependentUpon>CheckSite.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>321f4cc0-60a5-4160-a01c-fd447d829419</id>
+    </Compile>
+    <Compile Include="CheckSite.UserCode.cs">
+      <BoundTo>131f8bb6-db93-4d31-924c-98e8c76a42c7</BoundTo>
+      <DependentUpon>CheckSite.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fc226dcc-d76c-4ce7-9754-5ff48b183bab</id>
+    </Compile>
+    <Compile Include="CloseJDE.cs">
+      <BoundTo>18476c60-b716-456f-9932-f9b43e501c02</BoundTo>
+      <DependentUpon>CloseJDE.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>96bcfb57-60ec-4ba7-b336-3fc6ddb04011</id>
+    </Compile>
+    <Compile Include="CloseJDE.UserCode.cs">
+      <BoundTo>18476c60-b716-456f-9932-f9b43e501c02</BoundTo>
+      <DependentUpon>CloseJDE.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32a3c0f3-f0e1-4c8b-8939-1cdc25a70189</id>
+    </Compile>
+    <Compile Include="CloseSupplierPortal.cs">
+      <BoundTo>863b297f-2b06-46ca-a080-fad72499f77c</BoundTo>
+      <DependentUpon>CloseSupplierPortal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e8cb58c-4ff3-471a-a5ea-7e76a173a5af</id>
+    </Compile>
+    <Compile Include="CloseSupplierPortal.UserCode.cs">
+      <BoundTo>863b297f-2b06-46ca-a080-fad72499f77c</BoundTo>
+      <DependentUpon>CloseSupplierPortal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>18de0a56-7871-409f-b7e8-f1c1861b0f43</id>
+    </Compile>
+    <Compile Include="CreateRFQ.cs">
+      <BoundTo>13f3f8b7-ad73-4432-84bf-98940e2ec3cf</BoundTo>
+      <DependentUpon>CreateRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c315514-0ba2-4722-8185-51052eaa88d5</id>
+    </Compile>
+    <Compile Include="CreateRFQ.UserCode.cs">
+      <BoundTo>13f3f8b7-ad73-4432-84bf-98940e2ec3cf</BoundTo>
+      <DependentUpon>CreateRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31546725-a56f-41e9-8e8d-ed8a386e13fb</id>
+    </Compile>
+    <Compile Include="DelayModule.cs">
+      <BoundTo>af42ab05-cac5-4610-b121-144d0f1e6bdb</BoundTo>
+      <DependentUpon>DelayModule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0014932b-505a-40a7-a918-8884d6dd61a4</id>
+    </Compile>
+    <Compile Include="DelayModule.UserCode.cs">
+      <BoundTo>af42ab05-cac5-4610-b121-144d0f1e6bdb</BoundTo>
+      <DependentUpon>DelayModule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e6c4aa98-8e44-4090-a2c5-0d35479d1daa</id>
+    </Compile>
+    <Compile Include="DeleteRFQ.cs">
+      <BoundTo>d4d45ba8-0fa0-4aba-9ef4-0cc536d83123</BoundTo>
+      <DependentUpon>DeleteRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3dd8ced6-a6b4-4225-9455-2fb677855924</id>
+    </Compile>
+    <Compile Include="DeleteRFQ.UserCode.cs">
+      <BoundTo>d4d45ba8-0fa0-4aba-9ef4-0cc536d83123</BoundTo>
+      <DependentUpon>DeleteRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>adf99688-5008-410f-ad48-e5cc7b487315</id>
+    </Compile>
+    <Compile Include="DownloadAttachementsPROD.cs">
+      <BoundTo>4bddbea7-e8ed-4bd1-a85e-3008455ee8ae</BoundTo>
+      <DependentUpon>DownloadAttachementsPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>97ed61a0-4a64-4fc0-8098-0fbe17b21f8a</id>
+    </Compile>
+    <Compile Include="DownloadAttachementsPROD.UserCode.cs">
+      <BoundTo>4bddbea7-e8ed-4bd1-a85e-3008455ee8ae</BoundTo>
+      <DependentUpon>DownloadAttachementsPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8fa1fb45-4bf6-424c-99ce-6b7d0121bf7a</id>
+    </Compile>
+    <Compile Include="DownloadAttachments.cs">
+      <BoundTo>9aa04d03-27d9-40e4-8137-2520377ee718</BoundTo>
+      <DependentUpon>DownloadAttachments.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9a1a95ad-5afa-4df2-8288-ad00d0e5f675</id>
+    </Compile>
+    <Compile Include="DownloadAttachments.UserCode.cs">
+      <BoundTo>9aa04d03-27d9-40e4-8137-2520377ee718</BoundTo>
+      <DependentUpon>DownloadAttachments.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f968ceae-f046-4a32-b2f9-487db3465f66</id>
+    </Compile>
+    <Compile Include="ExportData.cs">
+      <BoundTo>5e82a067-459d-4a5c-97b9-66a0c49c38eb</BoundTo>
+      <DependentUpon>ExportData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4feccdac-fbef-4b72-a9c0-51c4873d8b48</id>
+    </Compile>
+    <Compile Include="ExportData.UserCode.cs">
+      <BoundTo>5e82a067-459d-4a5c-97b9-66a0c49c38eb</BoundTo>
+      <DependentUpon>ExportData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>002d9953-8d77-43b3-b977-f2bc3cadf2bb</id>
+    </Compile>
+    <Compile Include="ExportImportShipment.cs">
+      <BoundTo>b07be609-c1ae-4f2f-bcd5-709ca1f06096</BoundTo>
+      <DependentUpon>ExportImportShipment.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f437c2bd-e7e8-4b24-8000-7648c9692c2f</id>
+    </Compile>
+    <Compile Include="ExportImportShipment.UserCode.cs">
+      <BoundTo>b07be609-c1ae-4f2f-bcd5-709ca1f06096</BoundTo>
+      <DependentUpon>ExportImportShipment.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ffa28c81-3f32-425c-831e-0b4ef930e79a</id>
+    </Compile>
+    <Compile Include="ExportImportShipmentsPROD.cs">
+      <BoundTo>7a6545a6-500e-4671-9b82-bd4f858ee4ca</BoundTo>
+      <DependentUpon>ExportImportShipmentsPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f6d9bbaf-96e6-45dd-98e2-d18e8e5bcf8e</id>
+    </Compile>
+    <Compile Include="ExportImportShipmentsPROD.UserCode.cs">
+      <BoundTo>7a6545a6-500e-4671-9b82-bd4f858ee4ca</BoundTo>
+      <DependentUpon>ExportImportShipmentsPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7653f299-40af-476b-990b-292fde214572</id>
+    </Compile>
+    <Compile Include="ExportPO.cs">
+      <BoundTo>a4c32d3f-f2ca-4bec-9430-75fec51be9bb</BoundTo>
+      <DependentUpon>ExportPO.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>94290146-de33-430e-89ca-d7a362ae4a66</id>
+    </Compile>
+    <Compile Include="ExportPO.UserCode.cs">
+      <BoundTo>a4c32d3f-f2ca-4bec-9430-75fec51be9bb</BoundTo>
+      <DependentUpon>ExportPO.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>25ebf779-8e65-46de-8875-af8c8badbe84</id>
+    </Compile>
+    <Compile Include="ExportImportPOPROD.cs">
+      <BoundTo>c00cccce-818a-47e8-a30b-dbda13bc9c5a</BoundTo>
+      <DependentUpon>ExportImportPOPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b406488b-2bcf-474d-976d-c798bac21170</id>
+    </Compile>
+    <Compile Include="ExportImportPOPROD.UserCode.cs">
+      <BoundTo>c00cccce-818a-47e8-a30b-dbda13bc9c5a</BoundTo>
+      <DependentUpon>ExportImportPOPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d6e420d9-07a0-4af0-ae2b-d0864bed0aae</id>
+    </Compile>
+    <Compile Include="ExportRFQPROD.cs">
+      <BoundTo>8a15b7e3-8f8f-42ff-940d-ff03ae864b60</BoundTo>
+      <DependentUpon>ExportRFQPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b754c05f-2e57-42f6-a321-06d22bd919e4</id>
+    </Compile>
+    <Compile Include="ExportRFQPROD.UserCode.cs">
+      <BoundTo>8a15b7e3-8f8f-42ff-940d-ff03ae864b60</BoundTo>
+      <DependentUpon>ExportRFQPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f51188f1-803b-42c6-a77d-20ae8a2e7501</id>
+    </Compile>
+    <Compile Include="FilterDetails.cs">
+      <BoundTo>caa044da-a9c9-4707-9e06-847bec493953</BoundTo>
+      <DependentUpon>FilterDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af6d2dbe-4a09-4b0d-a415-9912b6aaee35</id>
+    </Compile>
+    <Compile Include="FilterDetails.UserCode.cs">
+      <BoundTo>caa044da-a9c9-4707-9e06-847bec493953</BoundTo>
+      <DependentUpon>FilterDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>69079177-48fd-4545-b0ea-ae36772e9ff7</id>
+    </Compile>
+    <Compile Include="FilterDetailsByAssignee.cs">
+      <BoundTo>fe460776-e939-4ce5-a6c2-6aea8b0d9620</BoundTo>
+      <DependentUpon>FilterDetailsByAssignee.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e15c7644-04b3-44d3-b0c0-56519240c649</id>
+    </Compile>
+    <Compile Include="FilterDetailsByAssignee.UserCode.cs">
+      <BoundTo>fe460776-e939-4ce5-a6c2-6aea8b0d9620</BoundTo>
+      <DependentUpon>FilterDetailsByAssignee.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3d024869-1971-4789-891e-a4e899d7a5ec</id>
+    </Compile>
+    <Compile Include="FilterDetailsProcessRFQ.cs">
+      <BoundTo>b4d9c140-1c04-425c-ad9e-8f21fa151acb</BoundTo>
+      <DependentUpon>FilterDetailsProcessRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>263d2ea7-5b35-4df3-8409-3107d6d1f6c3</id>
+    </Compile>
+    <Compile Include="FilterDetailsProcessRFQ.UserCode.cs">
+      <BoundTo>b4d9c140-1c04-425c-ad9e-8f21fa151acb</BoundTo>
+      <DependentUpon>FilterDetailsProcessRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aee9f1dc-347d-4646-b4dd-bef3d4637e44</id>
+    </Compile>
+    <Compile Include="FilterPOs.cs">
+      <BoundTo>ea8000a5-559a-4844-ad83-c723bc64d287</BoundTo>
+      <DependentUpon>FilterPOs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a91a3032-0e03-4b59-acfa-5ff3a700c413</id>
+    </Compile>
+    <Compile Include="FilterPOs.UserCode.cs">
+      <BoundTo>ea8000a5-559a-4844-ad83-c723bc64d287</BoundTo>
+      <DependentUpon>FilterPOs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5938c632-c387-4866-bf6a-504702e55add</id>
+    </Compile>
+    <Compile Include="FilterRFQs.cs">
+      <BoundTo>186a7dc8-3dd6-4c40-9731-54baa80d2be4</BoundTo>
+      <DependentUpon>FilterRFQs.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4ae2985f-98ae-4a77-8d98-db9009ffbdf4</id>
+    </Compile>
+    <Compile Include="FilterRFQs.UserCode.cs">
+      <BoundTo>186a7dc8-3dd6-4c40-9731-54baa80d2be4</BoundTo>
+      <DependentUpon>FilterRFQs.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c2c7e4c-779e-4838-ac14-8541a42ca3d1</id>
+    </Compile>
+    <Compile Include="FixDatePicker.cs">
+      <BoundTo>2b67f6c5-c5ad-4172-9487-2b781d4d2611</BoundTo>
+      <DependentUpon>FixDatePicker.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5e358be0-3c77-4e08-99c5-3f1c0b7f5c40</id>
+    </Compile>
+    <Compile Include="FixDatePicker.UserCode.cs">
+      <BoundTo>2b67f6c5-c5ad-4172-9487-2b781d4d2611</BoundTo>
+      <DependentUpon>FixDatePicker.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>46a33e1d-156a-4532-954f-66a226a4e100</id>
+    </Compile>
+    <Compile Include="GetUserReference.cs">
+      <BoundTo>855dc033-778c-4663-9391-7a91586246bb</BoundTo>
+      <DependentUpon>GetUserReference.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aec29447-02f2-490c-b339-d813e8e74587</id>
+    </Compile>
+    <Compile Include="GetUserReference.UserCode.cs">
+      <BoundTo>855dc033-778c-4663-9391-7a91586246bb</BoundTo>
+      <DependentUpon>GetUserReference.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>604b6355-b4e2-4e4f-a4e0-05577bb90f18</id>
+    </Compile>
+    <Compile Include="GetUserReferencePROD.cs">
+      <BoundTo>d3f23f2c-54fc-4bbc-bfe4-f64e6e9bad99</BoundTo>
+      <DependentUpon>GetUserReferencePROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f530dae-8b33-46bf-b3b1-e91220e72717</id>
+    </Compile>
+    <Compile Include="GetUserReferencePROD.UserCode.cs">
+      <BoundTo>d3f23f2c-54fc-4bbc-bfe4-f64e6e9bad99</BoundTo>
+      <DependentUpon>GetUserReferencePROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>60b23fa6-fbf7-4f0c-bbc7-00f178ffc8e4</id>
+    </Compile>
+    <Compile Include="GroupWinners.cs">
+      <BoundTo>94b9e7b9-218e-4d18-8d88-f4715e05732a</BoundTo>
+      <DependentUpon>GroupWinners.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9d1eb487-ebee-4fec-a8ab-4777112f2124</id>
+    </Compile>
+    <Compile Include="GroupWinners.UserCode.cs">
+      <BoundTo>94b9e7b9-218e-4d18-8d88-f4715e05732a</BoundTo>
+      <DependentUpon>GroupWinners.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>abcef0d3-3755-4df5-bd24-4d622857a8f1</id>
+    </Compile>
+    <Compile Include="ImportData.cs">
+      <BoundTo>4fba2212-512d-4a01-a062-33e1e6a7ea0d</BoundTo>
+      <DependentUpon>ImportData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7af6fa9d-548d-4e02-b58c-b25e239f1270</id>
+    </Compile>
+    <Compile Include="ImportData.UserCode.cs">
+      <BoundTo>4fba2212-512d-4a01-a062-33e1e6a7ea0d</BoundTo>
+      <DependentUpon>ImportData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>43f9a863-bf49-4f33-ab66-afe223363c24</id>
+    </Compile>
+    <Compile Include="KillExcel.cs">
+      <BoundTo>b181191e-133f-4b1d-a4e6-4e3a084f3bf1</BoundTo>
+      <DependentUpon>KillExcel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0075690b-92c5-442a-ae9e-b6b28b50dcab</id>
+    </Compile>
+    <Compile Include="KillExcel.UserCode.cs">
+      <BoundTo>b181191e-133f-4b1d-a4e6-4e3a084f3bf1</BoundTo>
+      <DependentUpon>KillExcel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6b0c7956-1d68-4d0f-a63f-5570c27cc3b4</id>
+    </Compile>
+    <Compile Include="KillFileExplorer.cs">
+      <BoundTo>42190ab8-9d19-4e42-8b3a-cad66ae0eda0</BoundTo>
+      <DependentUpon>KillFileExplorer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2fd9c954-3c1b-4add-bd29-42dec351e0cd</id>
+    </Compile>
+    <Compile Include="KillFileExplorer.UserCode.cs">
+      <BoundTo>42190ab8-9d19-4e42-8b3a-cad66ae0eda0</BoundTo>
+      <DependentUpon>KillFileExplorer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>eff071fc-36c9-4d18-91a5-71f33af3fa0e</id>
+    </Compile>
+    <Compile Include="KillFlashPlayer.cs">
+      <BoundTo>5f03ee3f-1abc-438a-989a-797f41eeaff8</BoundTo>
+      <DependentUpon>KillFlashPlayer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>598b6f09-989b-45ed-9e7a-2aace9c9d915</id>
+    </Compile>
+    <Compile Include="KillFlashPlayer.UserCode.cs">
+      <BoundTo>5f03ee3f-1abc-438a-989a-797f41eeaff8</BoundTo>
+      <DependentUpon>KillFlashPlayer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>660955c3-c3d3-4982-a694-f201a74c8be7</id>
+    </Compile>
+    <Compile Include="KillInternetExplorer.cs">
+      <BoundTo>d0793b76-1080-40ed-bf2f-cbc3144c914b</BoundTo>
+      <DependentUpon>KillInternetExplorer.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e058bb42-32a7-4096-9f9c-44172392c609</id>
+    </Compile>
+    <Compile Include="KillInternetExplorer.UserCode.cs">
+      <BoundTo>d0793b76-1080-40ed-bf2f-cbc3144c914b</BoundTo>
+      <DependentUpon>KillInternetExplorer.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af4fc2b6-6201-45cd-a708-d4bd52024ae1</id>
+    </Compile>
+    <Compile Include="KillProcess.cs">
+      <BoundTo>24e9aaf2-ef82-4618-8c86-85c5e55207e6</BoundTo>
+      <DependentUpon>KillProcess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65769f66-4a96-401b-b72c-97a12c130d3a</id>
+    </Compile>
+    <Compile Include="KillProcess.UserCode.cs">
+      <BoundTo>24e9aaf2-ef82-4618-8c86-85c5e55207e6</BoundTo>
+      <DependentUpon>KillProcess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9df6894b-3cc3-4c19-8926-1b9600264f30</id>
+    </Compile>
+    <Compile Include="KillSolidWorks.cs">
+      <BoundTo>2308a939-5317-4004-8ef1-fe3c3aa75625</BoundTo>
+      <DependentUpon>KillSolidWorks.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2898cc08-9c21-44fa-8872-ef22b5a724c5</id>
+    </Compile>
+    <Compile Include="KillSolidWorks.UserCode.cs">
+      <BoundTo>2308a939-5317-4004-8ef1-fe3c3aa75625</BoundTo>
+      <DependentUpon>KillSolidWorks.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6e8eccc7-bf9c-436c-a6a1-5e01a83ceb1a</id>
+    </Compile>
+    <Compile Include="LinkVendorErp.cs">
+      <BoundTo>5e2de225-fcfb-4450-a356-b71f489fb913</BoundTo>
+      <DependentUpon>LinkVendorErp.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1fe1bc27-5331-4fc7-8720-2ddd73b01b91</id>
+    </Compile>
+    <Compile Include="LinkVendorErp.UserCode.cs">
+      <BoundTo>5e2de225-fcfb-4450-a356-b71f489fb913</BoundTo>
+      <DependentUpon>LinkVendorErp.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>534decb1-3f87-4615-8899-c0f6d49534c1</id>
+    </Compile>
+    <Compile Include="LoginDevSPWeb.cs">
+      <BoundTo>1e4635d6-dc23-485a-b04a-9c1c0fa71be5</BoundTo>
+      <DependentUpon>LoginDevSPWeb.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>051c9733-eb11-484d-ac16-16784fe480bc</id>
+    </Compile>
+    <Compile Include="LoginDevSPWeb.UserCode.cs">
+      <BoundTo>1e4635d6-dc23-485a-b04a-9c1c0fa71be5</BoundTo>
+      <DependentUpon>LoginDevSPWeb.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>31573a51-b7af-4396-b59b-69a0f95c192b</id>
+    </Compile>
+    <Compile Include="LoginJDEDev.cs">
+      <BoundTo>e204be6f-3a6e-42d9-89a5-d4789c62af4f</BoundTo>
+      <DependentUpon>LoginJDEDev.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7867b709-5964-43ee-842a-332d4d61d3cb</id>
+    </Compile>
+    <Compile Include="LoginJDEDev.UserCode.cs">
+      <BoundTo>e204be6f-3a6e-42d9-89a5-d4789c62af4f</BoundTo>
+      <DependentUpon>LoginJDEDev.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>148a9c84-e6a6-4e71-9f1d-26502b1419ba</id>
+    </Compile>
+    <Compile Include="LoginJDEPROD.cs">
+      <BoundTo>a1fb3535-3279-4177-882b-c94b9d4e9dff</BoundTo>
+      <DependentUpon>LoginJDEPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c6b8b818-5a7b-46ad-a5c1-c27054345e7a</id>
+    </Compile>
+    <Compile Include="LoginJDEPROD.UserCode.cs">
+      <BoundTo>a1fb3535-3279-4177-882b-c94b9d4e9dff</BoundTo>
+      <DependentUpon>LoginJDEPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ecf94b1-4e6b-40c9-8a60-30cbc386fe26</id>
+    </Compile>
+    <Compile Include="LoginSPWebPROD.cs">
+      <BoundTo>ee8ddb1e-77d7-4b29-a514-96c12b208f49</BoundTo>
+      <DependentUpon>LoginSPWebPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f64554ff-f118-469e-a1ee-bcb45a06b4cc</id>
+    </Compile>
+    <Compile Include="LoginSPWebPROD.UserCode.cs">
+      <BoundTo>ee8ddb1e-77d7-4b29-a514-96c12b208f49</BoundTo>
+      <DependentUpon>LoginSPWebPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>2423f3aa-02a1-4d75-bfff-5add93946a2f</id>
+    </Compile>
+    <Compile Include="MaintainShippingMethod.cs">
+      <BoundTo>9255973e-9178-4a19-92c0-5427a295da61</BoundTo>
+      <DependentUpon>MaintainShippingMethod.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0e5ac6ac-092f-442e-8b54-badb7fcb9e90</id>
+    </Compile>
+    <Compile Include="MaintainShippingMethod.UserCode.cs">
+      <BoundTo>9255973e-9178-4a19-92c0-5427a295da61</BoundTo>
+      <DependentUpon>MaintainShippingMethod.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>efe40e74-a6a7-4ffd-a37b-35d9dbe6a322</id>
+    </Compile>
+    <Compile Include="ModifyPO.cs">
+      <BoundTo>76761711-cd38-4360-881e-d967a3b9788b</BoundTo>
+      <DependentUpon>ModifyPO.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>618eccf1-b7d8-44b2-9a2f-3ad317ab39fe</id>
+    </Compile>
+    <Compile Include="ModifyPO.UserCode.cs">
+      <BoundTo>76761711-cd38-4360-881e-d967a3b9788b</BoundTo>
+      <DependentUpon>ModifyPO.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e6eee9f3-f765-41a8-94bf-687e629a4abe</id>
+    </Compile>
+    <Compile Include="ModifyPOPROD.cs">
+      <BoundTo>24a7a002-2a07-4a68-9904-6eb356f510d2</BoundTo>
+      <DependentUpon>ModifyPOPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c7e4fa85-c1ae-44aa-9417-1da71f0130ee</id>
+    </Compile>
+    <Compile Include="ModifyPOPROD.UserCode.cs">
+      <BoundTo>24a7a002-2a07-4a68-9904-6eb356f510d2</BoundTo>
+      <DependentUpon>ModifyPOPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>854620c1-b503-4446-acdd-ae991d9c44c3</id>
+    </Compile>
+    <Compile Include="ModifyRequiredDate.cs">
+      <BoundTo>0115c1f1-c046-4fb0-ba0e-c87e05cf37d3</BoundTo>
+      <DependentUpon>ModifyRequiredDate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>706f9dfd-9b7c-41b6-8206-97a4cb9bebc2</id>
+    </Compile>
+    <Compile Include="ModifyRequiredDate.UserCode.cs">
+      <BoundTo>0115c1f1-c046-4fb0-ba0e-c87e05cf37d3</BoundTo>
+      <DependentUpon>ModifyRequiredDate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a58eaecc-a854-4886-925f-87e948e8527e</id>
+    </Compile>
+    <Compile Include="ModifyVendor.cs">
+      <BoundTo>c0130814-421c-402c-b07d-c680dcec2a46</BoundTo>
+      <DependentUpon>ModifyVendor.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d1acb19a-af01-43ad-98e1-e49ec7e20b59</id>
+    </Compile>
+    <Compile Include="ModifyVendor.UserCode.cs">
+      <BoundTo>c0130814-421c-402c-b07d-c680dcec2a46</BoundTo>
+      <DependentUpon>ModifyVendor.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>29843138-466a-43f2-b1f4-a8ac16638678</id>
+    </Compile>
+    <Compile Include="OpenDrawingFiles.cs">
+      <BoundTo>9c4984f0-ead5-4c15-9b58-eba58821bfcf</BoundTo>
+      <DependentUpon>OpenDrawingFiles.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c1705e41-eee0-4793-92ef-ca86fdd98381</id>
+    </Compile>
+    <Compile Include="OpenDrawingFiles.UserCode.cs">
+      <BoundTo>9c4984f0-ead5-4c15-9b58-eba58821bfcf</BoundTo>
+      <DependentUpon>OpenDrawingFiles.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f15557c9-8e93-4bec-a935-4aa560f1cdb0</id>
+    </Compile>
+    <Compile Include="OpenSupplierPortal.cs">
+      <BoundTo>ae79ebbe-e4de-4db5-b76f-af2c6103b327</BoundTo>
+      <DependentUpon>OpenSupplierPortal.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>757a9975-e243-46e3-a8a8-4ba1c7476c7b</id>
+    </Compile>
+    <Compile Include="OpenSupplierPortal.UserCode.cs">
+      <BoundTo>ae79ebbe-e4de-4db5-b76f-af2c6103b327</BoundTo>
+      <DependentUpon>OpenSupplierPortal.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>af9e8d27-871a-48c7-a994-8ddf0d620bc1</id>
+    </Compile>
+    <Compile Include="OpenSupplierPortalPROD.cs">
+      <BoundTo>30cda76f-0034-429b-8e0c-bf71b2850895</BoundTo>
+      <DependentUpon>OpenSupplierPortalPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a15e0cd1-f650-472c-9e0d-3c06004754cb</id>
+    </Compile>
+    <Compile Include="OpenSupplierPortalPROD.UserCode.cs">
+      <BoundTo>30cda76f-0034-429b-8e0c-bf71b2850895</BoundTo>
+      <DependentUpon>OpenSupplierPortalPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b6e090ab-046d-48a0-a83d-c688eb4b589f</id>
+    </Compile>
+    <Compile Include="PrepareRequisitionPROD.cs">
+      <BoundTo>144e5c2c-de45-4d3d-b585-2b437bbded1e</BoundTo>
+      <DependentUpon>PrepareRequisitionPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08969392-9c54-4348-b5fb-afe8e05d28ba</id>
+    </Compile>
+    <Compile Include="PrepareRequisitionPROD.UserCode.cs">
+      <BoundTo>144e5c2c-de45-4d3d-b585-2b437bbded1e</BoundTo>
+      <DependentUpon>PrepareRequisitionPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33c51fb3-23b0-4a06-8fb8-92f45aad1bee</id>
+    </Compile>
+    <Compile Include="PreviewDrawings.cs">
+      <BoundTo>0a73a9fd-621c-4add-aca3-b15cdc9a43cb</BoundTo>
+      <DependentUpon>PreviewDrawings.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b8b6cb31-6eef-4891-b286-b94c69013e59</id>
+    </Compile>
+    <Compile Include="PreviewDrawings.UserCode.cs">
+      <BoundTo>0a73a9fd-621c-4add-aca3-b15cdc9a43cb</BoundTo>
+      <DependentUpon>PreviewDrawings.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a25f99ca-0539-4411-8327-6a7418d6e383</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>f7e363e4-95d9-4b84-bdcb-9c4368c6a11a</id>
+    </Compile>
+    <Compile Include="PrepareRequisition.cs">
+      <BoundTo>0228f79f-ba61-4165-adc0-9873c84c880c</BoundTo>
+      <DependentUpon>PrepareRequisition.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>04bd6d29-b9f5-4a16-9c43-804f2e6627c7</id>
+    </Compile>
+    <Compile Include="PrepareRequisition.UserCode.cs">
+      <BoundTo>0228f79f-ba61-4165-adc0-9873c84c880c</BoundTo>
+      <DependentUpon>PrepareRequisition.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ee7369d3-a7eb-4e26-8561-46423991a7af</id>
+    </Compile>
+    <Compile Include="RejectPOChange.cs">
+      <BoundTo>806a3a46-4ed4-45e4-a420-1cab633ea61c</BoundTo>
+      <DependentUpon>RejectPOChange.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0df5652a-14b8-47e8-ad9b-bd65fda3ecf5</id>
+    </Compile>
+    <Compile Include="RejectPOChange.UserCode.cs">
+      <BoundTo>806a3a46-4ed4-45e4-a420-1cab633ea61c</BoundTo>
+      <DependentUpon>RejectPOChange.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>41606f1f-faee-4e72-a6ff-88e0a24f9449</id>
+    </Compile>
+    <Compile Include="RestartMuleSoftServices.cs">
+      <BoundTo>7cc1c2bc-e9ff-4e2f-8fc2-ce16e7b75499</BoundTo>
+      <DependentUpon>RestartMuleSoftServices.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>569393c8-3906-4c95-9d9a-e9fcf214b5aa</id>
+    </Compile>
+    <Compile Include="RestartMuleSoftServices.UserCode.cs">
+      <BoundTo>7cc1c2bc-e9ff-4e2f-8fc2-ce16e7b75499</BoundTo>
+      <DependentUpon>RestartMuleSoftServices.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4194de09-b7fd-4f72-8284-67d6bdf62f23</id>
+    </Compile>
+    <Compile Include="ResubmitQuote.cs">
+      <BoundTo>4c04db9a-0e6e-4e97-a19d-595c29697adf</BoundTo>
+      <DependentUpon>ResubmitQuote.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e3b7f64-c681-4dce-9157-862482704a8a</id>
+    </Compile>
+    <Compile Include="ResubmitQuote.UserCode.cs">
+      <BoundTo>4c04db9a-0e6e-4e97-a19d-595c29697adf</BoundTo>
+      <DependentUpon>ResubmitQuote.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>79e9499e-fc54-46a2-93e4-add861d588a8</id>
+    </Compile>
+    <Compile Include="RunSQLStatement.cs">
+      <BoundTo>c5cf1293-97a9-4c89-8f86-ff8956f28dfa</BoundTo>
+      <DependentUpon>RunSQLStatement.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>85314599-f161-41d9-bc2a-3aeb95094b89</id>
+    </Compile>
+    <Compile Include="RunSQLStatement.UserCode.cs">
+      <BoundTo>c5cf1293-97a9-4c89-8f86-ff8956f28dfa</BoundTo>
+      <DependentUpon>RunSQLStatement.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>403a9d27-f371-4a33-8f10-b70b3721d468</id>
+    </Compile>
+    <Compile Include="SearchJDE.cs">
+      <BoundTo>f663882c-91c1-4126-b1d5-7f4caea36bd6</BoundTo>
+      <DependentUpon>SearchJDE.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6cc09de8-a1ab-418b-8a50-5b3ebb292038</id>
+    </Compile>
+    <Compile Include="SearchJDE.UserCode.cs">
+      <BoundTo>f663882c-91c1-4126-b1d5-7f4caea36bd6</BoundTo>
+      <DependentUpon>SearchJDE.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>06ad937b-c2f5-4b1c-aea9-de4c7dabcc36</id>
+    </Compile>
+    <Compile Include="SearchJDEforCancelledLines.cs">
+      <BoundTo>a31db705-2d7f-4944-b3e7-ad1f72eeb4c3</BoundTo>
+      <DependentUpon>SearchJDEforCancelledLines.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4573ab53-1002-4723-bef0-54e37d2f1319</id>
+    </Compile>
+    <Compile Include="SearchJDEforCancelledLines.UserCode.cs">
+      <BoundTo>a31db705-2d7f-4944-b3e7-ad1f72eeb4c3</BoundTo>
+      <DependentUpon>SearchJDEforCancelledLines.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8386943d-112b-406f-87a0-cb30b93ad249</id>
+    </Compile>
+    <Compile Include="SelectProcessRFQ.cs">
+      <BoundTo>e55deb13-6843-4b28-95d2-10fefffc0614</BoundTo>
+      <DependentUpon>SelectProcessRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e3caae9c-e105-4da0-96ab-9973d8492cb3</id>
+    </Compile>
+    <Compile Include="SelectProcessRFQ.UserCode.cs">
+      <BoundTo>e55deb13-6843-4b28-95d2-10fefffc0614</BoundTo>
+      <DependentUpon>SelectProcessRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>36a99c49-c4e1-43f8-90ad-684c42560842</id>
+    </Compile>
+    <Compile Include="SelectRFQinWeb.cs">
+      <BoundTo>b0bc62de-3f0f-4284-9686-36ba8bf95d73</BoundTo>
+      <DependentUpon>SelectRFQinWeb.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7d158c31-0d76-464b-8b39-0fe92dcf57da</id>
+    </Compile>
+    <Compile Include="SelectRFQinWeb.UserCode.cs">
+      <BoundTo>b0bc62de-3f0f-4284-9686-36ba8bf95d73</BoundTo>
+      <DependentUpon>SelectRFQinWeb.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ef26c7c3-95e8-4032-a28b-6dba7b0950d7</id>
+    </Compile>
+    <Compile Include="SelectWinner.cs">
+      <BoundTo>621a6576-d3ba-4d32-a78b-ba8a95ce4523</BoundTo>
+      <DependentUpon>SelectWinner.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e584d8e2-a354-43d8-a2f3-963945928c99</id>
+    </Compile>
+    <Compile Include="SelectWinner.UserCode.cs">
+      <BoundTo>621a6576-d3ba-4d32-a78b-ba8a95ce4523</BoundTo>
+      <DependentUpon>SelectWinner.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f05cae54-1fca-4e49-9230-3d92c99168ed</id>
+    </Compile>
+    <Compile Include="SelectWinners.cs">
+      <BoundTo>0c05c564-d9c1-4972-86da-7a76f3e4b37c</BoundTo>
+      <DependentUpon>SelectWinners.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dbf5f5ef-f11e-4982-972f-b71dba1722bf</id>
+    </Compile>
+    <Compile Include="SelectWinners.UserCode.cs">
+      <BoundTo>0c05c564-d9c1-4972-86da-7a76f3e4b37c</BoundTo>
+      <DependentUpon>SelectWinners.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6be62b89-04c5-4a0a-9a34-a59ee8c67008</id>
+    </Compile>
+    <Compile Include="SetContactType.cs">
+      <BoundTo>7b392c0f-52af-409b-a200-cdf67514da42</BoundTo>
+      <DependentUpon>SetContactType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a225c98-fd8d-4030-ac7d-6a0d35ea1024</id>
+    </Compile>
+    <Compile Include="SetContactType.UserCode.cs">
+      <BoundTo>7b392c0f-52af-409b-a200-cdf67514da42</BoundTo>
+      <DependentUpon>SetContactType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a9314d3e-bba5-4047-a6c6-0ba2ff639b51</id>
+    </Compile>
+    <Compile Include="SetDefaultSiteSQL.cs">
+      <BoundTo>a1567044-3bf4-4543-95eb-99618b3d4401</BoundTo>
+      <DependentUpon>SetDefaultSiteSQL.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>22f22848-c986-4612-b114-df5e30657d84</id>
+    </Compile>
+    <Compile Include="SetDefaultSiteSQL.UserCode.cs">
+      <BoundTo>a1567044-3bf4-4543-95eb-99618b3d4401</BoundTo>
+      <DependentUpon>SetDefaultSiteSQL.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6a5b24cb-23f9-40b3-b28a-4b73d60fc1ef</id>
+    </Compile>
+    <Compile Include="ShowDates.cs">
+      <BoundTo>7809f226-eccb-45ac-ad1a-94ac87d06ceb</BoundTo>
+      <DependentUpon>ShowDates.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>702f229a-cc6d-42aa-950d-ff4c9e4c85dc</id>
+    </Compile>
+    <Compile Include="ShowDates.UserCode.cs">
+      <BoundTo>7809f226-eccb-45ac-ad1a-94ac87d06ceb</BoundTo>
+      <DependentUpon>ShowDates.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9e795ece-e76e-4e0d-bd1d-6a18293a0810</id>
+    </Compile>
+    <Compile Include="ShowNotes.cs">
+      <BoundTo>0a0f361c-fe30-45e4-94d8-22923e02b571</BoundTo>
+      <DependentUpon>ShowNotes.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b4e55e03-908a-4cef-a1e3-25d4d5df2704</id>
+    </Compile>
+    <Compile Include="ShowNotes.UserCode.cs">
+      <BoundTo>0a0f361c-fe30-45e4-94d8-22923e02b571</BoundTo>
+      <DependentUpon>ShowNotes.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d7abd51b-8dab-4b1e-977b-95b7f2411e4c</id>
+    </Compile>
+    <Compile Include="SortDetails.cs">
+      <BoundTo>6f57fcba-b4ae-4877-890f-fef6c49f241d</BoundTo>
+      <DependentUpon>SortDetails.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e73ac90b-c317-44b9-b592-efed26a14d4b</id>
+    </Compile>
+    <Compile Include="SortDetails.UserCode.cs">
+      <BoundTo>6f57fcba-b4ae-4877-890f-fef6c49f241d</BoundTo>
+      <DependentUpon>SortDetails.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f73b2a9-12fe-4956-b5bc-232d2a65e7bd</id>
+    </Compile>
+    <Compile Include="SortDetailsRFQ.cs">
+      <BoundTo>3ccb2a17-c44c-4f54-bf9c-327eee068565</BoundTo>
+      <DependentUpon>SortDetailsRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>778edef6-fae9-4c38-aa58-f77ce7d0ccf4</id>
+    </Compile>
+    <Compile Include="SortDetailsRFQ.UserCode.cs">
+      <BoundTo>3ccb2a17-c44c-4f54-bf9c-327eee068565</BoundTo>
+      <DependentUpon>SortDetailsRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e7baf4d1-40d0-43d1-a3f5-abd484be8900</id>
+    </Compile>
+    <Compile Include="SPCollection.cs">
+      <id>8484ca21-29cd-40d5-bd5b-6200ed3ebd0c</id>
+    </Compile>
+    <Compile Include="SplitRFQ.cs">
+      <BoundTo>241ad678-481c-4205-9888-47528a83657a</BoundTo>
+      <DependentUpon>SplitRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8d0b11c6-64dc-4ae9-a78c-e5e0e26423e5</id>
+    </Compile>
+    <Compile Include="SplitRFQ.UserCode.cs">
+      <BoundTo>241ad678-481c-4205-9888-47528a83657a</BoundTo>
+      <DependentUpon>SplitRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>10003642-49db-42d2-95c7-7b42feff2729</id>
+    </Compile>
+    <Compile Include="SubmitQuote.cs">
+      <BoundTo>7e2eefd1-6f9d-40c7-b9bf-8143213d16a0</BoundTo>
+      <DependentUpon>SubmitQuote.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ab6c7bc6-fbdc-4536-9afb-18f4351082f4</id>
+    </Compile>
+    <Compile Include="SubmitQuote.UserCode.cs">
+      <BoundTo>7e2eefd1-6f9d-40c7-b9bf-8143213d16a0</BoundTo>
+      <DependentUpon>SubmitQuote.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8c94e293-89d3-442d-a17b-b7a6269eae31</id>
+    </Compile>
+    <Compile Include="SubmitQuote2.cs">
+      <BoundTo>fa2b79d5-96e3-45b0-8be3-7aaf7f295aaf</BoundTo>
+      <DependentUpon>SubmitQuote2.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>12afd1d9-148e-47b8-a45e-b7834db18059</id>
+    </Compile>
+    <Compile Include="SubmitQuote2.UserCode.cs">
+      <BoundTo>fa2b79d5-96e3-45b0-8be3-7aaf7f295aaf</BoundTo>
+      <DependentUpon>SubmitQuote2.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3061a393-afac-4cd0-95cd-8c5d5e8edcda</id>
+    </Compile>
+    <Compile Include="SubmitSingleQuote.cs">
+      <BoundTo>7d2b6f05-fba3-4439-8f8e-a280696403c2</BoundTo>
+      <DependentUpon>SubmitSingleQuote.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e59ddaf3-b3e1-41e7-8935-e0c97912f43a</id>
+    </Compile>
+    <Compile Include="SubmitSingleQuote.UserCode.cs">
+      <BoundTo>7d2b6f05-fba3-4439-8f8e-a280696403c2</BoundTo>
+      <DependentUpon>SubmitSingleQuote.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fdf292bf-1354-4c01-966c-17a1205fe89a</id>
+    </Compile>
+    <Compile Include="SubmitSingleQuotePROD.cs">
+      <BoundTo>20b43ae9-c6ea-4f41-b71b-5592550ba80d</BoundTo>
+      <DependentUpon>SubmitSingleQuotePROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>925363c1-5037-4303-8198-79cecc8049af</id>
+    </Compile>
+    <Compile Include="SubmitSingleQuotePROD.UserCode.cs">
+      <BoundTo>20b43ae9-c6ea-4f41-b71b-5592550ba80d</BoundTo>
+      <DependentUpon>SubmitSingleQuotePROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acd41dfb-16eb-41d6-a39a-e248f077ed2a</id>
+    </Compile>
+    <Compile Include="SwitchCurrency.cs">
+      <BoundTo>5ff0337e-546c-4fa9-9171-df30c6a0f8ba</BoundTo>
+      <DependentUpon>SwitchCurrency.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>29188b2e-9bed-487f-a478-3c62e23553cf</id>
+    </Compile>
+    <Compile Include="SwitchCurrency.UserCode.cs">
+      <BoundTo>5ff0337e-546c-4fa9-9171-df30c6a0f8ba</BoundTo>
+      <DependentUpon>SwitchCurrency.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9c445cdc-1e61-4d5a-a815-b9ec438122b7</id>
+    </Compile>
+    <Compile Include="SwitchSites.cs">
+      <BoundTo>b34288c4-d023-4d77-a5e8-ecad082b013a</BoundTo>
+      <DependentUpon>SwitchSites.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>51a5c354-7f3a-48c3-8b62-b7f085b14e8c</id>
+    </Compile>
+    <Compile Include="SwitchSites.UserCode.cs">
+      <BoundTo>b34288c4-d023-4d77-a5e8-ecad082b013a</BoundTo>
+      <DependentUpon>SwitchSites.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c6352803-e3af-4ebb-b581-afa9041426dd</id>
+    </Compile>
+    <Compile Include="OpenProcessRFQ.cs">
+      <BoundTo>b053bb1a-375a-4723-adf7-ea7afb2b2eaf</BoundTo>
+      <DependentUpon>OpenProcessRFQ.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>37f17777-cee6-4a8c-b967-fe6f6084544e</id>
+    </Compile>
+    <Compile Include="OpenProcessRFQ.UserCode.cs">
+      <BoundTo>b053bb1a-375a-4723-adf7-ea7afb2b2eaf</BoundTo>
+      <DependentUpon>OpenProcessRFQ.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>42bb32af-b6ee-40de-81c2-7f057aaf710c</id>
+    </Compile>
+    <Compile Include="Test.cs">
+      <BoundTo>92891607-c41e-4c4e-a2af-989952fd8f9f</BoundTo>
+      <DependentUpon>Test.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c088af6-fc4a-46f1-86d4-97c1397f73a4</id>
+    </Compile>
+    <Compile Include="Test.UserCode.cs">
+      <BoundTo>92891607-c41e-4c4e-a2af-989952fd8f9f</BoundTo>
+      <DependentUpon>Test.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>134986e7-21b0-49f7-a943-d04b6fa027d7</id>
+    </Compile>
+    <Compile Include="UnlockQuote.cs">
+      <BoundTo>d16cdeb5-0075-4432-81f3-0de4eaed9d7f</BoundTo>
+      <DependentUpon>UnlockQuote.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>36b17606-e70c-407a-860d-3c5eb4db053b</id>
+    </Compile>
+    <Compile Include="UnlockQuote.UserCode.cs">
+      <BoundTo>d16cdeb5-0075-4432-81f3-0de4eaed9d7f</BoundTo>
+      <DependentUpon>UnlockQuote.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acf009ef-9a54-4e2b-96ce-0ca1158b8264</id>
+    </Compile>
+    <Compile Include="ValidateContactType.cs">
+      <BoundTo>158c6f64-b095-460a-9d60-e285d9cc2ac0</BoundTo>
+      <DependentUpon>ValidateContactType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d2d72223-c5f0-4c33-9b77-1c9c74dc8999</id>
+    </Compile>
+    <Compile Include="ValidateContactType.UserCode.cs">
+      <BoundTo>158c6f64-b095-460a-9d60-e285d9cc2ac0</BoundTo>
+      <DependentUpon>ValidateContactType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5934c771-a13d-4b72-9ac0-ab1ae02a9d68</id>
+    </Compile>
+    <Compile Include="ValidateData.cs">
+      <BoundTo>35955143-3f8b-4598-aff5-57b42ef96e9f</BoundTo>
+      <DependentUpon>ValidateData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6df50c3a-9cba-43b7-b6c1-2db31c7e31ba</id>
+    </Compile>
+    <Compile Include="ValidateData.UserCode.cs">
+      <BoundTo>35955143-3f8b-4598-aff5-57b42ef96e9f</BoundTo>
+      <DependentUpon>ValidateData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a12689af-66c5-4e8d-8a55-df5b5c18fa5e</id>
+    </Compile>
+    <Compile Include="ValidateDefaultShippingMethod.cs">
+      <BoundTo>77e23fcc-bcd4-4239-9563-d6d9deb08724</BoundTo>
+      <DependentUpon>ValidateDefaultShippingMethod.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ae2a4dcb-d62f-4d10-a167-312f331d3437</id>
+    </Compile>
+    <Compile Include="ValidateDefaultShippingMethod.UserCode.cs">
+      <BoundTo>77e23fcc-bcd4-4239-9563-d6d9deb08724</BoundTo>
+      <DependentUpon>ValidateDefaultShippingMethod.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3f88e550-92f4-40c8-ba5c-bc15bacd0aa2</id>
+    </Compile>
+    <Compile Include="ValidateDeletedDetail.cs">
+      <BoundTo>bfa93516-a9bc-45bd-bd0b-ec1a9f4e2618</BoundTo>
+      <DependentUpon>ValidateDeletedDetail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>61ba6fcf-192c-491a-8c9b-a1b6c6fb5b81</id>
+    </Compile>
+    <Compile Include="ValidateDeletedDetail.UserCode.cs">
+      <BoundTo>bfa93516-a9bc-45bd-bd0b-ec1a9f4e2618</BoundTo>
+      <DependentUpon>ValidateDeletedDetail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9688606a-b385-47d5-9491-d7e0fb03af9d</id>
+    </Compile>
+    <Compile Include="ValidateJDEPRODforReopen.cs">
+      <BoundTo>60da5064-e7f6-4fa5-b588-b67cac9e6699</BoundTo>
+      <DependentUpon>ValidateJDEPRODforReopen.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d837c96-22ac-4325-be13-3de83af3e7b7</id>
+    </Compile>
+    <Compile Include="ValidateJDEPRODforReopen.UserCode.cs">
+      <BoundTo>60da5064-e7f6-4fa5-b588-b67cac9e6699</BoundTo>
+      <DependentUpon>ValidateJDEPRODforReopen.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>daea6f9d-529b-4bf5-8acc-ee1f351d83af</id>
+    </Compile>
+    <Compile Include="ValidateOrderNumberJDE.cs">
+      <BoundTo>d6e61a3c-aeb1-48e6-b3b8-45f2caa90919</BoundTo>
+      <DependentUpon>ValidateOrderNumberJDE.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fa8b6761-5e4c-4063-85ec-57047e15c202</id>
+    </Compile>
+    <Compile Include="ValidateOrderNumberJDE.UserCode.cs">
+      <BoundTo>d6e61a3c-aeb1-48e6-b3b8-45f2caa90919</BoundTo>
+      <DependentUpon>ValidateOrderNumberJDE.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>97580a89-e12c-40f1-ab75-286a5d1aab00</id>
+    </Compile>
+    <Compile Include="ValidateOrderNumberJDEPROD.cs">
+      <BoundTo>fa253468-3732-460e-b1ea-e2d6b5e1e645</BoundTo>
+      <DependentUpon>ValidateOrderNumberJDEPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3b81dda3-8cea-4473-97a2-048e1509b3b9</id>
+    </Compile>
+    <Compile Include="ValidateOrderNumberJDEPROD.UserCode.cs">
+      <BoundTo>fa253468-3732-460e-b1ea-e2d6b5e1e645</BoundTo>
+      <DependentUpon>ValidateOrderNumberJDEPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6f256174-ba4a-4147-843e-97b579eb19ab</id>
+    </Compile>
+    <Compile Include="ValidateQuoteSubmitted.cs">
+      <BoundTo>816d41b8-7d0c-4939-b380-f755f5065951</BoundTo>
+      <DependentUpon>ValidateQuoteSubmitted.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0ef9b34d-6c8d-4d34-83c1-151b2f12ec8d</id>
+    </Compile>
+    <Compile Include="ValidateQuoteSubmitted.UserCode.cs">
+      <BoundTo>816d41b8-7d0c-4939-b380-f755f5065951</BoundTo>
+      <DependentUpon>ValidateQuoteSubmitted.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e8788fdf-a4ac-4bf3-bbbf-a35e5169e4d1</id>
+    </Compile>
+    <Compile Include="ValidateRecordsinJDE.cs">
+      <BoundTo>dfde08af-71a1-4e35-8a41-d57e6aad5571</BoundTo>
+      <DependentUpon>ValidateRecordsinJDE.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2737e79f-29fd-4dff-a80e-2c4ad69446ff</id>
+    </Compile>
+    <Compile Include="ValidateRecordsinJDE.UserCode.cs">
+      <BoundTo>dfde08af-71a1-4e35-8a41-d57e6aad5571</BoundTo>
+      <DependentUpon>ValidateRecordsinJDE.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b792c640-8b29-4acf-bb7a-24a0dbeab41e</id>
+    </Compile>
+    <Compile Include="ValidateShippingChangesJDE.cs">
+      <BoundTo>75190a75-4a7c-4e56-bece-be50ccd7cf7a</BoundTo>
+      <DependentUpon>ValidateShippingChangesJDE.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cc0ae94a-ea1b-47ff-8047-3916e9ee33ec</id>
+    </Compile>
+    <Compile Include="ValidateShippingChangesJDE.UserCode.cs">
+      <BoundTo>75190a75-4a7c-4e56-bece-be50ccd7cf7a</BoundTo>
+      <DependentUpon>ValidateShippingChangesJDE.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dd32d796-14f8-4cb5-9173-9b3b8da8a219</id>
+    </Compile>
+    <Compile Include="ValidatingWeb.cs">
+      <BoundTo>22414e81-ecb0-4d68-bc07-15f54726b000</BoundTo>
+      <DependentUpon>ValidatingWeb.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>feeb946f-82fb-4695-90ad-2d826a9802ba</id>
+    </Compile>
+    <Compile Include="ValidatingWeb.UserCode.cs">
+      <BoundTo>22414e81-ecb0-4d68-bc07-15f54726b000</BoundTo>
+      <DependentUpon>ValidatingWeb.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f4c2cf9e-6c7e-4e5f-8b1b-b229e6643cef</id>
+    </Compile>
+    <Compile Include="WriteData.cs">
+      <BoundTo>7f07bc5f-dc38-4e7a-894f-49c5fa30c0c7</BoundTo>
+      <DependentUpon>WriteData.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f9a2116d-9f3d-4958-b263-083a685718dc</id>
+    </Compile>
+    <Compile Include="WriteData.UserCode.cs">
+      <BoundTo>7f07bc5f-dc38-4e7a-894f-49c5fa30c0c7</BoundTo>
+      <DependentUpon>WriteData.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5040d2d2-1234-4ab1-a69a-8349900a5261</id>
+    </Compile>
+    <Compile Include="WriteDataPROD.cs">
+      <BoundTo>ca926a69-3b6a-470b-bc0a-2e2f7d98ae3f</BoundTo>
+      <DependentUpon>WriteDataPROD.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>269b6d90-1f2c-4aea-80dd-d8f8f6b5e7b4</id>
+    </Compile>
+    <Compile Include="WriteDataPROD.UserCode.cs">
+      <BoundTo>ca926a69-3b6a-470b-bc0a-2e2f7d98ae3f</BoundTo>
+      <DependentUpon>WriteDataPROD.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fcb10c71-3783-49ac-bf3f-f6fcc895f833</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddVendor.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>43956164-ba40-4914-8ec1-8414dddda38f</id>
+      <recordtableid>d382188f-ec3a-4b25-81a5-d4eb71b30b39</recordtableid>
+    </None>
+    <None Include="ApprovePOChange.rxrec">
+      <id>9fb01724-16b2-489c-a83c-275666e4d56d</id>
+      <recordtableid>bf9a8f89-c70e-4f63-9cc2-8dc247318baa</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ApprovePOChangePROD.rxrec">
+      <id>4007437f-5a1b-4f2e-948e-b7e3a7ee5ec1</id>
+      <recordtableid>e17c9d21-8956-4307-a6a2-6a168eb5a1da</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ChangeCurrencyPreferences.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>59f63b7c-3dcf-4a70-81de-8fbb197e56a2</id>
+      <recordtableid>c1e11b2e-4820-4b55-8032-0936dfc2269c</recordtableid>
+    </None>
+    <None Include="CheckSupplierPortalForReqNumber.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>488836ca-561c-4d1d-b0cc-43ab6f4e051e</id>
+      <recordtableid>69018ed1-3ff7-4048-b3ad-5d2befd2afaa</recordtableid>
+    </None>
+    <None Include="CleanupJDEPROD.rxrec">
+      <id>4c246a07-8a5a-41c2-b3c9-5ae6af7fe09c</id>
+      <recordtableid>a49c0ffb-c4aa-475f-8330-80431857da18</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="CleanupSupplierPortalPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>b40ce34d-c2a0-4bf7-bf8d-63dbc7feaf9a</id>
+      <recordtableid>ee11b6f9-aa0e-4197-96c5-8a471a1db43d</recordtableid>
+    </None>
+    <None Include="CloseRxAgntUI.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>a1183842-51b0-41e3-9bb7-6dddcd0a867a</id>
+      <recordtableid>a5ce6a58-7cd3-4942-aa98-18a8f5ca020d</recordtableid>
+    </None>
+    <None Include="CloseSPWeb.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>2c6af451-d6f0-4029-9a28-d4d68bd327df</id>
+      <recordtableid>6b24cb14-15ff-4371-9ccf-b49d4b30e7bf</recordtableid>
+    </None>
+    <None Include="ConfirmPOinJDE.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>342f6d01-425e-49cd-bba6-78ccace13dde</id>
+      <recordtableid>5f1f6e10-bb4d-4cbf-b51b-c081498b68e8</recordtableid>
+    </None>
+    <None Include="ConfirmReportCode3.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>d7367841-06d1-483d-8d01-a677d6190ceb</id>
+      <recordtableid>e16e3941-2961-4101-a7af-a9196b681399</recordtableid>
+    </None>
+    <None Include="CreateRFQforSelectWinner.rxrec">
+      <id>8aa24c4b-72d5-4ddc-b33a-bf87e4793abb</id>
+      <recordtableid>92e2eba0-48a2-4f28-9ee4-c83e5e7a7b48</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="CreateRFQPROD.rxrec">
+      <id>234d8ab1-104f-429c-bac9-f3b0b6624587</id>
+      <recordtableid>abb27670-1df4-481c-af41-f4d36ebc0577</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="DeleteShippingMethod.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>7be4cb33-3e7c-4a8c-aa7f-03ed9d2b27ab</id>
+      <recordtableid>9ec06daf-fb6b-4cf1-a755-5ae11fe1553e</recordtableid>
+    </None>
+    <None Include="DeleteVendor.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>895b798c-a068-4dad-bff4-6dc06ca75923</id>
+      <recordtableid>8da586e8-1e32-4ad1-bdb5-bbf12fdc4eaf</recordtableid>
+    </None>
+    <None Include="AddVendorToRFQ.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>d2b9bcbf-d453-46ce-bea1-20274f309218</id>
+      <recordtableid>dd8c7b48-b5e7-4d39-a092-0c08b944d94e</recordtableid>
+    </None>
+    <None Include="app.config">
+      <id>8b18ea1d-d653-4972-93b7-4e960bb033a7</id>
+    </None>
+    <None Include="AssignDetails.rxrec">
+      <id>f473a220-4043-48e1-a72f-9f39f9eed060</id>
+      <recordtableid>66b11c87-48b7-40f2-82ba-9e827c03114e</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ATS_Supplier_Portal_TestRepository.rximg">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <DependentUpon>ATS_Supplier_Portal_TestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>7db5f9a6-c139-4367-905f-63a868295c3f</id>
+    </None>
+    <None Include="ATS_Supplier_Portal_TestRepository.rxrep">
+      <id>975c26a6-accd-44d9-8264-cf7f2875c5d2</id>
+      <repoid>75df00c6-77c8-4495-8a74-562106990183</repoid>
+      <reporootid>42e50c4e-9774-4c6d-b4ee-919cd3b4b68b</reporootid>
+    </None>
+    <None Include="BulkAssignDetails.rxrec">
+      <id>3559f9a1-d383-4cdf-8796-fa99860ab45a</id>
+      <recordtableid>df699906-ff49-4e30-8ef7-99c8c0f1a6e9</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="BulkModifyReqDate.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>2036fa4b-84e0-4724-b7ed-e7613baff8a2</id>
+      <recordtableid>4cceea6d-c8ac-4cb5-97cd-e9d069a217c7</recordtableid>
+    </None>
+    <None Include="CheckSite.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>131f8bb6-db93-4d31-924c-98e8c76a42c7</id>
+      <recordtableid>822264a6-7389-47c9-9a1e-4be4375dc6f6</recordtableid>
+    </None>
+    <None Include="CloseJDE.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>18476c60-b716-456f-9932-f9b43e501c02</id>
+      <recordtableid>8f961a0f-241d-4cbd-9eaa-3c6cf0a9887a</recordtableid>
+    </None>
+    <None Include="CloseSupplierPortal.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>863b297f-2b06-46ca-a080-fad72499f77c</id>
+      <recordtableid>15ff7008-32d8-44b5-9aef-c0dccf687f0c</recordtableid>
+    </None>
+    <None Include="CreateRFQ.rxrec">
+      <id>13f3f8b7-ad73-4432-84bf-98940e2ec3cf</id>
+      <recordtableid>99be0b3c-4cc9-44eb-87d8-19ac67696864</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="DelayModule.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>af42ab05-cac5-4610-b121-144d0f1e6bdb</id>
+      <recordtableid>66399b36-3577-4f14-a0aa-73c56fc35dc9</recordtableid>
+    </None>
+    <None Include="DeleteRFQ.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>d4d45ba8-0fa0-4aba-9ef4-0cc536d83123</id>
+      <recordtableid>513ffa23-964b-4ccc-97c6-c2a2d725ee23</recordtableid>
+    </None>
+    <None Include="DownloadAttachementsPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>4bddbea7-e8ed-4bd1-a85e-3008455ee8ae</id>
+      <recordtableid>012eda14-7d5a-48cc-b2a4-8f788e8c5fcb</recordtableid>
+    </None>
+    <None Include="DownloadAttachments.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>9aa04d03-27d9-40e4-8137-2520377ee718</id>
+      <recordtableid>623ad5dd-d57d-4755-a1a2-4671311b84d1</recordtableid>
+    </None>
+    <None Include="ExportData.rxrec">
+      <id>5e82a067-459d-4a5c-97b9-66a0c49c38eb</id>
+      <recordtableid>a47193c0-d290-4e99-8177-4753caa565a0</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ExportImportShipment.rxrec">
+      <id>b07be609-c1ae-4f2f-bcd5-709ca1f06096</id>
+      <recordtableid>59b52f91-f674-4416-9b9f-dd1eb7178007</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ExportImportShipmentsPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>7a6545a6-500e-4671-9b82-bd4f858ee4ca</id>
+      <recordtableid>5412adc5-9215-42af-985e-03cec686c1ce</recordtableid>
+    </None>
+    <None Include="ExportPO.rxrec">
+      <id>a4c32d3f-f2ca-4bec-9430-75fec51be9bb</id>
+      <recordtableid>b9f9d6a3-26b9-49bf-a8d5-b14c1039982e</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ExportImportPOPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>c00cccce-818a-47e8-a30b-dbda13bc9c5a</id>
+      <recordtableid>dc65f510-3837-47ef-9bde-d0f94e928b3b</recordtableid>
+    </None>
+    <None Include="ExportRFQPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>8a15b7e3-8f8f-42ff-940d-ff03ae864b60</id>
+      <recordtableid>b2a1dc65-7843-4f13-84b8-9d240f001924</recordtableid>
+    </None>
+    <None Include="FilterDetails.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>caa044da-a9c9-4707-9e06-847bec493953</id>
+      <recordtableid>bf504755-4c08-4028-b94f-e2907fa1361e</recordtableid>
+    </None>
+    <None Include="FilterDetailsByAssignee.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>fe460776-e939-4ce5-a6c2-6aea8b0d9620</id>
+      <recordtableid>e0bf6ae3-e7d9-4728-b2e6-39bb798ee23e</recordtableid>
+    </None>
+    <None Include="FilterDetailsProcessRFQ.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>b4d9c140-1c04-425c-ad9e-8f21fa151acb</id>
+      <recordtableid>ce5dcba9-9a34-43c2-93cb-aaff21ef3d88</recordtableid>
+    </None>
+    <None Include="FilterPOs.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>ea8000a5-559a-4844-ad83-c723bc64d287</id>
+      <recordtableid>ddb6f33a-3bc7-42db-9ce5-6398b871d351</recordtableid>
+    </None>
+    <None Include="FilterRFQs.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>186a7dc8-3dd6-4c40-9731-54baa80d2be4</id>
+      <recordtableid>5d4c95f0-93d9-4f27-8aec-4f7988e434a9</recordtableid>
+    </None>
+    <None Include="FixDatePicker.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>2b67f6c5-c5ad-4172-9487-2b781d4d2611</id>
+      <recordtableid>9721ed3b-1fc0-4e28-a97b-9ef6980c9fa4</recordtableid>
+    </None>
+    <None Include="GetUserReference.rxrec">
+      <id>855dc033-778c-4663-9391-7a91586246bb</id>
+      <recordtableid>fa215d78-b4d5-4a51-ac08-7b5b2a6ed5d3</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="GetUserReferencePROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>d3f23f2c-54fc-4bbc-bfe4-f64e6e9bad99</id>
+      <recordtableid>57e110d6-36ba-4be4-a528-799e12889d6d</recordtableid>
+    </None>
+    <None Include="GroupWinners.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>94b9e7b9-218e-4d18-8d88-f4715e05732a</id>
+      <recordtableid>94e5cb67-976d-4ce3-9912-59873bfe0797</recordtableid>
+    </None>
+    <None Include="ImportData.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>4fba2212-512d-4a01-a062-33e1e6a7ea0d</id>
+      <recordtableid>4f765268-bacf-414f-b577-a8ba227f9525</recordtableid>
+    </None>
+    <None Include="KillExcel.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>b181191e-133f-4b1d-a4e6-4e3a084f3bf1</id>
+      <recordtableid>5a6c2dc2-9adb-4269-b966-986acfd4c290</recordtableid>
+    </None>
+    <None Include="KillFileExplorer.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>42190ab8-9d19-4e42-8b3a-cad66ae0eda0</id>
+      <recordtableid>21237b23-a011-44b6-8278-a4f33d2be432</recordtableid>
+    </None>
+    <None Include="KillFlashPlayer.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>5f03ee3f-1abc-438a-989a-797f41eeaff8</id>
+      <recordtableid>552c09dc-501f-4573-b20f-2f9e963b9303</recordtableid>
+    </None>
+    <None Include="KillInternetExplorer.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>d0793b76-1080-40ed-bf2f-cbc3144c914b</id>
+      <recordtableid>52f2ed1c-5e63-4362-8474-acab20950112</recordtableid>
+    </None>
+    <None Include="KillProcess.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>24e9aaf2-ef82-4618-8c86-85c5e55207e6</id>
+      <recordtableid>e84d11f9-980d-407f-9d17-baa89b32dc8f</recordtableid>
+    </None>
+    <None Include="KillSolidWorks.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>2308a939-5317-4004-8ef1-fe3c3aa75625</id>
+      <recordtableid>8cc2ffb4-0626-4a7c-b16a-4c73b4e03580</recordtableid>
+    </None>
+    <None Include="LinkVendorErp.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>5e2de225-fcfb-4450-a356-b71f489fb913</id>
+      <recordtableid>4a60ef5e-3aac-4e2e-b125-7cf197d16906</recordtableid>
+    </None>
+    <None Include="LoginDevSPWeb.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>1e4635d6-dc23-485a-b04a-9c1c0fa71be5</id>
+      <recordtableid>973f7bf5-fbed-4b2a-8654-c4497c331cc1</recordtableid>
+    </None>
+    <None Include="LoginJDEDev.rxrec">
+      <id>e204be6f-3a6e-42d9-89a5-d4789c62af4f</id>
+      <recordtableid>b8f4bacf-1eb8-4c3b-94c3-93b3c5f0cebb</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="LoginJDEPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>a1fb3535-3279-4177-882b-c94b9d4e9dff</id>
+      <recordtableid>05a691e2-4b86-4f88-8623-eb7d0ac8aa2c</recordtableid>
+    </None>
+    <None Include="LoginSPWebPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>ee8ddb1e-77d7-4b29-a514-96c12b208f49</id>
+      <recordtableid>c398c0c7-f0c9-477a-8d0d-d7276359f1a9</recordtableid>
+    </None>
+    <None Include="MaintainShippingMethod.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>9255973e-9178-4a19-92c0-5427a295da61</id>
+      <recordtableid>2ab4cc74-5472-4551-ac4e-6c806f813192</recordtableid>
+    </None>
+    <None Include="ModifyPO.rxrec">
+      <id>76761711-cd38-4360-881e-d967a3b9788b</id>
+      <recordtableid>df3668de-887c-411a-b968-fb913c6bd403</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ModifyPOPROD.rxrec">
+      <id>24a7a002-2a07-4a68-9904-6eb356f510d2</id>
+      <recordtableid>237ca749-b6d3-4533-957d-d20fc378e5db</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ModifyRequiredDate.rxrec">
+      <id>0115c1f1-c046-4fb0-ba0e-c87e05cf37d3</id>
+      <recordtableid>3cd66cc3-9f56-4d6e-ae24-11f88ca77489</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ModifyVendor.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>c0130814-421c-402c-b07d-c680dcec2a46</id>
+      <recordtableid>c772b0a1-06f0-4514-b752-caadc343cf7d</recordtableid>
+    </None>
+    <None Include="OpenDrawingFiles.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>9c4984f0-ead5-4c15-9b58-eba58821bfcf</id>
+      <recordtableid>01defffc-e8bd-4107-9e71-58e760517c31</recordtableid>
+    </None>
+    <None Include="OpenSupplierPortal.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>ae79ebbe-e4de-4db5-b76f-af2c6103b327</id>
+      <recordtableid>85fa9c53-4bec-4a8e-ad55-18292902a4cd</recordtableid>
+    </None>
+    <None Include="OpenSupplierPortalPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>30cda76f-0034-429b-8e0c-bf71b2850895</id>
+      <recordtableid>c9c22c15-4380-4495-af2c-ee749fbcc8f0</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>a77f7914-6f69-4f19-96c1-05be439f1d74</id>
+    </None>
+    <None Include="PrepareRequisition.rxrec">
+      <id>0228f79f-ba61-4165-adc0-9873c84c880c</id>
+      <recordtableid>c9254431-f1dd-41d3-a293-2bcb1f9274fe</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="PrepareRequisitionPROD.rxrec">
+      <id>144e5c2c-de45-4d3d-b585-2b437bbded1e</id>
+      <recordtableid>1710393b-aba6-4fd9-81c9-f281d315f1d6</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="PreviewDrawings.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>0a73a9fd-621c-4add-aca3-b15cdc9a43cb</id>
+      <recordtableid>f62d568b-7bca-40ad-b40d-08abacb0d393</recordtableid>
+    </None>
+    <None Include="RejectPOChange.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>806a3a46-4ed4-45e4-a420-1cab633ea61c</id>
+      <recordtableid>fe5ec008-4a51-400c-b406-09c61976b2c6</recordtableid>
+    </None>
+    <None Include="RestartMuleSoftServices.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>7cc1c2bc-e9ff-4e2f-8fc2-ce16e7b75499</id>
+      <recordtableid>cd4739a5-c156-47a9-bf92-df7480644311</recordtableid>
+    </None>
+    <None Include="ResubmitQuote.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>4c04db9a-0e6e-4e97-a19d-595c29697adf</id>
+      <recordtableid>b4906b7b-a04f-49ff-88b5-d55d34ece22f</recordtableid>
+    </None>
+    <None Include="RunSQLStatement.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>c5cf1293-97a9-4c89-8f86-ff8956f28dfa</id>
+      <recordtableid>830cfb65-d857-40fa-b9bb-faafa252c4cc</recordtableid>
+    </None>
+    <None Include="SearchJDE.rxrec">
+      <id>f663882c-91c1-4126-b1d5-7f4caea36bd6</id>
+      <recordtableid>809792e9-4dc8-4d2c-8ff9-0d9ff213460a</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="SearchJDEforCancelledLines.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>a31db705-2d7f-4944-b3e7-ad1f72eeb4c3</id>
+      <recordtableid>8cb85673-d2da-4cea-91f1-988504eb2b9d</recordtableid>
+    </None>
+    <None Include="SelectProcessRFQ.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>e55deb13-6843-4b28-95d2-10fefffc0614</id>
+      <recordtableid>d8dea434-4aac-4ca7-a15c-29b78c8eefce</recordtableid>
+    </None>
+    <None Include="SelectRFQinWeb.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>b0bc62de-3f0f-4284-9686-36ba8bf95d73</id>
+      <recordtableid>4bbbfd7a-5d1a-47ed-9277-fdf5d355a910</recordtableid>
+    </None>
+    <None Include="SelectWinner.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>621a6576-d3ba-4d32-a78b-ba8a95ce4523</id>
+      <recordtableid>072a405b-a852-4113-bd3d-7ca79d9b5a30</recordtableid>
+    </None>
+    <None Include="SelectWinners.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>0c05c564-d9c1-4972-86da-7a76f3e4b37c</id>
+      <recordtableid>2fd1b956-1634-423b-a5e3-454b7992359c</recordtableid>
+    </None>
+    <None Include="SetContactType.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>7b392c0f-52af-409b-a200-cdf67514da42</id>
+      <recordtableid>6bf063b1-7775-4ffb-badc-0091db219b76</recordtableid>
+    </None>
+    <None Include="SetDefaultSiteSQL.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>a1567044-3bf4-4543-95eb-99618b3d4401</id>
+      <recordtableid>f17aa3de-dd62-44e2-b81b-a01f8f0544ac</recordtableid>
+    </None>
+    <None Include="ShowDates.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>7809f226-eccb-45ac-ad1a-94ac87d06ceb</id>
+      <recordtableid>0ae1a8fe-adfc-4154-8794-be6bfb468687</recordtableid>
+    </None>
+    <None Include="ShowNotes.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>0a0f361c-fe30-45e4-94d8-22923e02b571</id>
+      <recordtableid>951bed70-b5bb-4757-9967-760060284215</recordtableid>
+    </None>
+    <None Include="SortDetails.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>6f57fcba-b4ae-4877-890f-fef6c49f241d</id>
+      <recordtableid>269bd206-9008-4a6d-8a71-26b8af35ff2f</recordtableid>
+    </None>
+    <None Include="SortDetailsRFQ.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>3ccb2a17-c44c-4f54-bf9c-327eee068565</id>
+      <recordtableid>97ed3f6c-057b-46c0-93b6-a21f3edc1cd8</recordtableid>
+    </None>
+    <None Include="SplitRFQ.rxrec">
+      <id>241ad678-481c-4205-9888-47528a83657a</id>
+      <recordtableid>e8020ae3-cbce-454f-afa7-7d2c6307e095</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="SubmitQuote.rxrec">
+      <id>7e2eefd1-6f9d-40c7-b9bf-8143213d16a0</id>
+      <recordtableid>af95de18-1e0b-4953-96e7-e077de978f31</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="SubmitQuote2.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>fa2b79d5-96e3-45b0-8be3-7aaf7f295aaf</id>
+      <recordtableid>d2626839-7e70-46c4-9b4c-cf63a3186116</recordtableid>
+    </None>
+    <None Include="SubmitSingleQuote.rxrec">
+      <id>7d2b6f05-fba3-4439-8f8e-a280696403c2</id>
+      <recordtableid>a4847951-52fa-4794-904e-c0fa35e9aaaf</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="SubmitSingleQuotePROD.rxrec">
+      <id>20b43ae9-c6ea-4f41-b71b-5592550ba80d</id>
+      <recordtableid>5224d7ab-926b-4165-8599-33093bc24b53</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="SwitchCurrency.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>5ff0337e-546c-4fa9-9171-df30c6a0f8ba</id>
+      <recordtableid>711ac0e5-3f55-434e-8b4d-7e0307bc059c</recordtableid>
+    </None>
+    <None Include="SwitchSites.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>b34288c4-d023-4d77-a5e8-ecad082b013a</id>
+      <recordtableid>3da0afb6-e5b1-4e7c-bf91-2ab972993449</recordtableid>
+    </None>
+    <None Include="OpenProcessRFQ.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>b053bb1a-375a-4723-adf7-ea7afb2b2eaf</id>
+      <recordtableid>552e116b-2b1d-49f5-be6e-bad65390dc89</recordtableid>
+    </None>
+    <None Include="Test.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>92891607-c41e-4c4e-a2af-989952fd8f9f</id>
+      <recordtableid>68cc3e41-db84-47f0-ba70-d8a208a5e3b3</recordtableid>
+    </None>
+    <None Include="UnlockQuote.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>d16cdeb5-0075-4432-81f3-0de4eaed9d7f</id>
+      <recordtableid>0252df67-0676-42f4-a6c2-cc1a0432d690</recordtableid>
+    </None>
+    <None Include="ValidateContactType.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>158c6f64-b095-460a-9d60-e285d9cc2ac0</id>
+      <recordtableid>0c802f84-e1e6-489e-8c03-fe95026393f1</recordtableid>
+    </None>
+    <None Include="ValidateData.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>35955143-3f8b-4598-aff5-57b42ef96e9f</id>
+      <recordtableid>dc458db2-b8e1-4c7d-9470-5405738a94a4</recordtableid>
+    </None>
+    <None Include="ValidateDefaultShippingMethod.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>77e23fcc-bcd4-4239-9563-d6d9deb08724</id>
+      <recordtableid>30c57850-94aa-46bb-8fd4-5b432391817b</recordtableid>
+    </None>
+    <None Include="ValidateDeletedDetail.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>bfa93516-a9bc-45bd-bd0b-ec1a9f4e2618</id>
+      <recordtableid>9a48a353-300e-422b-8d44-685f63608f3f</recordtableid>
+    </None>
+    <None Include="ValidateJDEPRODforReopen.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>60da5064-e7f6-4fa5-b588-b67cac9e6699</id>
+      <recordtableid>d7646606-2d70-4d9c-94b9-94ad1f9fc7c9</recordtableid>
+    </None>
+    <None Include="ValidateOrderNumberJDE.rxrec">
+      <id>d6e61a3c-aeb1-48e6-b3b8-45f2caa90919</id>
+      <recordtableid>56828220-67cd-4b82-98cb-e3a539704d66</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ValidateOrderNumberJDEPROD.rxrec">
+      <id>fa253468-3732-460e-b1ea-e2d6b5e1e645</id>
+      <recordtableid>4f5a08fb-6668-42ea-bca8-77645ce32a0d</recordtableid>
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+    </None>
+    <None Include="ValidateQuoteSubmitted.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>816d41b8-7d0c-4939-b380-f755f5065951</id>
+      <recordtableid>ddca797f-b46e-43b3-87fd-3f4511943537</recordtableid>
+    </None>
+    <None Include="ValidateRecordsinJDE.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>dfde08af-71a1-4e35-8a41-d57e6aad5571</id>
+      <recordtableid>a343e293-279c-4a01-afd4-bc93ae0755f7</recordtableid>
+    </None>
+    <None Include="ValidateShippingChangesJDE.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>75190a75-4a7c-4e56-bece-be50ccd7cf7a</id>
+      <recordtableid>6f91a427-ac41-4064-9fa4-ec9b666625f3</recordtableid>
+    </None>
+    <None Include="ValidatingWeb.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>22414e81-ecb0-4d68-bc07-15f54726b000</id>
+      <recordtableid>c8651c19-b093-43b9-903c-1ec2ee5f8225</recordtableid>
+    </None>
+    <None Include="WriteData.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>7f07bc5f-dc38-4e7a-894f-49c5fa30c0c7</id>
+      <recordtableid>f2ee6cc8-e878-4419-a4bd-8d0357f5e1e4</recordtableid>
+    </None>
+    <None Include="WriteDataPROD.rxrec">
+      <BoundTo>975c26a6-accd-44d9-8264-cf7f2875c5d2</BoundTo>
+      <id>ca926a69-3b6a-470b-bc0a-2e2f7d98ae3f</id>
+      <recordtableid>225eac2c-044b-42c2-aad3-91c0e83c37f8</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ATS_Supplier_Portal_Test.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ba81cbcc-ceed-4836-bb94-75a298b99a0d</id>
+    </Content>
+    <Content Include="ATS_Supplier_Portal_Test.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1e8d24dd-3580-459c-b1d0-1fa538291e93</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{47BC91D6-9716-4901-97FB-536F5057808D}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

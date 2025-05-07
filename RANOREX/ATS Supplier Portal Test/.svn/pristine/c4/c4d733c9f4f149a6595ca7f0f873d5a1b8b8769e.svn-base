@@ -1,0 +1,21 @@
+﻿<Properties>
+  <Array name="active" />
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="ATS_Supplier_Portal_Test.rxtst" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <fileNames value="" />
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="ATS_Supplier_Portal_Test.SPCollection.RunOCRCogServ(String sWord)" />
+      <Element value="ATS_Supplier_Portal_Test.SPCollection.CloseWithAltF4(Boolean val)" />
+      <Element value="ATS_Supplier_Portal_Test.KillFlashPlayer.ClosewithAltF4()" />
+      <Element value="ATS_Supplier_Portal_Test.SPCollection.RunOCRCogServ(String sWord)" />
+      <Element value="ATS_Supplier_Portal_Test.SPCollection.GetSS()" />
+      <Element value="ATS_Supplier_Portal_Test.SPCollection.FilterValidateDateTimeText(String columnName, String textToCompare)" />
+    </Array>
+  </Properties>
+</Properties>

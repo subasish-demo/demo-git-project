@@ -1,0 +1,4781 @@
+﻿<repository
+id="75df00c6-77c8-4495-8a74-562106990183"
+name="ATS_Supplier_Portal_TestRepository">
+	<codegen
+	classname="ATS_Supplier_Portal_TestRepository"
+	namespace="ATS_Supplier_Portal_Test">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="42e50c4e-9774-4c6d-b4ee-919cd3b4b68b"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="9dece62c-5174-47b8-9d90-6bf37ccb3796"
+		isrooted="True"
+		name="MainWindow"
+		refimgid="958b6f46-5187-4514-870e-5e9cfc29c323"
+		refpath="/form[@title='MainWindow']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<folder
+			addcaps="list,wpfelement,wpfgroupelement"
+			capname="list"
+			id="afa5c93e-2fb6-420d-9011-29c762e78eb7"
+			isrooted="True"
+			name="NavigationPanel"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="5431bab9-9af4-4b0c-87dc-af7258507f37"
+				name="VendorRequirements"
+				refimgid="332e445c-f539-4188-8e60-2e2408bacae5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Vendor Requirements']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="447aa4dc-c22e-435a-8882-838b09889fa2"
+				name="SupplierPortalContactDropDown"
+				refimgid="202d2ccf-78ec-47ac-8a02-74dd4e9a56c2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedContact']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="0d145095-b9ca-4802-bf52-1a2f624b60e3"
+				name="SupplierPortalContactBackupDropDown"
+				refimgid="937a4e50-5f8d-4a51-8b58-737730b0eb94"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedContactBackup']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="e55064f1-9e98-4acf-87d6-8ebc08034ea4"
+				name="EngineeringContactDropDown"
+				refimgid="0ab50e08-0e0b-412f-9da3-a0e1216497d1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedEngContact']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="60ae2051-f64b-4755-960b-c5c463dee8a6"
+				name="EngineeringContactBackupDropDown"
+				refimgid="02199541-acca-4bf7-9dd3-f22a9af9d76e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedEngContactBackup']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="f4ccdda4-6d08-4599-a68f-50d56c61aef5"
+				name="VendorSelection"
+				refimgid="e5b92274-1ae7-4cea-b6d8-4b2dbefcb3c7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Vendor Selection']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="8c54a9b9-9d0e-4904-ad2d-210c01571751"
+				name="ANCHORDANLY"
+				refimgid="879d355a-0d36-4428-8923-752b36e55613"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='unprocessedAllVendorsList']//checkbox[@text='ANCHOR DANLY']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="24d3dd99-b472-4bf3-a936-ff25c3b3b359"
+				name="ATSAUTOMATION1"
+				refimgid="00abfd05-7d11-4ffa-8144-223594a3ff71"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='unprocessedAllVendorsList']//checkbox[@text='ATS AUTOMATION1']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="8176599f-a62c-4e82-bafa-9b1a2b74c662"
+				name="DetailsInBatch"
+				refimgid="a8616d3e-b8be-4df1-9aa7-7d9b895aadb3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Details In Batch']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="5779cc73-605b-4140-86b3-bd23e63c6c07"
+				name="ANCHORDANLY1"
+				refimgid="eb3cb5ec-c045-47f9-afb0-62e5a24ee5cc"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='unprocessedFiltersList']/checkbox[@text='ANCHOR DANLY']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="acbcd17d-e63f-4a13-9b2f-ee1fedf9a5e1"
+				name="ATSAUTOMATION11"
+				refimgid="9009dc2c-75cc-4cd4-b518-cc377f2727d4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='unprocessedFiltersList']/checkbox[@text='ATS AUTOMATION1']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="1cf2537d-c24a-4b68-9710-4968a073d178"
+				name="UserReferenceFilter"
+				refimgid="287b0c5a-5ca6-4cb7-a283-70c92a906a5a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']//cell[@text='User Reference']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="table,wpfelement,wpfgroupelement"
+				capname="table"
+				id="612d57e7-ce58-4d33-8391-0fe09213b205"
+				name="UnprocessedDetailsGrid"
+				refimgid="3cf19cee-b472-4a26-aee7-775b72261df1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']
+				</item>
+				<item
+				addcaps="table,wpfelement,wpfgroupelement"
+				capname="container"
+				id="e8f16bbd-536e-41f7-8211-b950e29a6a25"
+				name="UnprocessedTableContainer"
+				refimgid="3cf19cee-b472-4a26-aee7-775b72261df1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/container[1]
+				</item>
+				<item
+				addcaps="table,wpfelement,wpfgroupelement"
+				capname="container"
+				id="59afc445-c522-4af8-b93d-b4082a67c9c7"
+				name="TableHeaderContainer"
+				refimgid="3cf19cee-b472-4a26-aee7-775b72261df1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/container[1]
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="e751ac92-7927-40de-bd0f-8352eed1bc0d"
+				name="CheckBoxItem1"
+				refimgid="1b49d594-7028-4438-9e1a-c6577848deb2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/?/?/checkbox
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="e7257759-8e3a-4066-af63-32f29aed2699"
+				name="CheckBoxItem2"
+				refimgid="13ce5b85-d3a7-4107-8653-f608749e8ddc"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='1']/list/?/?/checkbox
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="45789721-6d7c-46b4-9b8d-f4f485ba4d38"
+				name="CheckBoxItem3"
+				refimgid="13ce5b85-d3a7-4107-8653-f608749e8ddc"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='2']/list/?/?/checkbox
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="e1635a43-7164-4029-8312-198e37fa83cb"
+				name="FileAttachments"
+				refimgid="68c08900-61d8-41cc-a57b-f91fcf741251"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='File Attachments']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="5900963d-aea5-475a-b7d6-eb344b427153"
+				name="AddFileButton"
+				refimgid="da9fc0e0-ae01-4214-be90-1c3a67ec7df9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption=' Add File']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="7d4c16a1-dbb9-43fe-a24a-a070c104e78c"
+				name="CreateRFQButton"
+				refimgid="f9faad06-cdde-4fad-8e01-65ba8d07aca2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='unprocessedCreateRfqButton']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="ff93fb25-52fb-4dac-af73-f8e4823a06b1"
+				name="DetailViewDropDown"
+				refimgid="11c4115a-5f5b-45c8-9897-4f24fceb5393"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='processedRfqFilterUser']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="text"
+				id="70eb642c-91e3-41b9-bcd3-fb0e01a05149"
+				name="ProcessRFQButton"
+				refimgid="0ef0391d-1157-4bda-815a-a9554950a70c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption='Process RFQs']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="3cc6a434-ecfb-43c1-bf5f-4fcf2e845a1d"
+				name="CreateRFQNumber"
+				refimgid="b0842dae-2c14-4566-b82c-640afece94c9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/button[@automationid='mainShowUserPrefsButton']//text[@automationid='bannerLine2SubHeader']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="ae2cfb92-1d61-4345-ba9b-3cb225a702c1"
+				name="Details"
+				refimgid="ddde26ec-06e8-4a7e-a093-3969028c0f12"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Details']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="badfe98d-9850-4098-9858-7f65df497d52"
+				name="Vendors"
+				refimgid="ddde26ec-06e8-4a7e-a093-3969028c0f12"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Vendors']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="table"
+				id="53865262-df84-436c-8867-46dda1e2f9ce"
+				name="TableProcessGrid"
+				refimgid="e5e5c990-6e8f-48f8-ac2f-de0bcc1b1d4d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']
+				</item>
+				<item
+				addcaps="listitem,wpfelement,wpfgroupelement"
+				capname="listitem"
+				id="92768fb3-c6c3-4894-a510-ac2eb2041eb8"
+				name="SelectRFQ"
+				refimgid="30f97d2b-5df7-446b-b892-67ced44ea86a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='processedRfqsList']//listitem[@text~$varRFQNumber]
+				</item>
+				<item
+				addcaps="listitem,wpfelement,wpfgroupelement"
+				capname="listitem"
+				id="1c74c294-8717-4a48-9a21-f956785e5f9a"
+				name="FirstListItem"
+				refimgid="30f97d2b-5df7-446b-b892-67ced44ea86a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='processedRfqsList']//listitem[1][1]
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="74f59605-43d4-449a-b41e-b7a6c59fb014"
+				name="DetailsFilter"
+				refimgid="f3cfc4ef-bddf-48dd-8a39-dfca84abcc18"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Detail']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				capname="tabpagelist"
+				id="b4b1f546-ac18-4c6c-9e22-7218dbaf7b6f"
+				name="tabPageList"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/?/?/tabpagelist
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="db02e2f2-504c-4397-9090-5c69c772c2af"
+				name="TextClearAllFilters"
+				refimgid="5c48004b-2364-4c0a-a9fa-c1d0787f771d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='unprocessedClearFiltersButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="29fe876f-3a05-4666-9867-14ed5b1003c9"
+				name="DescriptionFilter"
+				refimgid="4580521d-20a2-4b39-97dd-20eadc7213e9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Description']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="987c71d2-1d34-408e-ad34-aa6d5319d6e1"
+				name="ATSOrigPromDateFrom"
+				refimgid="18644d31-3259-4cfd-8d21-1c1d2f686934"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='ATS-Orig Prom Date']/container[@automationid='PART_GridDatePickerFilterBetween']/datetime[1]/?/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="74f95b2b-4eeb-4ea4-9128-a8abd66ee59b"
+				name="CreatedFrom"
+				refimgid="18644d31-3259-4cfd-8d21-1c1d2f686934"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Created']/container[@automationid='PART_GridDatePickerFilterBetween']/datetime[1]/?/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="64a30d15-914e-4d35-9a79-44b0bc48de5b"
+				name="ATSOrigPromDateTo"
+				refimgid="14fdaca2-4994-41d7-a68f-08f388e70d2c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='ATS-Orig Prom Date']/container[@automationid='PART_GridDatePickerFilterBetween']/datetime[2]/?/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="e27a0c68-e212-47f8-ba2a-b6816bed2b59"
+				name="CreatedTo"
+				refimgid="14fdaca2-4994-41d7-a68f-08f388e70d2c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Created']/container[@automationid='PART_GridDatePickerFilterBetween']/datetime[2]/?/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="c89cb9a4-7c2a-4c26-97f2-a776bd325bb0"
+				name="SystemAdministration"
+				refimgid="cb4b9077-d6d5-4993-9edc-9e2c4b692e2d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption='System Administration']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="d0e980b4-a7d1-464c-bc57-463929e5803f"
+				name="ReqDateFirstRowTextBox"
+				refimgid="8f078c54-74b7-413f-ba94-d323bc243862"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex=$varcolumnIndex]/?/?/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="e8b0ef38-70c0-41be-9a33-663ead4d0045"
+				name="ATSRequestDateFirstRowTextBox"
+				refimgid="8f078c54-74b7-413f-ba94-d323bc243862"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex='10']/?/?/text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="datetime"
+				id="1e9b0ea3-ff6f-47ec-9893-aa729c68eefa"
+				name="DateTime"
+				refimgid="8f078c54-74b7-413f-ba94-d323bc243862"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex=$varcolumnIndex]/datetime
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="21b26af5-5a53-4e08-b515-817a6c823350"
+				name="calButtonFirstRow"
+				refimgid="63a0d54c-394d-4e6c-b4b2-705493b4b662"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex=$varcolumnIndex]/?/?/button[@automationid='PART_Button']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="34a22848-7dde-4004-a8b2-67b0668bf612"
+				name="BulkReqDateTextBox"
+				refimgid="c3edc5e8-80da-4e35-b076-747158ca8a70"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//datetime[@automationid='unprocessedRequiredDatePicker']//text[@automationid='PART_TextBox']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="45bff868-5825-45de-835f-a5dac2abe35e"
+				name="ApplyToSelected"
+				refimgid="fa15a3f7-c862-4343-b011-b95514b085f0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='unprocessedRequiredDateButton']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="5d16879a-f772-41a8-b266-c6b264404fbe"
+				name="AssignedToDropDown"
+				refimgid="2d974b39-32b8-45b1-b385-9c7eac12aafa"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedAssignedToList']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="dd7b0a8d-ecf8-4511-a392-2e02464d92fc"
+				name="AssigneeDropDownRow0"
+				refimgid="c34439cd-ccb0-4045-9e68-387cfb014c8c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/?/?/combobox/button[@automationid='toggleButton']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="text"
+				id="a89852e3-1f81-4318-bfe9-8fc83e11a2bb"
+				name="AssigneeTextRow0"
+				refimgid="c34439cd-ccb0-4045-9e68-387cfb014c8c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/?/?/combobox/text
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="e367ad7c-0ef8-4301-903b-e87f6a17b751"
+				name="DetailsAssignDropDown"
+				refimgid="3f933bdf-8356-40ae-99fc-ff0d2c7801f8"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedEmployeeAssignList']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="text"
+				id="d82af9ea-ce9d-4415-9bad-51d6a940cc23"
+				name="DetailsAssignText"
+				refimgid="3f933bdf-8356-40ae-99fc-ff0d2c7801f8"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='unprocessedEmployeeAssignList']/text
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="f5441a2d-7549-4938-9d9a-2b29cc5295ca"
+				name="AssignButton"
+				refimgid="e11fb78a-b6e6-4bd7-a7f9-d4df00b21545"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='unprocessedEmployeeAssignButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="cc74fd2c-4d8e-4105-a482-b07eb71eef07"
+				name="Preview"
+				refimgid="b5c27ae2-19a9-4f72-8f8b-5371f302aef3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Preview']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="554cd39c-e45b-4ccc-b57f-13b61ffcc00d"
+				name="Notes"
+				refimgid="18227b3e-a5aa-4c1a-bf2e-d30846030318"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']//text[@caption='Notes']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="ffe77bc4-d1bd-4983-a1cf-ed0b2187f9ac"
+				name="Row0Cell5"
+				refimgid="46074663-b49f-4899-a6b7-a7c40796ab1c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[5]
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="aefb5d44-18e3-4b2c-a71e-a2daf6229e00"
+				name="Row0Cell3"
+				refimgid="46074663-b49f-4899-a6b7-a7c40796ab1c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[3]
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="e1876afe-aa6c-4545-b428-628cab17cac9"
+				name="Row0Cell6"
+				refimgid="46074663-b49f-4899-a6b7-a7c40796ab1c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[6]
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="74d99d63-38fe-44a3-af3d-271bf15a3dcb"
+				name="Row1Cell5"
+				refimgid="46074663-b49f-4899-a6b7-a7c40796ab1c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='1']/list/cell[5]
+				</item>
+				<item
+				addcaps="tabpagelist,wpfelement,wpfgroupelement"
+				capname="container"
+				id="97ee5cb3-6850-47e8-bd38-73b4d1cc14e3"
+				name="TableWithPreview"
+				refimgid="cab50325-551a-4aca-9f16-f8028fb16be4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container[1]/container[2]
+				</item>
+				<item
+				addcaps="container,wpfelement,wpfgroupelement"
+				capname="picture"
+				id="9b47ffd7-4e8e-44c4-b5f5-f729a4de5bbe"
+				name="Image"
+				refimgid="cbba2b4b-a8c0-41e7-a844-5b09cc69cd7a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//container[@automationid='PreviewBrowser']/picture[@automationid='PART_image']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="8dbc1195-6d59-4431-a8ca-e7cc19405594"
+				name="Detail"
+				refimgid="af7ac253-d342-426a-a7af-fbb79d20a6e0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Detail']/text[@caption='Detail']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="a22b1699-07d1-4eb0-a48e-bf6f3d6751a3"
+				name="Revision"
+				refimgid="baae3761-0233-4fdd-9fda-36c909ec8828"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Revision']/text[@caption='Revision']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="0366c37a-2f18-477e-a990-442f6fa94da6"
+				name="Description"
+				refimgid="e3883ab8-3919-4bd3-a6b2-058bf81c3bcd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Description']/text[@caption='Description']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="e3493ef9-7d14-4ca9-bb63-38801a4cf2b6"
+				name="TextQty"
+				refimgid="6c2b9934-6b1d-4abc-9d35-0d7faf256d54"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Qty']/text[@caption='Qty']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="4ff94b02-eab9-4a67-839d-4039bea5e907"
+				name="Created"
+				refimgid="0002d089-7eea-4418-9e1a-b51d5a1a5dd3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Created']/text[@caption='Created']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="f767a961-588f-4d5c-af41-96c204491c73"
+				name="ATSRequestDate"
+				refimgid="465aaae6-f50a-4188-bbdc-aca0394892ad"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='ATS Request Date']/text[@caption='ATS Request Date']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="d1886a93-790e-4f5f-8605-02555fbaf4bd"
+				name="LastCost"
+				refimgid="3c3ee892-cdc6-4880-acbd-28331c703dd7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='LastCost']/text[@caption='LastCost']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="3c96d4e8-b465-4822-b30c-c1c3e80fce76"
+				name="ProjectNo"
+				refimgid="4c970dce-fee2-4e9c-97ae-631613c20c03"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='ProjectNo']/text[@caption='ProjectNo']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="c8e44559-503b-4001-a30e-d0d115378af3"
+				name="Designer"
+				refimgid="a632fccd-ddf3-49d7-9f97-9cc69beedc22"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Designer']/text[@caption='Designer']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="1a56709d-80b5-4cff-9381-90a1049ffbfe"
+				name="Cell011525"
+				refimgid="33d107ed-c338-4c2e-9229-7b0cc7928b67"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='7']/list/cell[@text='01/15/25']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="f48e6ade-de57-43ca-9e25-8fc88b9ab395"
+				name="Kitting"
+				refimgid="c0f56724-83dc-4860-8f30-871d56b680bd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Kitting']/text[@caption='Kitting']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="a80f15ba-8912-4029-b883-be10aafda8e7"
+				name="ManufacturingType"
+				refimgid="7518f835-8918-4022-b693-d7735894e11c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Manufacturing Type']/text[@caption='Manufacturing Type']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="9ef902c8-cbf7-4a6d-9b82-094019c11788"
+				name="UserReference"
+				refimgid="311b61e8-53a2-4ef0-8934-515dfa680dab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='User Reference']/text[@caption='User Reference']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="440c4062-5b1a-4d4d-b009-fa4de3b6519f"
+				name="Line"
+				refimgid="a314d3cc-201c-4e04-95c0-463f7780cba0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Line']/text[@caption='Line']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="2e97ad7c-8e9b-4d30-b8c4-25e4b0462827"
+				name="PARTLineRightButton"
+				refimgid="0eea249e-30ad-440f-bd15-5f4fabadb448"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/scrollbar[@automationid='PART_HorizontalScrollBar']/button[@automationid='PART_LineRightButton']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="1b9421bd-f6d2-4cde-85d1-df72238e5bd3"
+				name="PARTLineRightButton1"
+				refimgid="0eea249e-30ad-440f-bd15-5f4fabadb448"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//scrollbar[@automationid='PART_HorizontalScrollBar']/button[@automationid='PART_LineRightButton']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="a698cdb5-a852-4a16-b51b-12f398549b3a"
+				name="CellUserReference0"
+				refimgid="d4f6f9a9-b93d-4ddf-9407-988096e1ba3a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex='20']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="ed30e56b-2967-45c2-86bf-8d83770151e5"
+				name="CellLineNumber0"
+				refimgid="d4f6f9a9-b93d-4ddf-9407-988096e1ba3a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex='21']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="78f390a9-bb5c-4789-9847-d298abf227b9"
+				name="CopyButton0"
+				refimgid="e3d61821-06e2-4476-bac9-7949fb2dd0cf"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex='3']/button
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="77187200-927a-4775-a533-8ade596214ba"
+				name="TextReopenQuoteLinesInERP"
+				refimgid="4b38b3b0-0f75-4796-8d79-5201bf0bd39e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='unprocessedReopenDetailsButton']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="23c5da80-e2c4-4b54-9a75-3b47f7bcd910"
+				name="QuantityRow0"
+				refimgid="6c886177-e195-4dc2-8112-6e14024f3d70"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[9]
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="36f4c65b-8c4d-40a0-8b23-59cd16f488c8"
+				name="DetailRow0"
+				refimgid="6c886177-e195-4dc2-8112-6e14024f3d70"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[3]
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="be2d05f8-dd80-4162-be0d-367be368bd1a"
+				name="ATSRequiredDateRow0"
+				refimgid="6c886177-e195-4dc2-8112-6e14024f3d70"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[12]
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="fa170f7a-c60f-497c-9608-c618c36607ae"
+				name="CompanyRow0"
+				refimgid="6c886177-e195-4dc2-8112-6e14024f3d70"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[19]
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="ee3cceef-cdcc-432c-80e0-a8346b6f41cc"
+				name="ReopenQuoteLinesButton"
+				refimgid="46b92d95-6696-4138-9f88-99176951add3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='unprocessedReopenDetailsButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="b3520653-217e-4b4a-84eb-ee3268b72dba"
+				name="AddVendorToRFQButton"
+				refimgid="be7fb9b3-d05d-4860-bbef-a6f5c6a27d69"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedAddVendorButton']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="48dd1e02-9057-4afb-9d23-ee35bdd31377"
+				name="ATSAUTOMATION12"
+				refimgid="88074ea0-cbcd-4702-bfe8-6039d1c73da9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/?/?/tabpage[@title='Detail View']/?/?/tabpagelist/container/container[1]/container[2]/list[1]/container[7]/checkbox[@text='ATS AUTOMATION1']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="6be66190-c484-432b-a769-406bf78c9179"
+				name="SomeText"
+				refimgid="e09333c0-60f4-46c4-95e9-f479bfd7fe0e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/tabpagelist/tabpage[@title='Detail View']/?/?/tabpagelist/container/container[1]/container[2]/text[4]
+				</item>
+				<item
+				capname="table"
+				id="d51483dd-c6dd-4cab-8718-e6bdc0cdea0f"
+				name="VendorsTable"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedVendorGrid']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="4959fa06-d308-4fe5-8eaa-18ab5f385ae8"
+				name="BORINGSERVICELLC"
+				refimgid="9124d87a-1da4-4696-a7be-259cee362554"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='unprocessedAllVendorsList']//checkbox[@text='BORING SERVICE, LLC.']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="fc624367-cb44-47fb-8b21-075b6d1fc373"
+				name="CellDetailRow0"
+				refimgid="3a05655c-cdb6-49ff-beaf-b222acd96aa4"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex='0']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="9bb2cb4c-19fb-42a3-986a-643be32345cc"
+				name="TextSplitSelectedToNewRFQ"
+				refimgid="d5b7c7a6-6d83-46ac-81cf-c2bbbedaad8c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedSplitRfqButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="ff4194e6-94ab-4abc-a4e7-290e452fccf2"
+				name="DeleteRFQ"
+				refimgid="4e8da029-bf79-4bd6-a2ba-5b409023b5d5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedDeleteRfqButton']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="text"
+				id="87382a87-b6e8-4efb-aa92-778f32a7c415"
+				name="Preferences"
+				refimgid="ff976710-b91b-42b1-ac02-b46d153d861c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/?/?/button[@automationid='mainShowUserPrefsButton']/?/?/text[@caption='Preferences']
+				</item>
+				<item
+				capname="combobox"
+				id="b39009a9-6858-4632-9dbf-6842e4a69d8f"
+				name="SiteDropDown"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='prefsSiteList']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="ad408d01-7b64-4d13-a303-b14c57933086"
+				name="Save"
+				refimgid="f434711d-86b3-410a-a71c-8159ef1fbe5e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='prefsSaveButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="bca4a848-ef6a-411e-b7c2-422ec22744d5"
+				name="VendorProfile"
+				refimgid="9d60679b-09fe-4b87-8b88-839f43f0a546"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption='Vendor Profile']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="4eaf33a0-f94b-4d51-80cb-0488570182c5"
+				name="AddVendor"
+				refimgid="37dc44be-9e46-4ce8-82ff-eb1aff058c32"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='vendorProfileAddVendorButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="de14e151-add5-40a7-b3ab-13ddbf933387"
+				name="FirstName"
+				refimgid="d532a9e3-b874-4d89-aac4-94eedf83becb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileFirstNameText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="993b80f5-24ce-46be-b6d5-2fa0f146d2a4"
+				name="LastName"
+				refimgid="a6c53864-c941-42b0-941e-1e7994ac82b3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileLastNameText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="f476b8c1-dc70-4e6b-b537-70bbde17f3e2"
+				name="Email"
+				refimgid="2a00c0d5-b4c7-41dd-8e47-c3a3efad7714"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileEmailText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="95b7aa3c-5c25-4a5f-af5a-cdcbb517a73d"
+				name="Phone"
+				refimgid="2a00c0d5-b4c7-41dd-8e47-c3a3efad7714"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfilePhoneText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="60ca3997-4294-4442-a889-360d1c2b8e7c"
+				name="VendorName"
+				refimgid="7e88507c-5245-43fd-ac1b-716773049446"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='vendorProfileSaveButton']//text[@automationid='vendorProfileNameText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="e15580ea-2c46-4a60-86a9-207a321ba943"
+				name="Address1"
+				refimgid="28c8d31a-b3e7-414b-ba15-597f448513ab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileAddr1Text']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="6ddf8962-9f81-4132-8eb5-9a5639bf1579"
+				name="CountryDropDown"
+				refimgid="36720f8b-f738-44d5-9163-5dcf4ea378b6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='vendorProfileCountryList']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="98b06465-2029-44da-893a-313d1ede414d"
+				name="RegionDropDown"
+				refimgid="1bfa0273-0580-485b-84ea-baa738771b54"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='vendorProfileRegionList']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="f7d147f7-1f1d-42a5-84e0-58b1710649fe"
+				name="CityDropDown"
+				refimgid="20e62e5a-7a25-4408-aeb8-e76ea27777e6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='vendorProfileCityText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="c3d7effa-64d9-41f4-9201-7c34ba7cee64"
+				name="ZipCode"
+				refimgid="df7b2853-7759-412f-9793-597315837d9a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileZipText']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="97f38c1b-1e35-4771-a48a-fb6dffdcaf77"
+				name="SaveButton"
+				refimgid="ff89aa13-70da-49f7-97eb-949a42ad49b7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='vendorProfileSaveButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="6898c95c-531b-42c1-b1b0-f53f0b57a6b8"
+				name="VendorNameLink"
+				refimgid="4a39a7f0-226e-4a83-afe7-51231750fd5b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='vendorProfileUsersTable']//list[@automationid='PART_ColumnHeadersPresenter']/cell[@text='Last Name']/text[@caption='Last Name']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="759a2341-34ea-4c6a-98e0-a05e7462066b"
+				name="Search"
+				refimgid="678aacdb-762a-418c-8a83-77cabbe73513"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='vendorProfileLinkSearchButton']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="679f0f43-1b69-4b7d-8e86-3434ae7ef8d1"
+				name="LinkedCheckBox"
+				refimgid="81f69747-5e91-457f-86f6-a8b141444a86"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container//table[@automationid='vendorProfileLinkVendorsTable']/row[@index='0']/list/?/?/checkbox
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="452ebd0e-3fb2-414d-bad0-01c9bd5b2559"
+				name="RANOREXCREATED"
+				refimgid="ad731274-f7d1-448e-84a3-2856a6e4b0c9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//list[@automationid='vendorProfileVendorsList']//text[@caption='RANOREX CREATED']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="e1426e17-6403-494b-8fa6-22941bd48903"
+				name="Refresh"
+				refimgid="e0d9202a-5af8-4d26-9853-42c333afcbff"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='vendorProfileRefreshButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="9969bb8f-91db-4de9-9a60-153046488b78"
+				name="VendorSearch"
+				refimgid="88796c15-f740-4a3d-9d21-c196bf9c4a6a"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileVendorsFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="4f8ce028-7d58-48a3-a33f-f27c7fcc2898"
+				name="VendorNameTextBox"
+				refimgid="83cae472-e78f-4ea2-a2d3-82fc253fd00b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileLinkNameText']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="9ba1d759-4262-4d75-ba13-88bca01c6696"
+				name="Address2"
+				refimgid="2211a276-26e3-4bfd-97a3-6ac44fc120bc"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='vendorProfileAddr2Text']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="table"
+				id="b1e4c1cb-ecf6-48d6-8800-2ca501a9da6a"
+				name="SomeCheckBox"
+				refimgid="f5a84ef5-4082-4db3-bd4a-bfcd3f4d2fee"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/tabpagelist/tabpage[@title='Detail View']/container/container[1]/tabpagelist[1]/container[@caption='']/table
+				</item>
+				<item
+				addcaps="tabpagelist,wpfelement,wpfgroupelement"
+				capname="tabpagelist"
+				id="e67c0b34-d79d-45db-9e29-3a184f40d311"
+				name="SomeTabPageList"
+				refimgid="b18b03c0-ead7-4a86-b6e5-dfcb573edb31"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/tabpagelist
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="d5be190b-932b-4391-895c-a8f09cdf67ac"
+				name="RandomNoteHere"
+				refimgid="02a8b1ee-1aec-49f2-80d9-4d5727674e4b"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedVendorGrid']//text[@caption='Random Note here']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="table"
+				id="3100452b-d4c2-412a-96af-8407dd6e81d8"
+				name="ProcessDetailsGrid"
+				refimgid="aec5fb6a-7e31-4448-9912-2df303e4c63c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="container"
+				id="f9f2eea6-b349-4550-974f-9b1eb08488bf"
+				name="ProcessDetailesContainer"
+				refimgid="aec5fb6a-7e31-4448-9912-2df303e4c63c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']/container[3]
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="70149a4e-3da9-4a81-b9b2-75beed1081bf"
+				name="Detail1"
+				refimgid="0384605e-6590-4454-91d4-352ea912c7a0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Detail']/text[@caption='Detail']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="cbb288b5-a429-4fe0-b5b3-8fe8fb015a08"
+				name="UnlockSelected"
+				refimgid="257cf602-c424-471c-98a4-30c3dc46f8b1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedUnlockVendorButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="7c4cc0ef-be83-45e3-86d1-25307823d8e4"
+				name="SelectWinner"
+				refimgid="aea25c4c-c4ed-4018-8eb7-2ef06e338436"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedSelectWinnerButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="f74f4212-b27d-427f-b2ca-33ac6a73bff7"
+				name="DetailFilterProcessRFQ"
+				refimgid="7631a81d-1544-463e-a459-cc6b27c783f1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Detail']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="a4f4a233-e0ee-44f7-be98-0a8da7c6e14a"
+				name="TextClearAllFilters1"
+				refimgid="249058a6-7c40-4ac9-8175-bd42d6aff9e5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedClearFiltersButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="d10fb852-a0b3-4037-871b-c46754979604"
+				name="RevisionFilter"
+				refimgid="e2f0c912-aeab-49d1-9cf7-b6ae1d20cf52"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Revision']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="ed05c9b0-3ee4-4722-bde2-ef7b92559537"
+				name="DescriptionFilter1"
+				refimgid="157873f2-d322-4d42-acea-492ccc7c83ae"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Description']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="fb211ada-a38b-42a2-a59c-55f6c7cfdff5"
+				name="QtyFilter1"
+				refimgid="1361b07b-b15f-4d09-a7db-ce4aea059897"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Qty']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				ensurevisible="True"
+				id="fbe18886-c0d1-46ea-bf6f-3ab19527d101"
+				name="KittingFilter1"
+				refimgid="399e3aee-ddae-47cd-8146-5e5efb17cdd0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Kitting']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="ff376c04-ed5d-4dcf-b40b-10f708cb424d"
+				name="Revision1"
+				refimgid="0ba5ae9f-4cbb-42b3-81e5-38b2d4cedeaf"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Revision']/text[@caption='Revision']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="0676137b-5996-4151-850d-592ae028f403"
+				name="Description1"
+				refimgid="9444a796-6f0c-47cf-a3bc-9a9e2aa01820"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Description']/text[@caption='Description']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="5f1e8915-fb85-49f9-bdba-55ef5a9a198f"
+				name="TextQty1"
+				refimgid="02bf99a6-c0a4-421b-9688-6357d4481c17"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Qty']/text[@caption='Qty']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="cell"
+				id="9b26257a-b456-46ce-bb95-a84ea953aed0"
+				name="Kitting1"
+				refimgid="8831991b-7bd8-4195-882d-838b4f6982f7"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Kitting']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="236be591-8c91-44bc-95a6-2451ccb6b206"
+				name="ShowDates"
+				refimgid="29ecff95-3623-43ab-b88b-6f70c8345989"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='ShowDateColumns']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="85d4bc5f-8154-4d71-803e-6791a034dc9f"
+				name="RequiredDate"
+				refimgid="4d196e2e-d8ca-4e8e-8c83-0cbd46e43763"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Required Date']/text[@caption='Required Date']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="2da217ef-6c7f-4863-9d49-2e4e17d086eb"
+				name="Text1PromiseDate"
+				refimgid="21b268d3-5b1d-4ec7-9467-5bdc3f2ade69"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='1 Promise Date']/text[@caption='1 Promise Date']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="0d18c9b1-13e7-4ccd-9497-330b3b0dc1be"
+				name="Text2PromiseDate"
+				refimgid="d6cde7d4-5731-4029-b20f-7371bfb4eb64"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='2 Promise Date']/text[@caption='2 Promise Date']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="ef3c28c1-1744-40cf-aad0-de9c1610f046"
+				name="ShowNotes"
+				refimgid="5d185535-2c2b-4f84-a288-a8dc9d2b2fd1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='ShowNoteColumns']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="6dd683e3-7fd2-442a-a9e3-bbd326dfbc3d"
+				name="Text1Note"
+				refimgid="aef4f8b0-9b0c-4195-9b60-d78a6e26dc8c"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='1 Note']/text[@caption='1 Note']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="4239f1f4-73c8-4b0e-a9d2-29cf7f3fd4f2"
+				name="Text2Note"
+				refimgid="90008141-3534-463f-80b2-c8937c4f3307"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='ProcessedDetailsGrid']//list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='2 Note']/text[@caption='2 Note']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="b106ddd7-f26b-4658-b437-a35ee5f8faa4"
+				name="HideDetailsWithoutNotes"
+				refimgid="ba59c782-4e3d-467a-bdaa-52fe5004a520"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedHideDetailsWithoutNotesToggle']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="be8d97e1-89fa-4b66-bda5-9c2b11ff0f0c"
+				name="GroupWinners"
+				refimgid="6b49e59b-2b01-4e0c-99fd-59eba37c9575"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedGroupWinnersButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="ff3deaaf-5c92-4b12-a2cd-8643f48a5cd8"
+				name="SelectWinners"
+				refimgid="d27b891f-1fd4-4289-b17c-0e6700d15a76"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='processedSelectWinnersButton']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="9630bd98-70fc-4588-a6cf-523b6bc28b3f"
+				name="POChanges"
+				refimgid="4d664e8f-6a4c-40fb-948b-b68e4716fab2"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption='PO Changes']
+				</item>
+				<folder
+				capname="table"
+				id="175ed54e-aab6-401f-accf-b7d341055643"
+				isrooted="True"
+				name="datagrid"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="button"
+					id="f6c07c90-2f6d-49a0-a13a-649fbffb1807"
+					name="RefreshButton"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']/button[@automationid='poChangesRefresh']
+					</item>
+					<item
+					addcaps="button,wpfelement,wpfgroupelement"
+					capname="button"
+					id="db7e7198-b2cd-46ad-96b0-6062dfe7effe"
+					name="Approve"
+					refimgid="d5319eb2-8769-4bbc-b078-f2a3169605c7"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']//row[@index='0']//button[@text='Approve']
+					</item>
+					<item
+					addcaps="cell,wpfelement,wpfgroupelement"
+					capname="cell"
+					id="59ecd557-cbad-48aa-b39c-c387805f4bc6"
+					name="CellWithJDEOrderNo"
+					refimgid="e32c594e-70a9-4d46-88a3-c3a879e18f72"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']//cell[@text=$varJDEOrderNumber]
+					</item>
+					<item
+					addcaps="button,wpfelement,wpfgroupelement"
+					capname="button"
+					id="4c22f409-c1a8-4d6f-95e0-0baa03b09f61"
+					name="Approve1"
+					refimgid="e860acf1-29b5-4619-806a-9d28416535b0"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']//row[@index=$varRowIndex]//button[@text='Approve']
+					</item>
+					<item
+					addcaps="button,wpfelement,wpfgroupelement"
+					capname="button"
+					id="23fcf194-7fdf-41a7-9d59-cd14b1abbe37"
+					name="Reject"
+					refimgid="d249f80c-53e6-4e09-99a7-0f3b78760825"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']//row[@index=$varRowIndex]//button[@text='Reject']
+					</item>
+					<item
+					addcaps="text,wpfelement,wpfgroupelement"
+					capname="text"
+					id="866d76d3-6cbb-4ce8-b3f2-aa7616ea8101"
+					name="OrderNumberFilter"
+					refimgid="b1054256-0312-4fff-a339-48d66dfb46dc"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']//list[@automationid='PART_ColumnHeadersPresenter']//cell[@text='Order #']/text[@automationid='PART_TextBoxFilter']
+					</item>
+					<item
+					addcaps="cell,wpfelement,wpfgroupelement"
+					capname="cell"
+					id="fdc9a7b0-b987-4529-84fc-d3fb89098c85"
+					name="NewPromiseDateRow0"
+					refimgid="d4ebb4d2-5985-410a-9596-c06c4ad5ffc2"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']/container/row[@index='0']/list/cell[@columnindex='13']
+					</item>
+					<item
+					addcaps="cell,wpfelement,wpfgroupelement"
+					capname="cell"
+					id="7c1f02c8-eef5-45a0-913e-30b37cb5ff21"
+					name="NewPromiseDateRow0PROD"
+					refimgid="d4ebb4d2-5985-410a-9596-c06c4ad5ffc2"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']//row[@index='0']/list/cell[@columnindex='13']
+					</item>
+					<item
+					addcaps="cell,wpfelement,wpfgroupelement"
+					capname="cell"
+					id="6d4dd64f-914b-46ce-94d0-376173f983d4"
+					name="NewPromiseDateRow1"
+					refimgid="d4ebb4d2-5985-410a-9596-c06c4ad5ffc2"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']/container/row[@index='1']/list/cell[@columnindex='13']
+					</item>
+					<item
+					addcaps="text,wpfelement,wpfgroupelement"
+					capname="cell"
+					id="4413d9e2-94de-4ab2-a594-de62cb00ae81"
+					name="ATSResponse"
+					refimgid="5569d924-432b-4cc5-9744-25a1bf6516c0"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']/?/?/row[@index=$varRowIndex]/list/cell[@columnindex=$varColumnIndexofDetailsTable]
+					</item>
+					<basepath>
+						/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='datagrid']
+					</basepath>
+				</folder>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="d524fbd2-3285-48db-a1cf-384df1284562"
+				name="CurrencyComboBox"
+				refimgid="a2043957-44fe-4fdd-ada2-87dc079a01d9"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//combobox[@automationid='prefsCurrencyList']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="e896b811-d809-4878-ab5e-96fbbed904ae"
+				name="Currency"
+				refimgid="bfd37d33-ec06-40cc-a4af-ba2c895d9a74"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@automationid='bannerLine2SubHeader']
+				</item>
+				<item
+				addcaps="cell,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="627f18cc-6511-4608-a8a2-af38918f634d"
+				name="CellCAD"
+				refimgid="4b642cdc-a62a-4dd1-865e-c2112bb2267d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table/?/?/row[@index='0']/list/cell[6]
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="009dd529-6eae-4bc0-ad8b-6e1e7fdf12ff"
+				name="EngContact"
+				refimgid="eae1f61e-f9a1-47a7-bf48-410e7dad0da3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container[@caption='']//checkbox[@text='Eng Contact']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="1c14912a-f690-442a-b1fa-0d780fee3ac7"
+				name="EngContactDefault"
+				refimgid="eae1f61e-f9a1-47a7-bf48-410e7dad0da3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container[@caption='']//checkbox[@text='Eng Contact Default']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="272a8086-6771-471e-87a4-1c88cdef3bf7"
+				name="EngBackupContact"
+				refimgid="eae1f61e-f9a1-47a7-bf48-410e7dad0da3"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container[@caption='']//checkbox[@text='Eng Backup Default']
+				</item>
+				<item
+				addcaps="link,wpfelement,wpfgroupelement"
+				capname="link"
+				id="d282a817-2c1a-4bbd-940c-bd84f4d146f9"
+				name="ATSDreaminPng"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table/?/?/row/list/?/?/list/?/?/link[@text='ATSDreamin.png'][1]
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="c3c0948e-faca-457c-af24-6f754aa8bd0a"
+				name="CreateRFQ"
+				refimgid="29167eef-6458-4a57-b77c-4d24be6cdf8d"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption='Create RFQ']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="763a6d52-e7cd-45c9-88dd-4413c08be886"
+				name="POChanges1"
+				refimgid="a6499210-f3b9-4ce2-b112-ed99287caaca"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//button[@automationid='MenuDropDownButton']/container[@automationid='HeaderPanel']//text[@caption='PO Changes']
+				</item>
+				<item
+				addcaps="checkbox,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="8a137ee1-a394-464f-b520-70b0c23fd2ce"
+				name="SomeCheckBox1"
+				refimgid="4afb1b7c-ee5b-4723-a275-4cc38f98a5ab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='vendorProfileLinkVendorsTable']/?/?/row[@index='0']/list/cell[@columnindex='0']/checkbox
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="8fa318b8-3443-498d-b7e0-b6c86ca25549"
+				name="Reporting"
+				refimgid="882f173a-77df-48b8-b0f2-1a9154f1ce50"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//text[@caption='Reporting']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="text"
+				id="6783ea1f-0685-401e-9f35-984a715a6f5a"
+				name="LineFilter"
+				refimgid="06def78f-f392-4cf5-bdf9-35410be96526"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/list[@automationid='PART_ColumnHeadersPresenter']/?/?/cell[@text='Line']/text[@automationid='PART_TextBoxFilter']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="03154d3d-01ab-4285-bfe7-2b41c4088794"
+				name="FileNameofFirstDocumentLink"
+				refimgid="3f1d1ace-4a26-4264-b5ba-df874997487f"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']//table[@automationid='UnprocessedDetailsGrid']/?/?/row[@index='0']/list/cell[@columnindex=$varcolumnIndex]/list[2]/button[1]
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="text"
+				id="3d5eca26-b78f-4db8-b9d0-3feb874e81dd"
+				name="SitePreferences"
+				refimgid="c1128643-33be-4491-8a30-640e5dd07a40"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//text[@caption='Site Preferences']
+				</item>
+				<item
+				addcaps="text,wpfelement"
+				capname="button"
+				id="bc4b8425-905d-43fb-b72f-8955a46106c7"
+				name="AddRow"
+				refimgid="cdd8c22c-191c-49a6-963d-359924099d7e"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//button[@automationid='shippingAddButton']
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="e98fbbe0-dd54-4fa4-b6e1-8a9ca1d376cd"
+				name="NewShippingMethodTextBox"
+				refimgid="9a6af715-5e88-44ab-8b93-015535293829"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//table[1]//cell[@columnindex='0'][-1]
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="3cf38d24-3664-4575-9ef6-675795a69884"
+				name="NewDescriptionTextBox"
+				refimgid="9a6af715-5e88-44ab-8b93-015535293829"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//table[1]//cell[@columnindex='1'][-1]
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="cell"
+				id="221788a9-ccd9-443b-a5c2-91b944597df9"
+				name="NewShippingDurationTextBox"
+				refimgid="9a6af715-5e88-44ab-8b93-015535293829"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//table[1]//cell[@columnindex='2'][-1]
+				</item>
+				<item
+				addcaps="text,wpfelement,wpfgroupelement"
+				capname="checkbox"
+				id="7e866f03-8b0b-4088-9f79-3e1c9793ccb5"
+				name="NewInactiveCheckBox"
+				refimgid="9a6af715-5e88-44ab-8b93-015535293829"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//table[1]//cell[@columnindex='3'][-1]/checkbox
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="button"
+				id="dbfb438d-7e65-42b3-8ff2-08732846bc29"
+				name="ToggleButton"
+				refimgid="4e01ec6d-e5c8-4023-9855-4f389e9790d6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/list[@automationid='AdminPagesListBox']//button[@automationid='toggleButton']
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="text"
+				id="06a068f8-f20a-436c-9ef9-08d3a53b7684"
+				name="ShippingMethodComboBoxText"
+				refimgid="19662f46-0135-47c0-a1a9-e85972dc0101"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container/?/?/tabpagelist/?/?/combobox[@automationid='shippingMethod']/text
+				</item>
+				<item
+				addcaps="button,wpfelement,wpfgroupelement"
+				capname="combobox"
+				id="cb92313a-518f-475f-aece-c49f1ada81d4"
+				name="ShippingMethodComboBox"
+				refimgid="19662f46-0135-47c0-a1a9-e85972dc0101"
+				robustPath=""
+				searchtimeout="30000ms">
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']/container/?/?/tabpagelist/?/?/combobox[@automationid='shippingMethod']
+				</item>
+				<basepath>
+					/form[@title='MainWindow']/list[@automationid='navigationPanel']
+				</basepath>
+			</folder>
+			<item
+			capname="text"
+			id="4e728064-c0e4-4d04-b978-64afe3b71944"
+			name="BusyOverlay"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']//text[@automationid='Status' and @text='Loading']
+			</item>
+			<item
+			capname="text"
+			id="06713798-a360-4cf5-8fa7-800212e4df7b"
+			name="BusyOverlayLoaded"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']//text[@automationid='Status' and @text='Loaded']
+			</item>
+			<item
+			capname="container"
+			id="1d665654-13b6-4c7f-bcaa-c2d63dc30384"
+			name="Copy_of_BusyOverlay1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']//container[@automationid='BusyOverlay' and @visible='True']
+			</item>
+			<item
+			capname="text"
+			id="3543486e-4305-4030-aeee-a94361829755"
+			name="Copy_of_BusyOverlay"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']//text[@automationid='Status' and @text='Loading']
+			</item>
+			<item
+			addcaps="tabpagelist,wpfelement,wpfgroupelement"
+			capname="tabpagelist"
+			id="b959dd70-4c24-4116-8ec5-ba1fd85ebf37"
+			name="TabPageList"
+			refimgid="c676eabe-00a1-47d3-9d44-03f1eb67510c"
+			refpath="/form[@title='MainWindow']/list[@automationid='navigationPanel']/tabpagelist"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']/?/?/tabpagelist
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="68cb2e1c-3e24-4841-a6d4-f1a7160afe56"
+			name="UnprocessedCancelDetailsButton"
+			refimgid="8073c3bb-6608-4ef4-8740-b079305d675a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']//button[@automationid='unprocessedCancelDetailsButton']
+			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="76b959fe-11b1-444c-a676-87fe1973db2e"
+			name="Text"
+			refimgid="3bbaf968-df17-41bd-a1fd-2b7c726a8e97"
+			refpath="/form[@name='MainWindow']/element[@automationid='BusyOverlay']/text[@classname='Text']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']/?/?/text[@classname='Text']
+			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="baa1c72b-b7d9-43ca-a27a-22fe92118363"
+			name="RFQBid"
+			refimgid="52a196f4-a0b0-4143-9deb-bef424693f63"
+			refpath="/form[@name='MainWindow']/element[@classname='Reporting']/list[@automationid='reportList']/listitem[1]/text[@name='RFQ Bid']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='MainWindow']/?/?/list[@automationid='reportList']/?/?/text[@name='RFQ Bid']
+			</item>
+			<basepath>
+				/form[@title='MainWindow']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH9SURBVDhPY6ApCA0NZQZSLNiwvb09iGYEYqyA
+MSoqyqWxsfF0YWHh6qCgoNUBAQEoOCQkZJW3t3cmVD0qCA4Oturr63t37dq1/ykpKf+lpKT+S0pK
+/ldUVPxvYGDwX1NT87+MjMz/xMTE61AtCBAdHa3e3t7+9NatW/+am5v/c3Bw/AcK/+fm5v5fUlLy
+f+/evf/Xrl37X0RE5H9CQsJ9iC4oSEpKkmpqarp55cqVP8uWLfsvJCQE1szCwvI/Pj7+H9CAC+vW
+rXt348aN/2JiYqgGaGlpsdXV1R09efLkj6NHj/5XVlYGa2ZkZPzv7u7+v7W19ZKTk5Pv5s2b72MY
+UF9fz5ScnJwItPXrnTt3/ltbW4M1g7C+vv7/rq6ub8AAqwIZsGXLlmcYBgD97TZlypRPt2/f/g8M
+/f9MTExgzSA6Jibm/6xZs/729va+B+HVq1f/Xbx48X9RUVGIAcC4NgBKvLp///7/2tra/+zs7OAA
+k5CQAIc8LgwPxLa2tutAZ//dvXs3OJoEBQXBkmFhYb+AsdAFjCotYABqgHBgYKDF9u3br718+RIc
+jRkZGfcYSktLW+bOnbsdmGi2A52/PTIycntsbOz2tLS0PmBqEwH7EQo8PDzYKysrG4Be2l5cXLwd
+aGg3AyhJysvLc6BjaFLFAMjqcakZUoCBAQDW3Aqwvo8k8QAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="contextmenu"
+		id="f3eaae1f-d216-4e58-bd2d-ecf9ad00b876"
+		isrooted="True"
+		name="ATSSupplierPortalManagment"
+		refimgid="1516b320-ad4b-409b-8ed9-aac1a668cf86"
+		refpath="/contextmenu[@processname='ATSSupplierPortalManagment']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="edf982f5-6446-4adf-a05b-704cea000e41"
+			name="PatelAnkit"
+			refimgid="29a51ec9-f376-4c55-801b-de59b4de38e9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='Patel, Ankit']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="5a9f4cde-53b3-4cb8-8874-a04612c83d93"
+			name="RanorexRT"
+			refimgid="29a51ec9-f376-4c55-801b-de59b4de38e9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='Runtime, RanorexRT']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="3c093226-4654-481f-9f6f-a202058d2718"
+			name="All"
+			refimgid="29a51ec9-f376-4c55-801b-de59b4de38e9"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='All']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="20403526-8db7-4f3f-9524-3815b685689b"
+			name="username"
+			refimgid="a7f27098-2638-4e24-9598-810f7c2872f5"
+			robustPath=""
+			searchtimeout="5000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text=$varUsername]
+			</item>
+			<item
+			addcaps="datetime,wpfelement,wpfgroupelement"
+			capname="datetime"
+			id="f87bcf22-d35f-4d4a-ab10-5188894446ba"
+			name="SomeDateTime"
+			refimgid="2af37501-30b7-4eb1-9446-ca01a1df3b2e"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/datetime"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/datetime
+			</item>
+			<folder
+			capname="container"
+			id="a4858d65-446f-4092-b96d-173768797024"
+			isrooted="True"
+			name="AssigneeList"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				capname="listitem"
+				id="cb3ffd8f-352d-4cd0-a4af-4abef10daf24"
+				name="brhill"
+				robustPath=""
+				searchtimeout="30000ms">
+					/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='brhill']
+				</item>
+				<item
+				capname="listitem"
+				id="7395d17e-03d7-46e8-a5cf-3548ace93125"
+				name="userNameInAssigneeList"
+				refimgid="c18774f5-66f7-40a0-9285-a2da983e98eb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text=$varUsername]
+				</item>
+				<item
+				capname="listitem"
+				id="caf03e84-30ff-445b-88b9-ee812dfa8634"
+				name="ranorexrt"
+				refimgid="c18774f5-66f7-40a0-9285-a2da983e98eb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='ranorexrt']
+				</item>
+				<item
+				capname="listitem"
+				id="739ce738-1a80-4a6c-aca1-60f6c9f62db7"
+				name="EmptyListItem"
+				refimgid="c18774f5-66f7-40a0-9285-a2da983e98eb"
+				robustPath=""
+				searchtimeout="30000ms">
+					/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='']
+				</item>
+				<basepath>
+					/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']
+				</basepath>
+			</folder>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="88d5e304-83e6-4d22-ace9-c20d29777f88"
+			name="Float"
+			refimgid="1033c5f3-59d3-46ec-9ba2-6a8f6ac7c45e"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/menuitem[@text='Float']/text[@caption='Float']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/text[@caption='Float']
+			</item>
+			<item
+			addcaps="text,wpfelement,wpfgroupelement"
+			capname="text"
+			id="7c798725-9322-4683-82f4-cd8fe1450b43"
+			name="NewVerticalTabGroup"
+			refimgid="308c575b-65e4-4880-adb2-362e8754a809"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/menuitem[@text='New Vertical Tab Group']/text[@caption='New Vertical Tab Group']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/text[@caption='New Vertical Tab Group']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="666b739d-20ff-495e-8f2a-6776af9045f6"
+			name="SiteName"
+			refimgid="9f808194-7d7d-484b-8d85-149e4de8f87f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text=$varSiteName]
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="52c02cb6-e03c-4aea-941f-9bea6c9221ba"
+			name="Canada"
+			refimgid="179bcdfe-d869-4253-8a08-e9bdbdfa77e3"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='Canada']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='Canada']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="87781149-b011-4d78-9ef7-cd19f0c2c159"
+			name="Ontario"
+			refimgid="7e68a09d-bed8-4e86-960a-9775e2a6db0a"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='Ontario']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='Ontario']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="45112771-52ee-4a8e-bbf9-63fb0eef434a"
+			name="ListItemCAD"
+			refimgid="913fe9e1-547c-4e94-951d-252f68d817e8"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='CAD']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='CAD']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="a2d8d87b-055a-4460-9986-64f152b8e470"
+			name="USD"
+			refimgid="913fe9e1-547c-4e94-951d-252f68d817e8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='USD']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="a9612fc8-46ad-407c-bdb9-4a3009d1a29a"
+			name="ARDRushAir"
+			refimgid="d67f034d-6e66-4f4a-93ab-af183a42b52f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text~'ARD - Rush Air']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="474452b8-8997-4cea-bcc1-810ed981ded7"
+			name="OCNOcean"
+			refimgid="48ee556b-90fd-4d5e-a350-c866cd57b4d0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text~'OCN - Ocean']
+			</item>
+			<item
+			addcaps="listitem,wpfelement,wpfgroupelement"
+			capname="listitem"
+			id="93b089cc-c0f7-4a17-a87f-8a3c51ed671c"
+			name="Ranorexrt1"
+			refimgid="83d6a645-96f8-4c40-b83b-52e942fad047"
+			refpath="/contextmenu[@processname='ATSSupplierPortalManagment']/container[@automationid='grid']/listitem[@text='ranorexrt']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='ATSSupplierPortalManagment']/?/?/listitem[@text='ranorexrt']
+			</item>
+			<basepath>
+				/contextmenu[@processname='ATSSupplierPortalManagment']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="cba36696-88ce-4b9f-bd68-b4455bc3889a"
+		isrooted="True"
+		name="Open"
+		refpath="/form[@title='Open']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="32599e35-efc8-42ee-a3a3-7a0ae426fc71"
+			name="Text1148"
+			refimgid="a50cb7c1-8ef3-4ea9-b803-daf5df4d4d8d"
+			refpath="/form[@title='Open']/combobox[@controlid='1148']/text[@controlid='1148']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open']/?/?/text[@controlid='1148']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="5e9db18c-f505-45e9-93fe-29ad479ccea9"
+			name="ButtonOpen"
+			refimgid="09f8cd65-2512-42e7-a2fe-2c9e84746041"
+			refpath="/form[@title='Open']/button[@text='&amp;Open']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open']/button[@text='&amp;Open']
+			</item>
+			<basepath>
+				/form[@title='Open']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH9SURBVDhPY6ApCA0NZQZSLNiwvb09iGYEYqyA
+MSoqyqWxsfF0YWHh6qCgoNUBAQEoOCQkZJW3t3cmVD0qCA4Oturr63t37dq1/ykpKf+lpKT+S0pK
+/ldUVPxvYGDwX1NT87+MjMz/xMTE61AtCBAdHa3e3t7+9NatW/+am5v/c3Bw/AcK/+fm5v5fUlLy
+f+/evf/Xrl37X0RE5H9CQsJ9iC4oSEpKkmpqarp55cqVP8uWLfsvJCQE1szCwvI/Pj7+H9CAC+vW
+rXt348aN/2JiYqgGaGlpsdXV1R09efLkj6NHj/5XVlYGa2ZkZPzv7u7+v7W19ZKTk5Pv5s2b72MY
+UF9fz5ScnJwItPXrnTt3/ltbW4M1g7C+vv7/rq6ub8AAqwIZsGXLlmcYBgD97TZlypRPt2/f/g8M
+/f9MTExgzSA6Jibm/6xZs/729va+B+HVq1f/Xbx48X9RUVGIAcC4NgBKvLp///7/2tra/+zs7OAA
+k5CQAIc8LgwPxLa2tutAZ//dvXs3OJoEBQXBkmFhYb+AsdAFjCotYABqgHBgYKDF9u3br718+RIc
+jRkZGfcYSktLW+bOnbsdmGi2A52/PTIycntsbOz2tLS0PmBqEwH7EQo8PDzYKysrG4Be2l5cXLwd
+aGg3AyhJysvLc6BjaFLFAMjqcakZUoCBAQDW3Aqwvo8k8QAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,wpfwin32element,wpfelement,wpfgroupelement"
+		capname="form"
+		id="02d84179-83bc-45df-b83a-378485fa6ae1"
+		isrooted="True"
+		name="NotificationsWindow"
+		refpath="/form[@title='NotificationsWindow']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="5f323148-7ab3-4248-a2af-a89ac7cda86a"
+			name="Text"
+			refimgid="df5f2b1b-4264-4b99-9fae-ed11eb81724d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text='You must select at least one vendor before you can send an RFQ']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="3573044d-29a5-4c81-a225-ad90620d147f"
+			name="SuccessMessage"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Sending RFQ \d+ to Selected Vendors']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="61cc3e7f-2555-48f5-9f6d-a88efd592643"
+			name="ErrorShippingDate"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Shipping Method not viable.']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="9c008404-84b2-4727-9bda-4a9216f3d841"
+			name="RejectMessage"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Please provide ATS Response.']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="bc1f148b-98ab-4010-afc3-57f812312a16"
+			name="ShippingMethodError"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text='Shipping Method AP must be added to ERP first.']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="4b2195e0-1ac3-4359-884d-07017db6a7c8"
+			name="SplitRFQMessage"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Details split from']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="97b18f81-d453-4879-9778-bb4923e198ba"
+			name="SavedChanges"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Saved changes to the vendor']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="a92f676b-6cbe-46d0-9f04-b2c91ea571c5"
+			name="SuccessfullyLinked"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Successfully linked']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="4c8afc28-69ae-4076-be9b-4f0551b2c715"
+			name="SuccessfulMessage"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Successfully']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="0ea0e157-2b54-42f2-bb14-6576c3269fb1"
+			name="Unlocked_RFQ"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Unlocked RFQ']
+			</item>
+			<item
+			addcaps="text,wpfelement"
+			capname="text"
+			id="ef535496-c4ce-4020-8e6a-8415efc5ead6"
+			name="WinnerHasBeenSelected"
+			refimgid="67b8b069-ad01-4b12-8687-a9131756d90c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='NotificationsWindow']/list[@automationid='NotificationsList']/?/?/text[@text~'Winner']
+			</item>
+			<item
+			addcaps="button,wpfelement,wpfgroupelement"
+			capname="button"
+			id="259f5081-0691-48fa-9b48-96be1fa0619c"
+			name="CloseButton"
+			refimgid="82701945-be64-4f2c-94f6-98d17abaa255"
+			robustPath=""
+			searchtimeout="5000ms">
+				/form[@title='NotificationsWindow']//button[@automationid='CloseButton']
+			</item>
+			<basepath>
+				/form[@title='NotificationsWindow']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH9SURBVDhPY6ApCA0NZQZSLNiwvb09iGYEYqyA
+MSoqyqWxsfF0YWHh6qCgoNUBAQEoOCQkZJW3t3cmVD0qCA4Oturr63t37dq1/ykpKf+lpKT+S0pK
+/ldUVPxvYGDwX1NT87+MjMz/xMTE61AtCBAdHa3e3t7+9NatW/+am5v/c3Bw/AcK/+fm5v5fUlLy
+f+/evf/Xrl37X0RE5H9CQsJ9iC4oSEpKkmpqarp55cqVP8uWLfsvJCQE1szCwvI/Pj7+H9CAC+vW
+rXt348aN/2JiYqgGaGlpsdXV1R09efLkj6NHj/5XVlYGa2ZkZPzv7u7+v7W19ZKTk5Pv5s2b72MY
+UF9fz5ScnJwItPXrnTt3/ltbW4M1g7C+vv7/rq6ub8AAqwIZsGXLlmcYBgD97TZlypRPt2/f/g8M
+/f9MTExgzSA6Jibm/6xZs/729va+B+HVq1f/Xbx48X9RUVGIAcC4NgBKvLp///7/2tra/+zs7OAA
+k5CQAIc8LgwPxLa2tutAZ//dvXs3OJoEBQXBkmFhYb+AsdAFjCotYABqgHBgYKDF9u3br718+RIc
+jRkZGfcYSktLW+bOnbsdmGi2A52/PTIycntsbOz2tLS0PmBqEwH7EQo8PDzYKysrG4Be2l5cXLwd
+aGg3AyhJysvLc6BjaFLFAMjqcakZUoCBAQDW3Aqwvo8k8QAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="4a58eaef-921c-4eeb-b051-faa302a9c013"
+		isrooted="True"
+		name="SOLIDWORKS"
+		refpath="/form[@title='SOLIDWORKS Premium 2018 SP5.0 - 3263208120191118114658057.SLDPRT']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem"
+			capname="statusbar"
+			id="7290dd28-aef3-4698-9fee-2d081234099a"
+			name="statusBarText"
+			refimgid="aa94c4f4-1a9a-40c3-8be4-cc310f7bfee0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title&gt;'SOLIDWORKS Premium 2018 SP5.0']/statusbar[@windowtext='SOLIDWORKS Premium 2018 SP5.0']
+			</item>
+			<basepath>
+				/form[@title&gt;'SOLIDWORKS Premium 2018 SP5.0']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIeSURBVDhPnVBdSJNRGD5nn4xUNCH6k1Fu65uT
+CNJwthuDrYGXYoR03c1o69LrxAtvMpDdOCiiS4nILUu/CLdlKCu2Qc2RbSij+hYShCF9u8meznnx
+k83mTQ88533P8573Oee87AB4P2MXPYyNDXC+5OHcEPGdiBNC915nTNk7V48BxkbFwUeCfwYVZf1W
+S2sqftqW01W3kbSdLYy1tSd9FiUvjH4LzooLbuy1MiaEjyNW62rk2Ik363Z167urB4dxw6n+uH/8
+5Ko4vyIuy5OBSJC0u7DicKHg7IauNm6W/HKuG4udNkwe7YDs2zfQutQ6LgvD98Lss+rGptOFp6c6
+caetHaNNTbimKMR/DCrPnsNE+cFD0pbsKsKqiqDDAW1mBhNDQ9jIZhsbSORuBrE86KNcaglhMD89
+jWgwiOrODl5EIngbizU2+Pr4CTUW797DK/cF0l6Lr6ylUohPTaFSLOJTOo2X0Whjg8Sly6jE58nk
+51qBNDkL+eQPiQTSc3P4tb2N2fHxeoMukRxGb0trQ72WZGCiXC6TmBW3SmQyGfT39uJ2OEx7WdM0
+jfKYmAUZ2BnfPG89YlzxeqlgGo4MD1O86vdTlDBrtZGd4fxbB+P5lBhWtVolUdd1NFssdCgQCMDT
+10e5rJVKJcplJAO5LCws7hqGgVAotGsamC/w+3x1Nx6MdTOQkHvzn7lcDs2Mb9U2yL9L7M9ALv9P
+jr+lPvL1CaKGMgAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="25483335-4e8a-4046-af32-7b629c951c71"
+		isrooted="True"
+		name="WindowsSecurity"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem"
+			capname="button"
+			id="5e5d64fa-ea1d-4770-8d21-82355b7c3194"
+			name="CloseButton"
+			refimgid="aa94c4f4-1a9a-40c3-8be4-cc310f7bfee0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Windows Security']/button[@automationid='CloseButton']
+			</item>
+			<basepath>
+				/form[@title='Windows Security']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAIeSURBVDhPnVBdSJNRGD5nn4xUNCH6k1Fu65uT
+CNJwthuDrYGXYoR03c1o69LrxAtvMpDdOCiiS4nILUu/CLdlKCu2Qc2RbSij+hYShCF9u8meznnx
+k83mTQ88533P8573Oee87AB4P2MXPYyNDXC+5OHcEPGdiBNC915nTNk7V48BxkbFwUeCfwYVZf1W
+S2sqftqW01W3kbSdLYy1tSd9FiUvjH4LzooLbuy1MiaEjyNW62rk2Ik363Z167urB4dxw6n+uH/8
+5Ko4vyIuy5OBSJC0u7DicKHg7IauNm6W/HKuG4udNkwe7YDs2zfQutQ6LgvD98Lss+rGptOFp6c6
+caetHaNNTbimKMR/DCrPnsNE+cFD0pbsKsKqiqDDAW1mBhNDQ9jIZhsbSORuBrE86KNcaglhMD89
+jWgwiOrODl5EIngbizU2+Pr4CTUW797DK/cF0l6Lr6ylUohPTaFSLOJTOo2X0Whjg8Sly6jE58nk
+51qBNDkL+eQPiQTSc3P4tb2N2fHxeoMukRxGb0trQ72WZGCiXC6TmBW3SmQyGfT39uJ2OEx7WdM0
+jfKYmAUZ2BnfPG89YlzxeqlgGo4MD1O86vdTlDBrtZGd4fxbB+P5lBhWtVolUdd1NFssdCgQCMDT
+10e5rJVKJcplJAO5LCws7hqGgVAotGsamC/w+3x1Nx6MdTOQkHvzn7lcDs2Mb9U2yL9L7M9ALv9P
+jr+lPvL1CaKGMgAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="402ccebd-e403-4d83-bce1-58a32eb080d1"
+		isrooted="True"
+		name="AdobeReader"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title~'(?i:pdf)']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAD/SURBVDhPY4CB//KiBv8VxD78VxT7jxWD5IBq
+oMoxwT9FsQs/Z0/f9/Xr1//Y8M8JPe/+KUl+xmkIyBZsGpHxj4Vzv+E0hBgDQBjsEkXRB1BtCIBu
+wPezp///9bAH08ji3148B4cJVBsCoBvwT1f5/7dbN8GGIIuDMFEG/Opu/f/P2vD/74JMFHEQJsqA
+H5vW//+THA02CFkchIkyAGQzyL8gr/wN9QVjkKEEDfi5dCFYMcj5IM0gcVg4gMQIGgALPJhiEAbZ
+DDLk54zJhA0ARRtIM0wxNozXAGIwdgOAmQXkf2wakDFIDXYDgOn7n5rUN5AkQSwvmgDVRilgYAAA
+ZqQtL10mB5EAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="585c87fe-4d9c-4069-a239-13649a7c3618"
+		isrooted="True"
+		name="AutoCAD2018"
+		refimgid="107b0452-ac6f-4015-9e0a-221514aec008"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title~'(?i:dwg)']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKiSURBVDhPbZPdS1NxGMfP39Lc3Hw5W25rwxRR
+EHJZqJB3XYiFIN1URBeWURYJXUVEQqBiutLexpi65sts2mqzUDPf0ulymnPuzdi7F9+es7PJpl58
+OZzD+X2e7+/7PA+T8LmR8HPa5RXg5MEBp+BeSl5e+5x8vP75k2KizgVE/ywh6lpBdGsVse01xHbW
+EXM7Ed/dRHzPhbh3GwnfDl8gSGAOxAFCQTCRjV+IOhePQcarNBjPEcJySgCHVIaYy3EihIms/8RR
+yF+jHjpxHkyCHHyRSDBHT8+tGyc6YSJrszgKMVRfgIEOfZYX4YNcATu52JBK+SulIVxWBGHCqzPI
+hARmrHgtKYCO7Peqi9HKymBnWSwQ0PvkcXYmBGHCv38gE2K51owB+tlYVISX5RUw37wOo0qFaXLh
+LCk5FiwTXp5GJuSNSo0eqv6xogLT91oQmP0KU3k5rPRtXihCyD6VBWFCSzakIW7zELpyRNDJ5eiv
+rcFaexssVH2Eqk+QpkjbVxszWrxFgMVvSENGmxrxVCDE2HkNBhUKDFBVfV4+hikDo0wKc64Y80pl
+1pww4SU7wivfkw66z6jwgtLuKmTRR4f6WCk6ciXoIGgnaVTKwkzQ8KztEMIkPFtIkBX/wgzaBCI8
+l51Gq0iCR3TgGV3nVQELfWkphigbvVoFgygXzpbbNGyOJOQQYHt4Hw9EYnQWq9FfVgbfnD1pkduV
+Axqc5bt3oK2vhUkhh7WyMtmB+K6LB8Q9m9BqNOhSKDHR1ADDOQ0itCNcV7jucPvinxjBcHUVPtVd
+xHuazvSSHTpozy+EreEyJutqMHmpnt+LzZRoQkOU1aD6LKaar+CdWAKP2ZQNcFvGsf+2Fx5tD72n
+Ji0p/gqcAlYz9rTdCFrGUuvuxX/hDRyTzRShEwAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="webdocument"
+		id="a3ace41d-3361-41f6-ab5c-2e34c0cbe63a"
+		isrooted="True"
+		name="JDEdwardsEnterpriseOne"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="dc84eece-f1f7-4e00-b71d-349c9e943196"
+			name="User"
+			refimgid="096600a1-6530-4009-9376-fa5bc6ff8b5a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@caption='JD Edwards']//input[#'User']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="7dc33e8c-f0b5-4589-9b6c-84444dc14e98"
+			name="Password"
+			refimgid="527ea71a-3921-4114-93b8-e5261bf6b982"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@caption='JD Edwards']//input[#'Password']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3d3640a6-000d-4d9b-a0f8-78ea77da4a85"
+			name="Submit"
+			refimgid="e9da957d-49bb-4aac-ae37-29432317a21f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@caption='JD Edwards']//table[#'mainLoginTable']//input[@type='submit']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="729cd64f-8f34-4855-8cc1-109b1b4c5b37"
+			name="BcDropdownArrow"
+			refimgid="c803b345-b4c5-47de-bfc5-89efd5b763fb"
+			refpath="/dom[@domain='e1pd']//img[#'bcDropdownArrow']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@caption='JD Edwards']//img[#'bcDropdownArrow']
+			</item>
+			<basepath>
+				/dom[@caption='JD Edwards']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		capname="webdocument"
+		id="17609367-e71c-4382-8044-f8615f7da29c"
+		isrooted="True"
+		name="JDEPath"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="8768b9ff-0430-449c-bfd7-eec60dda5297"
+			name="Home"
+			refimgid="2770b860-81ab-4318-86c5-4e0773794f8a"
+			refpath="/dom[@domain='deve1']//div[#'listOCLInner']/div/table/tbody/tr/td[@innertext='Home']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//div[#'listOCLInner']/?/?/table//td[@innertext='Home']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="18e0fde2-d183-448e-b36b-9603c4653724"
+			name="PurchasingGeneral"
+			refimgid="257b0d07-2726-4207-93f1-50e8592bbcc7"
+			refpath="/dom[@domain='deve1']//iframe[#'e1menuAppIframe']//div[#'tabBar']/div[@innertext='Purchasing General']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'tabBar']/div[@innertext='Purchasing General']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="63ce0de7-59e3-417f-acfa-1433aa4562a7"
+			name="ViewAllDocTypes"
+			refimgid="109220d9-d26f-4186-bbc9-ca2c2d4bd9d1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[@innertext='View All Doc Types']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="e9a00261-dec4-48c2-867a-c16248aaeb39"
+			name="UserReferenceTextBox"
+			refimgid="80600234-e536-4a26-bf06-1bb555739eb2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']//input[@title='User Reference']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="17d77717-5f6a-451a-9738-4f2724f4851a"
+			name="LineNumberTextBox"
+			refimgid="80600234-e536-4a26-bf06-1bb555739eb2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']//input[@title='Line Number']
+			</item>
+			<item
+			addcaps="unknown,webelement,imgtag"
+			capname="imgtag"
+			id="09957946-ff55-4357-a22e-ad3766024771"
+			name="Find"
+			refimgid="be107f14-bef9-4294-910b-f3f00669372d"
+			refpath="/dom[@domain='deve1']//iframe[#'e1menuAppIframe']//img[#'hc_Find']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//img[#'hc_Find']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="e4d42d05-35c9-4344-be42-4998ef059a8b"
+			name="SupplierSO"
+			refimgid="fdf00690-8f39-4044-953f-49144d928dc2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']//input[@title='Supplier SO']
+			</item>
+			<folder
+			addcaps="unknown,webelement,tabletag"
+			capname="table"
+			id="acd45d1b-90d4-4e3a-8f13-71f80fc1c4b4"
+			isrooted="True"
+			name="JdeGridData010"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="7f53f209-aff1-4eea-85ee-3b6f9ff36653"
+				name="BuyerNumberRow0"
+				refimgid="f2579eda-4ecb-415e-a963-22637413c769"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/tbody/tr/td[7]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="atag"
+				id="f2076891-702f-4c1b-a72f-8a09ca23080f"
+				name="OrderNumber"
+				refimgid="f2579eda-4ecb-415e-a963-22637413c769"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/tbody/tr/td[4]/div/a
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="88c2f74e-b347-4698-bdfc-1b52943185af"
+				name="LineNumber"
+				refimgid="f2579eda-4ecb-415e-a963-22637413c769"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/tbody/tr/td[5]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a5389e32-9547-4057-ae76-343e6ab4a665"
+				name="LastStatusRow0"
+				refimgid="0797e9fe-fcf3-469c-b87d-e2193c87e4c5"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/tbody/tr/td[8]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f1b8151d-29b9-4777-9f46-57bdeda61bc4"
+				name="NextStatusRow0"
+				refimgid="bb30d7ef-07ad-494d-ae29-1c8651dbceab"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/tbody/tr/td[9]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="1972845f-f1a8-4515-94c9-cbaf86255aea"
+				name="QtyRow0"
+				refimgid="7e432c3f-ce6d-44c3-8b84-663a2e6744d1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[13]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="5129cb13-6252-4b6a-adad-36c8fb893a7e"
+				name="OrderTypeRow0"
+				refimgid="7e432c3f-ce6d-44c3-8b84-663a2e6744d1"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[15]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="3f82810b-f416-454d-a0ef-22e56d3e0208"
+				name="SupplierNumberRow0"
+				refimgid="e63306e1-97f3-41f1-b7a8-da27779775b6"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[17]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="f6c80214-c3c5-49f7-87da-5e6328b8d58d"
+				name="ATSPromDate"
+				refimgid="49819e1c-d28c-4785-9cd6-59ab749791b0"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[24]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="b09d5f9f-1699-46cb-ad7f-3fcc1e190c48"
+				name="ATSRequestDate"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[25]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="56d11e7c-30b1-454b-a076-98ef54c80b1f"
+				name="PromiseDeliveryDate"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[26]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="839fc639-4e3f-4cb6-8a37-51a698febb7f"
+				name="ShippingMethod"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[27]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="8880960c-db11-4ada-8e07-0e32793def41"
+				name="RequestedShipDate"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[28]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="653bdeab-a443-4dd3-b64e-46725411bd32"
+				name="OriginalOrderNo"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[29]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="a992b1b4-1a39-4c18-9e50-c0ba0425243b"
+				name="OriginalLineNo"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[30]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="092ee687-b3fd-48a5-967e-ca7b11e40e6b"
+				name="ReportCode3"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[31]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="aa9854ee-b065-4496-89fb-69b834eb3e48"
+				name="TrackingNo"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[32]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="56b7b176-93c1-4802-8b0e-9c4cb010df09"
+				name="ExFactoryDate"
+				refimgid="9313d216-93ca-46d2-a232-1ec7dfc540dd"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[33]/div
+				</item>
+				<item
+				addcaps="unknown,webelement,divtag"
+				capname="divtag"
+				id="19651a5c-0320-4822-b327-b3b936dba114"
+				name="SupplierName"
+				refimgid="17deba8c-ddf5-4b0e-9bc8-8b3f3ad60974"
+				robustPath=""
+				searchtimeout="30000ms">
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table/?/?/tr/td[18]/div
+				</item>
+				<basepath>
+					/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table/tbody/tr[2]//table/?/?/tr/td[2]/table//td/table
+				</basepath>
+			</folder>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="e374874c-556b-4c1c-b364-7f2a080f75ab"
+			name="QtyToRecv"
+			refimgid="0cd29189-4cd0-4b53-b882-aedbc324085b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']//input[@title='Quantity To Receive']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="7d0e4529-98f3-4903-97f9-ec88b3af5167"
+			name="AfProgressIndicatorIndeterminate"
+			refimgid="c8b73807-e45b-4c06-a6bc-02d52eb36b85"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'procIndicatorFloatLyr']//td[@visible='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3eeabaf6-99bf-4cfa-8f6c-e7e78fc0e753"
+			name="InputTag013"
+			refimgid="548a2240-9ab8-4720-bbf5-1c20d56b6b91"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']//input[@title='Order Number']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="8529f85a-baa9-4968-85b1-cf3102090752"
+			name="NumRecords"
+			refimgid="05d8f1bf-1621-4a77-a285-0f8c644eed5c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[1]/?/?/table/?/?/tr/td[1]/table/?/?/tr/td[3]/table//td[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="6a4bb3e6-0d2e-41d7-99bb-9e737b97605f"
+			name="JSGridBorder"
+			refimgid="12a6b63d-07ac-4c1f-953f-b2a2c11392d8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/td
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="4d817421-4d92-4da8-a103-ad45c492ff0c"
+			name="LineNumberHeader"
+			refimgid="cb8b04ae-1c85-4d77-b11e-819fed21bdbf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//iframe[#'e1menuAppIframe']//div[#'FormAboveGrid']/span[2]/table/tbody/tr[2]/?/?/table//td/table//td/div[1]/table/tbody/tr[1]/td[4]//input[@title='Line Number']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="326e92bd-434d-4c9a-8bea-2d216554fed9"
+			name="CaroBar"
+			refimgid="57633d5a-45e8-4f80-a448-d1021980da1f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//div[#'caroBar']
+			</item>
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="7cf9d60f-595f-4820-adea-9244c59abcc3"
+			name="ViewAllPurchasingDocTypes"
+			refimgid="e6980957-a1f4-4e0d-8ecc-65441af83362"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//div[#'listFavInner']/div[2]/table//td[@innertext='View all purchasing doc types']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="8daac8ba-f25d-4399-93da-7f41f58a3e67"
+			name="DropNotificationMenus"
+			refimgid="ce812c1c-0190-42f0-9d97-8261da02292c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@path~'/jde/']//div[#'drop_notification_menus']
+			</item>
+			<basepath>
+				/dom[@path~'/jde/']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,nativewindow"
+		capname="contextmenu"
+		id="b80c6ea0-a88e-47d0-9d8f-ba3e10a942d7"
+		isrooted="True"
+		name="Iexplore"
+		refpath="/contextmenu[@processname='iexplore']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="7e946bc6-1110-4dfc-8a43-664d936c8a08"
+			name="SaveAs"
+			refimgid="57a0657c-6252-4f35-a79e-35947e2e6f64"
+			refpath="/contextmenu[@processname='iexplore']/contextmenu[@accessiblename='Context']/menuitem[@accessiblename='Save as']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/contextmenu[@processname='iexplore']/?/?/menuitem[@accessiblename='Save as']
+			</item>
+			<basepath>
+				/contextmenu[@processname='iexplore']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="519b5bb6-91c7-4f4b-a6e3-2c9f8a381fa4"
+		isrooted="True"
+		name="WorkWithOrderDetailsInternetExplo"
+		refimgid="0e9710bf-f8bd-4ffd-ba30-83f27682d2d9"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title~'Work With Order Details']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="b7ca068a-52ad-4d8d-966d-0abc09bf3425"
+		isrooted="True"
+		name="DeleteQuote"
+		refpath="/form[@title='Delete Quote?']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="93fbc361-c8b7-447b-aa5e-cb17c6754afb"
+			name="ButtonYes"
+			refimgid="f262a537-6432-468e-ba3f-39d9496abae6"
+			refpath="/form[@title='Delete Quote?']/button[@text='&amp;Yes']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Delete Quote?']/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@title='Delete Quote?']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH9SURBVDhPY6ApCA0NZQZSLNiwvb09iGYEYqyA
+MSoqyqWxsfF0YWHh6qCgoNUBAQEoOCQkZJW3t3cmVD0qCA4Oturr63t37dq1/ykpKf+lpKT+S0pK
+/ldUVPxvYGDwX1NT87+MjMz/xMTE61AtCBAdHa3e3t7+9NatW/+am5v/c3Bw/AcK/+fm5v5fUlLy
+f+/evf/Xrl37X0RE5H9CQsJ9iC4oSEpKkmpqarp55cqVP8uWLfsvJCQE1szCwvI/Pj7+H9CAC+vW
+rXt348aN/2JiYqgGaGlpsdXV1R09efLkj6NHj/5XVlYGa2ZkZPzv7u7+v7W19ZKTk5Pv5s2b72MY
+UF9fz5ScnJwItPXrnTt3/ltbW4M1g7C+vv7/rq6ub8AAqwIZsGXLlmcYBgD97TZlypRPt2/f/g8M
+/f9MTExgzSA6Jibm/6xZs/729va+B+HVq1f/Xbx48X9RUVGIAcC4NgBKvLp///7/2tra/+zs7OAA
+k5CQAIc8LgwPxLa2tutAZ//dvXs3OJoEBQXBkmFhYb+AsdAFjCotYABqgHBgYKDF9u3br718+RIc
+jRkZGfcYSktLW+bOnbsdmGi2A52/PTIycntsbOz2tLS0PmBqEwH7EQo8PDzYKysrG4Be2l5cXLwd
+aGg3AyhJysvLc6BjaFLFAMjqcakZUoCBAQDW3Aqwvo8k8QAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="e459e311-23af-47ad-9113-371c0c93f4ab"
+		isrooted="True"
+		name="LoginATSSupplierPortal"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="8f2c02cf-ee18-43c8-9a71-f4eae10171ee"
+			name="Email"
+			refimgid="9c5695b1-bcd9-419f-8796-346b69a6dd8e"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'Email']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="6988728c-92e5-48df-9b09-165e6903ee74"
+			name="Password"
+			refimgid="a545dc27-7138-4580-a50b-d39d9d6d7e71"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'Password']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="295f0745-87bd-4a2d-b1ed-62354836217f"
+			name="SpanTagLogin"
+			refimgid="739613c4-fded-4f9f-be5c-d39b3536c85d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//section[#'loginForm']//span[@innertext=' Login']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c8b4c750-9e2b-4893-a551-9f7b8a2f2250"
+			name="Search"
+			refimgid="889e77bf-8b4a-45a5-b85e-cc1728b3d81c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'tblRfqs_filter']/?/?/input[@type='search']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="7b99cde3-ca93-455c-abca-551c6918d82e"
+			name="SelectRFQNumber"
+			refimgid="b3ea9c43-2370-4df9-b0da-4a7b81d2eaae"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'tblRfqs']//a[@innertext=$varRFQNumber]
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="addc089a-f4e9-4d0c-b46f-bab20cd07ccc"
+			name="BtnSetPromise"
+			refimgid="98abaf13-e191-4fd1-8393-f643965a73f8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[@innertext~' Accept all Required Dates']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="4a6da770-ab30-480b-9639-23ecb282af9a"
+			name="DetailsTableInfo"
+			refimgid="72793648-db53-497d-949c-815cb1c5a42f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'detailsTable_info']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="78e79610-271a-430f-a10f-43a154777950"
+			name="DetailPrice"
+			refimgid="921bd927-d45a-45f3-a3f7-3dc80f589537"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'detailsTable']//input[@name=$varDetailPrice and @visible='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,dttag"
+			capname="dttag"
+			id="7a16d316-9181-4e04-9ff4-8001cbba31e8"
+			name="CurrencyTag"
+			refimgid="ceb47479-f266-437d-a671-3e367a543fd7"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'noQuoteSlidePanel']/dt[@innertext~'Currency:']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="a131bc20-7e25-475d-9715-19db7625ae5b"
+			name="QuoteNumber"
+			refimgid="7216c1e1-24d8-4d34-afb2-430f05b27a75"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'noQuoteSlidePanel']//input[@name='QuoteNumber' and @type='text']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="c7087bb0-5e24-45d4-8511-8e1789255b3d"
+			name="BtnSave"
+			refimgid="8050d0b2-2aeb-4cff-84e1-05762f379a9c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnSave']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			ensurevisible="False"
+			id="6270398b-60e9-4f9b-afe3-e30ff6e0b3d0"
+			name="BtnSubmit"
+			refimgid="6da23625-a541-403c-b8ab-d4a918df5827"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnSubmit']
+			</item>
+			<item
+			addcaps="unknown,webelement,labeltag"
+			capname="labeltag"
+			id="a2edf566-41c7-4bdd-a0fe-2b3fae321492"
+			name="LblNotify"
+			refimgid="a6ddebd0-607d-4fb6-a7c6-5c5cb5a22feb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//label[@id='lblNotify' and @visible='True']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="6a56ed3e-5939-4662-a028-1b87315b3e6e"
+			name="VendorNote"
+			refimgid="8ca1dfe4-fd0f-4633-9919-8347a8aa31f6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//textarea[#'VendorNote']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ce81a1d3-7dc2-4a75-a7df-b1d86a3b9b1b"
+			name="Search1"
+			refimgid="57598943-a3a8-46e5-91c0-b79dea2ceccb"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'posTable_filter']/?/?/input[@type='search']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="ba2139fb-3e4f-40d6-acdb-1511c1dd65de"
+			name="OrderNumberRow0"
+			refimgid="62eccc19-0500-4799-a34e-f7bf70aa2484"
+			robustPath=""
+			searchtimeout="10000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'posTable']/tbody/tr/td[4]/a
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="b1ba70c6-3e4d-4b64-a054-ead84822f808"
+			name="NotesRow0"
+			refimgid="ad67dd92-40a8-467e-adc2-1d0a2ebb2c52"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'openPOsTable']/tbody/tr[1]/td[19]/textarea[@name='[0].Notes']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="trtag"
+			id="f3147068-c165-47c6-acc3-cba2e2d528ce"
+			name="TableRow1"
+			refimgid="ad67dd92-40a8-467e-adc2-1d0a2ebb2c52"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'openPOsTable']/tbody/tr[1]
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="trtag"
+			id="2a90cf45-d171-4bab-8ceb-9dd8d3a499e9"
+			name="TableRow2"
+			refimgid="ad67dd92-40a8-467e-adc2-1d0a2ebb2c52"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'openPOsTable']/tbody/tr[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="3b9ff201-646a-4ba0-ac1f-f5e655fca4fa"
+			name="TblRfqsInfo"
+			refimgid="6adf485a-c2b8-4385-9bd2-26b855603fab"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'tblRfqs_info']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="244206e2-f4f2-4939-ba7a-faf47aab687d"
+			name="DropDown"
+			refimgid="dc88d6fb-ffca-4df2-a540-104e5fc90baa"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]//button//span[@class='caret']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="4bbcd896-95db-4027-b05a-e2d77e669e17"
+			name="OpenNotSubmitted1"
+			refimgid="215fdf69-7c58-44c3-8290-eee7250f0583"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/?/?/ul/li[1]/?/?/span[@innertext='Open/Not Submitted']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="a9a51d73-e83e-4544-9edd-b7c16ca2371b"
+			name="OpenSubmitted"
+			refimgid="f772f65b-5732-4e24-a915-883273021690"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/?/?/ul/li[2]/?/?/span[@innertext='Open/Submitted']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="3f8fda43-a605-4075-aa3c-2f8ff1ef5354"
+			name="Won"
+			refimgid="37fae936-43cb-4412-a786-2aa130bc0f67"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/?/?/ul/li[3]/?/?/span[@innertext='Won']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="5f906290-1a92-4de9-8db5-3e7841425b65"
+			name="OpenSubmitted1"
+			refimgid="7a8a8034-206a-4131-9909-21ddd7e1e1f5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/button[@title='Open/Submitted']/span[@innertext='Open/Submitted']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="cae02980-4db5-41c4-bf92-982412bee91e"
+			name="SpanTagWon"
+			refimgid="60cf5a74-b326-4612-bd5d-741ca161dee2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/button[@title='Won']/span[@innertext='Won']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="9cdc62d4-37bd-432d-bad4-e26f7e9547c2"
+			name="Lost"
+			refimgid="9cc4d5b2-9292-4021-ae5b-500d9b7197b6"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/?/?/ul/li[4]/?/?/span[@innertext='Lost']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			ensurevisible="False"
+			id="8c82a328-0b8f-4a17-973f-7b4d85162b4a"
+			name="Lost1"
+			refimgid="9f9c5e66-58cc-4232-9090-3f0a18463f66"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/button[@title='Lost']/span[@innertext='Lost']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="2f9a2a0b-6d99-4e11-bc01-2c6389e94f3c"
+			name="SpanTagAll"
+			refimgid="5d03857f-04d2-4d69-a871-51bd0eba4e54"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/div[1]/div/?/?/ul/li[5]/?/?/span[@innertext='All']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			ensurevisible="False"
+			id="c76e323c-0ff2-4aff-b61d-c85845228aee"
+			name="BtnExport"
+			refimgid="383bccb7-7689-4a9f-988d-7735a8dd21ed"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnExport']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="a88b87ef-e93b-49b9-b781-ee5afce70987"
+			name="BtnImport"
+			refimgid="383bccb7-7689-4a9f-988d-7735a8dd21ed"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnImport']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="32b9019e-4a64-417d-a5e7-fcb50a173c1c"
+			name="ButtonTagImport"
+			refimgid="5437c7d3-a064-4cc5-9cb9-e92d0f60992a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'printThis']/form[@action='/VendorQuote']/?/?/button[@innertext~'Import']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="483f564c-e922-4652-ba7c-3f7d61a8b0a5"
+			name="PasteBucket"
+			refimgid="9445a92f-d93c-40d5-9284-959b2a89bcbf"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//textarea[#'pasteBucket']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="662a69d4-57a2-4fbd-83e3-7548f80b6a00"
+			name="ImportButton"
+			refimgid="dfbf51ac-cb1e-4040-8a2c-36e3ddd73b31"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'importButton']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="73523e25-f1ef-463c-b854-407cc3be3e81"
+			name="ATagFileAttachments"
+			refimgid="58c29cb3-7ffa-48cb-96a7-4abf083c0738"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'headingThree']/?/?/a[@innertext&gt;' File Attachments']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="051b8c95-b956-4d49-83c5-2994600a8032"
+			name="AttachmentPdf"
+			refimgid="5b386d47-95a0-4b6f-a6f4-734b85c3212a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'collapseThree']/?/?/ul[@id='detailsTable']/?/?/a[@innertext='Attachment.pdf']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="85eebb62-43df-4b1c-9fe8-e680fe1b1ed4"
+			name="FileInput"
+			refimgid="984d60b7-d533-42d5-a019-bdd083eb9959"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'fileInput']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="3f7b8f6f-38cc-4f48-a11c-56899e2f4b6b"
+			name="Attach"
+			refimgid="c244e1cd-3444-489c-b129-2535d7d1bee0"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'collapseThree']/?/?/input[@value='Attach']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="74a2918d-3fb9-43b2-bea1-a6041666f947"
+			name="ATSDreaminPng"
+			refimgid="06803776-7ca7-4a09-8718-cd45054656d1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//ul[#'attachmentsTable']/?/?/a[@innertext='ATSDreamin.png']
+			</item>
+			<item
+			addcaps="unknown,webelement,h3tag"
+			capname="h3tag"
+			id="c2dd1588-6bdc-4a5a-a2f4-2d0960625158"
+			name="MyAttachments"
+			refimgid="9407938a-5557-44aa-b3aa-720f24f8578f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'collapseThree']/?/?/h3[@innertext='My Attachments']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="494aab1a-5968-44bc-bbcb-c47a37fc1b96"
+			name="BtnDownload"
+			refimgid="ed138aa0-e0e0-4f1a-8ef8-2b4b92515af4"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnDownload']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="cab5b9f2-193d-4833-ac6d-223f5b962099"
+			name="PDF"
+			refimgid="d09fc24c-5238-4771-8cdf-ac1dc5bdbdc2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'detailsTable_wrapper']/table[@id='detailsTable']//a[@innertext~'.pdf'][1]
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="3e584627-ac14-4761-b1bd-12544d5d2bb5"
+			name="QuoteNotSubmitted"
+			refimgid="2d66b25a-9e72-4706-be26-b615e39520aa"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/div[3]/?/?/ul/li[@innertext~'Quote not submitted. Each']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="8d539605-cd7a-424b-9738-bfd98b32f2fe"
+			name="CostError"
+			refimgid="2d66b25a-9e72-4706-be26-b615e39520aa"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/div[3]/?/?/ul/li[@innertext~'One or more cost is not in the chosen currency format.']
+			</item>
+			<item
+			addcaps="unknown,webelement,litag"
+			capname="litag"
+			id="a5d19aaf-0030-479a-b0b2-bee2eeb3f638"
+			name="QuoteNotSubmittedPromise"
+			refimgid="5508eb6b-863e-472e-a68e-313daac5c107"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/div[3]/?/?/ul/li[@innertext&gt;'Quote not submitted. Promise']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="a8f6d4c0-b455-481d-aab6-00685dba19e1"
+			name="InputTag0Promised"
+			refimgid="e0901bec-fddc-4b77-8b1d-cc5d988ff525"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'detailsTable_wrapper']/table[@id='detailsTable']//input[@name='[0].Promised']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="ef49704f-709f-41bc-b00f-df50d4742003"
+			name="RequestedShipDate"
+			refimgid="e5682ad4-a9ae-44fe-b1c5-8f1babf414db"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'detailsTable_wrapper']/table[@id='detailsTable']//input[@name='[0].RequestedShip' and @enabled='false']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="bbd6331c-4f0b-40b6-b976-23b5edddb5d2"
+			name="PromiseDateMustBeAFutureDate"
+			refimgid="6da48b65-4f83-4026-84a2-52844f554935"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'detailsTable_wrapper']/table[@id='detailsTable']//span[@innertext&gt;'Promise Date must be a future']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="f3038335-2992-447b-a204-e9837292d67e"
+			name="TxtEachPriceError"
+			refimgid="e947d65f-d3dd-43c8-af2a-e2e53bce99c8"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//span[#'txtEachPrice-error']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="efe36b12-da19-45ab-b327-c2f89c0d5d36"
+			name="RFQNumber"
+			refimgid="2671916c-8b5f-47a3-ae25-66d281fab041"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/div[3]/h2/span[@innertext='RFQ Number: ']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="h1tag"
+			id="c1397340-f6a5-40c8-9149-205d06379895"
+			name="DivTagSuppl"
+			refimgid="1d9de81c-e6ad-4f12-9a3f-327bffcacd29"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//h1[@innertext~'Supplier Portal']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="e4936ec6-510a-4fd3-8156-8ef9c4eb8cfa"
+			name="PosTableInfo"
+			refimgid="3ee93435-c025-4f4d-bbc1-83a84d5ca462"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'posTable_info']
+			</item>
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="29f2d8f8-7cfd-405e-a8a5-a4478ac2d66a"
+			name="RFQListing"
+			refimgid="b663c1c4-d6e9-4dc1-9612-d5303d12997d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[1]/?/?/h2[@innertext='RFQ Listing']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="45cf2b35-72ab-4d39-899d-7074286a0ae5"
+			name="DropDownPO"
+			refimgid="f8deabd4-50e9-484e-8545-ba20e71243da"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[2]//button//span[@class='caret']
+			</item>
+			<item
+			addcaps="unknown,webelement,h2tag"
+			capname="h2tag"
+			id="d0497735-fd04-45c9-b658-c2e800f2f004"
+			name="OpenPOListing"
+			refimgid="b6f0ab5e-7f26-4ff8-a7aa-695e6940aa75"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[2]//h2[@innertext~'Open PO Listing']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="8c71d1a4-38ea-4edd-9c81-4b5db6b4cb5e"
+			name="Pending"
+			refimgid="f61e84ec-5df1-4044-aa38-70bb9b6ea0d1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//li//span[@innertext='Pending']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="76b1a1a2-ae9c-4bcb-a37e-b138ff8d99de"
+			name="All"
+			refimgid="f61e84ec-5df1-4044-aa38-70bb9b6ea0d1"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[2]//span[@innertext='All']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="8758bb1f-4107-4eb5-9f69-390212e16276"
+			name="ApprovedConfirmed"
+			refimgid="635b0130-93ec-4142-91db-f09117b2cec5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//li//span[@innertext='Approved/Confirmed']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="24862fed-0a15-4eb8-95ad-b433229056d4"
+			name="BulkDate"
+			refimgid="6259937f-ac98-42e0-b76c-bb69ddbdd09f"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'bulkDate']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="51afb168-7e29-4894-8f6a-02931287d24c"
+			name="ApplySelectedDate"
+			refimgid="f220a5fb-5378-4929-83e2-a2b49f589eee"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'applySelectedDate']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="d6eb8bb5-1340-4601-86d2-ed6aec4640d5"
+			name="OpenPOsTableInfo"
+			refimgid="5008bab7-c7d1-4afb-b87e-9e068e7ad8c3"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'openPOsTable_info']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="3a00c291-b7ad-4580-bb72-ee72a57d6010"
+			name="ATagRFQInfo"
+			refimgid="16610c6d-d2c0-4587-b9d5-0b80e906e01d"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'headingOne']/?/?/a[@innertext&gt;' RFQ Info']
+			</item>
+			<item
+			addcaps="unknown,webelement,ddtag"
+			capname="inputtag"
+			id="9a2026f2-fb05-4d41-aa37-a76f15dd2ca2"
+			name="ShippingMethodWebTag"
+			refimgid="0d976c97-956c-4fd2-b211-b6f761dcb129"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'ShippingMethod']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="639a6a8f-4405-449a-b160-f9c0220dcc7a"
+			name="BtnExportPOs"
+			refimgid="b2f18349-05d5-421c-80a4-a2ac318acaec"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnExportPOs']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="66b1c747-ded5-4672-8fd9-d1543692d7df"
+			name="BtnImportPOs"
+			refimgid="6b132459-18e7-4ff0-9c3c-7e75b0f403ed"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[2]/form[@action='/Home/Export']/div[1]/button[2]
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="ff3a1fb1-cb8c-4c7a-93fa-dbeca4ff3e39"
+			name="PoPasteBucket"
+			refimgid="0d2d32af-85a2-464e-b22b-894a77f5b727"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//textarea[#'poPasteBucket']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="cb4076a1-9d0d-4f03-9d53-f42738eb79d3"
+			name="ImportPOButton"
+			refimgid="479daeab-1c89-487c-bfb1-064624902e2a"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'importPOButton']
+			</item>
+			<item
+			addcaps="unknown,webelement,ptag"
+			capname="ptag"
+			id="30581677-6b6d-414a-b3e5-8cf24a43f973"
+			name="ImportPOWarning"
+			refimgid="73748002-12bb-4fec-a759-f8d31c9efdec"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//p[#'importPOWarning']
+			</item>
+			<item
+			addcaps="unknown,webelement,h4tag"
+			capname="h4tag"
+			id="8eed0703-ae62-415b-b85d-4b73d7d4394b"
+			name="H4TagQuote"
+			refimgid="86eaf5ce-1668-47f5-86bb-976a790d6914"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/?/?/h4[@innertext~'Quote ']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="560e5b98-2be8-4d74-8b2c-6ad5798d3901"
+			name="BtnExportShipments"
+			refimgid="b42b8ca0-053d-47fa-ba9e-582894da4142"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//button[#'btnExportShipments']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="7d05f628-edcd-4625-a61c-71ea1c2c58ba"
+			name="BtnImportShipments"
+			refimgid="1b10b02f-c55c-4b62-944e-706452fc63ed"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']/body/div[2]/section[2]/form[@action~'/Home/Export']/div[1]/button[4]
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="9eeaa673-90b3-423a-af44-7d1401c28d5c"
+			name="ImportShipmentButton"
+			refimgid="df6c5078-281b-434e-b788-317458e7f124"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'importShipmentButton']
+			</item>
+			<item
+			addcaps="unknown,webelement,atag"
+			capname="atag"
+			id="5d8a7db9-65a7-4900-9aad-d34ab864a608"
+			name="PDFAttachment"
+			refimgid="b0c083e9-d0a0-47c1-b1e7-bbd14d395219"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'detailsTable_wrapper']/table[@id='detailsTable']//a[@innertext~'.*.pdf']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="c562824d-39a4-482f-8b38-7cdc35323d76"
+			name="TxtEachPrice"
+			refimgid="302e5d44-98a3-4183-a42c-b0319aa2ae99"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//input[#'txtEachPrice']
+			</item>
+			<item
+			addcaps="unknown,webelement,textareatag"
+			capname="textareatag"
+			id="14750b23-05c0-41f2-8a3a-b4e5c7f83e56"
+			name="NoteRow0"
+			refimgid="eaa1ebcc-5120-470d-9f8c-86a2304a486b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//table[#'detailsTable']/tbody/tr/td[17]/textarea
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="4c398ba8-c786-4654-98f5-026bcdedbb8f"
+			name="Cancel"
+			refimgid="3ea4c4b7-add5-44cf-8264-fd1962f05637"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'importPOModal']/div/div/div[3]/button[@innertext='Cancel']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="f2984d51-c517-4c54-bee7-dbfc8b816280"
+			name="Cancel1"
+			refimgid="be4cdb20-8ee9-4a9c-ab02-034fedbd4e1b"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//div[#'importShipmentModal']/div/div/div[3]/button[@innertext='Cancel']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="f82abfb6-c43d-4bc8-b044-ed18d7c2a1ca"
+			name="Open1"
+			refimgid="35c59c44-9f8d-4c31-a02f-2c4cb430dd91"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//li//span[@innertext='Open']
+			</item>
+			<item
+			addcaps="unknown,webelement,spantag"
+			capname="spantag"
+			id="f7dc90ac-7434-41af-82a8-d13be4385f6b"
+			name="ActionRequired"
+			refimgid="35c59c44-9f8d-4c31-a02f-2c4cb430dd91"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']//li//span[@innertext='Action Required']
+			</item>
+			<basepath>
+				/dom[@domain='ca10a2061.atsna.atsauto.net' or @domain~'supplierportal.*']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="30629cc7-e31d-413f-9f85-c73c2deff4e0"
+		isrooted="True"
+		name="VendorQuoteATSSupplierPortalInt"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="9a35c8bd-4a22-42a7-abcd-893a07d2709f"
+			name="Options"
+			refimgid="f27a4dd3-8167-4168-aeb6-298cd4050306"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'.*- ATS Supplier Portal -.*']//container[@accessiblename='Downloads bar']/container/button[@accessiblename='Options menu']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="46b62644-244b-4c8b-891f-aeace55d0455"
+			name="Copy_of_Button6"
+			refimgid="f27a4dd3-8167-4168-aeb6-298cd4050306"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'.*- ATS Supplier Portal -.*']//toolbar[@accessiblename='Notification']/button[@accessiblename='Save']/button[@accessiblename='6']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="ddd30d9a-e17e-4278-abf4-7d236fcbd714"
+			name="Open"
+			refimgid="7ed11918-6c0b-40a7-b515-35305f49efc5"
+			robustPath=""
+			searchtimeout="10000ms">
+				/form[@title~'.*- ATS Supplier Portal -.*']//toolbar[@accessiblename='Notification']/button[@accessiblename='Open']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="cf216588-f8d4-48fa-b496-c3d81fe787db"
+			name="Close"
+			refimgid="b02756e8-49a3-45af-8fff-28819437550f"
+			robustPath=""
+			searchtimeout="5000ms">
+				/form[@title~'.*- ATS Supplier Portal -.*']//toolbar[@accessiblename='Notification']/button[@accessiblename='Close']
+			</item>
+			<item
+			addcaps="button,accessible"
+			capname="button"
+			id="fbed6ef3-084c-45fe-8919-e59c2773ea3c"
+			name="OptionsMenu"
+			refimgid="38438f9d-b483-4311-87bf-53918d58e292"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'.*- ATS Supplier Portal -.*']//container[@accessiblename='Downloads bar']/container/button[@accessiblename='Options menu']
+			</item>
+			<basepath>
+				/form[@title~'.*- ATS Supplier Portal -.*']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="9bdf8ffd-32df-4698-923d-de8858ace26c"
+		isrooted="True"
+		name="SaveAs"
+		refpath="/form[@title='Save As']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="db25bddb-c2c4-40e5-ae80-b1aed0feb8fa"
+			name="FileName"
+			refimgid="f726faed-afbc-446c-89ee-9295e6fe057a"
+			refpath="/form[@title='Save As']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='FloatNotifySink' and @instance='0']/combobox[@class='ComboBox']/text[@controlid='1001']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Save As']/element[@class='DUIViewWndClassName']//combobox[@class='ComboBox']/text[@controlid='1001']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="e56b078b-7b81-4c96-b475-7156b6ba2931"
+			name="ButtonSave"
+			refimgid="b721d583-6572-41a9-8d09-7cefe3288629"
+			refpath="/form[@title='Save As']/button[@text='&amp;Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Save As']/button[@text='&amp;Save']
+			</item>
+			<basepath>
+				/form[@title='Save As']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHkSURBVDhPjY/fS1phGMfPbf/CKBpddDliXXQ5
+KroZC6ItAscYFHQjQYjbTmiytKBTXRm1YXQRSgWJubmz4W+baV6M2PpFUZZRtoj5Iw+ZWviN9+2Q
+WNr8whee93k+z5fnZTweD0o1U0hkUIpqhrw/azkviEktrpceUCH/AvUvAaOBf6mnw77cNcUCMlcZ
+zK3pMemeoG8SUGeO4GMgdlFSgC3Io93VBM4wgEg0QgMafpxBsyJk/htwloyjM9iMkflBpDNp2isa
+YLfbKXB8foTUZYrWE0EOXYFW7OzuoIL9TpeJXzgT6P+dBAkgfqJ2geF5ni6pQz3o25LiOBFGd/QV
+PpnGkM1m6az83VewyzE8t8XQaE1g8E8y/FjhvrnCaDRSaP8kiJ7lt5D8rUeHqQ2CINA+0ephDJUK
+Kz74o/i8eb5XPeDPfcFgMIgYsBnawOuZFvCLFrGTE+Eq31tQpXTklol0Op2I3FcqnUY8nsD+wRFM
+ZgucHt+Y0+3rc7n8z2xLS49ogFarFfF8rayHYHV4YV74VtD6WbO/uXO8leE4TlzJl7JfR8FiIjPC
+MBqNBiqV6p5ZVk2hre1wnl+elkEieYMFk4Uy9BuFRIZTU9O3J981mT0YIJP1Sglw13I5e1vLZL3S
+azIQzRHyk8taAAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="5a5884d5-f24a-4768-b84c-1817753ed955"
+		isrooted="True"
+		name="ConfirmSaveAs"
+		refpath="/form[@title='Confirm Save As']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="29d39390-61db-43d1-ae01-4d27ab74a787"
+			name="ButtonYes"
+			refimgid="5773fa29-4ac5-4b21-aa5d-210d09b04e2f"
+			refpath="/form[@title='Confirm Save As']/container[@class='DirectUIHWND']/element[@class='CtrlNotifySink' and @instance='0']/button[@text='&amp;Yes']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Confirm Save As']/?/?/element[@instance='0']/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@title='Confirm Save As']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow,excelapplication"
+		capname="form"
+		id="d53a863b-a917-405a-b821-f616de3154e4"
+		isrooted="True"
+		name="Excel"
+		refpath="/form[@processname='EXCEL']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="cell,uiautomation"
+			capname="cell"
+			id="0a8c040e-97e2-4e98-9d06-e9624aa88c9e"
+			name="SelectAll"
+			refimgid="29054413-196e-4e12-92eb-5f83404de702"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='12491.xlsx']/tabpagelist[@automationid='12491.xlsx']/tabpage[@automationid='test']/table[@automationid='Grid' and @name='Top Pane']/cell[@name='Select All']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//tabpagelist[@automationid='12491.xlsx']/tabpage[@automationid='test']/?/?/cell[@name='Select All']
+			</item>
+			<item
+			addcaps="button"
+			capname="button"
+			id="8db1e5fd-6cda-4416-8575-b8315363b1c2"
+			name="SomeButton"
+			refimgid="b2420504-10a5-41c6-a84e-820875199609"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL;']/combobox[@controlid='13']/button[@text='>']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/?/?/combobox[@controlid='13']/button[@text='&gt;']
+			</item>
+			<folder
+			capname="container"
+			id="0e7d3892-a6ea-48be-9936-218f5a999985"
+			isrooted="True"
+			name="test"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="table"
+				id="03e1b510-49d5-4055-9003-f62243b1113e"
+				isrooted="True"
+				name="TopPaneTable"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="f7080f3d-b6a2-4a62-9f81-19d73eda7543"
+					name="CellA1"
+					refimgid="88b63ae5-d64e-482c-b802-7a5229c40a48"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='test']/table[@name='Top Pane']/cell[@name='&quot;A&quot; 1']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="77b1eb22-7151-4a9d-a3ca-bc020211e67d"
+					name="SelectAll"
+					refimgid="88b63ae5-d64e-482c-b802-7a5229c40a48"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='test']/table[@name='Top Pane']/cell[@name='Select All']
+					</item>
+					<basepath>
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='test']/table[@name='Top Pane']
+					</basepath>
+				</folder>
+				<folder
+				capname="table"
+				id="64b75c9f-faaa-4804-b2b4-4d89ab2e31bf"
+				isrooted="True"
+				name="BottomPaneTable"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="cell"
+					id="54e88fe9-033c-4447-b6bb-bcc42700e951"
+					name="Row3"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@rowindex='3'][1]
+					</item>
+					<basepath>
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='test']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="f2a10ad4-34cc-4066-8712-4d1e46771dac"
+			isrooted="True"
+			name="Sheet1"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="table"
+				id="859222de-7c5b-4cf1-8e18-59e1b74a6122"
+				isrooted="True"
+				name="TableSheet1"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="cell"
+					id="d8d46b2c-d828-44e9-8942-2ad2da4256ff"
+					name="Row3"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@rowindex='3'][1]
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="860ff6d9-0559-4847-95e2-9f0d329af491"
+					name="CellE2_LineNumberFirstLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;E&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="720eb7c4-1271-4f0d-8ac7-893f83a4ae1f"
+					name="CellD2_OrderNumberFirstLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;D&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="27e3f15a-2e94-421a-928c-d0c906f84931"
+					name="CellQ2_NoteFirstLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;Q&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="5a71f35f-7c7c-4ba5-a110-94a265816d3f"
+					name="CellQ3_NoteSecondLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;Q&quot; 3']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="792003f0-09f6-47de-8c7e-220f06abe680"
+					name="CellQ4_NoteThirdLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;Q&quot; 4']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="0a6e2c13-4a19-43c5-9cf9-025dda61b9be"
+					name="CellO2_PromiseDateFirstLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;O&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="8562cbbf-2ccd-4ef5-b6cc-c067971c1c35"
+					name="CellO3_PromiseDateSecondLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;O&quot; 3']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="6204a829-627b-4bdf-82ba-711b876d904e"
+					name="CellO4_PromiseDateThirdLine"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;O&quot; 4']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="b6768d1c-a81c-4839-91cc-21181941cad2"
+					name="CellA1"
+					refimgid="88b63ae5-d64e-482c-b802-7a5229c40a48"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='&quot;A&quot; 1']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="a684632c-913a-4627-8448-58b7d3bf8bd2"
+					name="SelectAll"
+					refimgid="88b63ae5-d64e-482c-b802-7a5229c40a48"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table/cell[@name='Select All']
+					</item>
+					<basepath>
+						/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']/table
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@processname='EXCEL']//container[@automationid='POExport.xlsx']/container[@automationid='Sheet1']
+				</basepath>
+			</folder>
+			<folder
+			capname="container"
+			id="2ee2d67c-8cf4-4b10-ba6f-c25983613b00"
+			isrooted="True"
+			name="ConfirmShipmenttest"
+			searchtimeout="30000ms"
+			usecache="False">
+				<folder
+				capname="table"
+				id="2016f2fd-193d-4ead-88c1-826bca8fe0ac"
+				isrooted="True"
+				name="TopPaneTable"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="783cae9c-031a-4ae1-9c81-17f7f6f0f466"
+					name="CellA1"
+					refimgid="88b63ae5-d64e-482c-b802-7a5229c40a48"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Top Pane']/cell[@name='&quot;A&quot; 1']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="6d111399-8961-4a86-b128-fa94610168fc"
+					name="SelectAll"
+					refimgid="88b63ae5-d64e-482c-b802-7a5229c40a48"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Top Pane']/cell[@name='Select All']
+					</item>
+					<basepath>
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Top Pane']
+					</basepath>
+				</folder>
+				<folder
+				capname="table"
+				id="bad83eb2-f979-40bd-8021-9ae5b6c76532"
+				isrooted="True"
+				name="BottomPaneTable"
+				searchtimeout="30000ms"
+				usecache="False">
+					<item
+					capname="cell"
+					id="44c73cc2-409c-431d-a4b7-58113b5355bd"
+					name="Row2"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@rowindex='1'][1]
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="e7ba730d-1b62-4f1d-b9b2-8d1b07601b1d"
+					name="Ex_FactoryDate"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@name='&quot;Q&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="0bde6750-9476-4699-8fac-b982c71fb1ea"
+					name="OrderNoCellF2"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@name='&quot;F&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="a9ab969f-c3a4-4d3a-91e4-044f3ce233f2"
+					name="LineNoCellG2"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@name='&quot;G&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="1b0fe629-9f17-4635-bc0d-7bd4cf98750a"
+					name="ShippingMethodExcel"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@name='&quot;S&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="331a7f78-21f4-497d-bbfc-ce519620a7e4"
+					name="TrackingNumber"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@name='&quot;T&quot; 2']
+					</item>
+					<item
+					addcaps="cell,excelrange"
+					capname="cell"
+					id="4f758f7d-23bd-417c-b981-31588fafa503"
+					name="NotesExcel"
+					refimgid="9dc084e7-3053-463f-aed4-b34f605ce525"
+					robustPath=""
+					searchtimeout="30000ms">
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']/cell[@name='&quot;U&quot; 2']
+					</item>
+					<basepath>
+						/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']/table[@name='Bottom Pane']
+					</basepath>
+				</folder>
+				<basepath>
+					/form[@processname='EXCEL']//container[@automationid='ConfirmShipment.xlsx']/container[@automationid='test']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@processname='EXCEL']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFNSURBVDhPY4ABmcIQTuViN2OFYrc0+SLXyfIF
+zgfk85zeyuc5/5fPdfoPVYYJFCs81ymUedxWLHP/r1jq/h9owH+FItf/CoUu/+XzgZqhBoDFkLB8
+octP+ULXCQxKFZ7/Fcs9/hMyAB38+vMbbAjRBoDEQADmAhgbbkDlmgn/T9+/8l+1zOu/RrnP/1sv
+HvzffukwTheAAIoBsbMrwYJ5S9r/V6+Z+P/P37//3TpSiHcByAuXn9z6f+Lupf8PXj/9v/bMLrxh
+AAIYBqQvbARLgALIvjWOtDCAGQByOgi7diST5gIVIH331eP/my7s///0/UtIAJLigvLVfWBBr97M
+/22bZoHZfr3ZxLtg9sE1/9ee3Q1OB7pVAf9ffXr7/9CNM6SFAc1TIjKG5wViMxM07+EGoOysWOZm
+BjQgTaHQdRowOx+Wy3P6gN8ABgYA0S8tdd7bJP8AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="8ccd8398-b9e3-4d47-9a17-f80236cbbdd9"
+		isrooted="True"
+		name="ChooseFileToUpload"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="6ac01a3f-ca85-4ae3-8b54-988a05206ea3"
+			name="Text1148"
+			refimgid="714bee60-1edc-4956-acdb-096ed3dc63a2"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open']/?/?/text[@controlid='1148']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="a946c0c8-2099-4d6c-ad49-0d55c22d1633"
+			name="ButtonOpen"
+			refimgid="d6bf3e79-0886-4a1c-b547-c32f29b15442"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Open']/button[@text~'Open']
+			</item>
+			<basepath>
+				/form[@title='Open']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="73679469-bb26-449c-8968-0fa5025955dd"
+		isrooted="True"
+		name="ATSRFQZipFolder"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="f7a44a60-1dfd-4209-8d86-6345afa9a039"
+			name="PDFFile"
+			refimgid="ce0e05c7-0b29-4fa5-92c6-ba8e1bfb548c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'ATS RFQ.*.zip']//text[@uiautomationvaluevalue~'.*.pdf'][1]
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="971807f2-bee1-41df-8c46-8a360906d631"
+			name="SLDPRTFile"
+			refimgid="ce0e05c7-0b29-4fa5-92c6-ba8e1bfb548c"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title~'ATS RFQ.*.zip']//text[@uiautomationvaluevalue~'.*.SLDPRT'][1]
+			</item>
+			<basepath>
+				/form[@title~'ATS RFQ.*.zip']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAHpSURBVDhPdZNPSxthEIf3I/RbeA7oWRQ0dhvx
+qp/AYtEqtvXgxRBaKzYtFtGkVGr0XP/QUyBk0aa1a7ZRySUQgjTETbKJRj2X/jrzvm+SzaoDw5ye
+Z96ZndWacXs2jJvTAG5OArjmzARw9q0foVAI+Xxe1NP9Plwe66gf+U8U1g6GUdum3KLcBJwvMPZe
+oVgsCkEul4OxMwNU1lA3H0Nh7eDObhjOBozdlygUCtB1HdlslgTTJFhF/dc9An62G4bzmQQvRGeG
+M5kMCZ4D5Y+o3Sugmd0wqp9IMNuCTdOE8XWKBCuoHQ3dFTR+P+mAUY2KmZtwKpUiwSQJPsD5+aCg
+DaOyLmZm2OfzIZlMkuAZYL9/QGCRwAXztnlm7sxwPB4nwQQJ3sH54b8ruErrHTBv+/x4AdFoVOTY
+cBfOzXn8Ky2imvKjYfQ+UqgMIXDBvG1e2NzTHsRiMdi2Td2X0bBG6TOOkGTAUKgMvjAvzAuzLEvk
+3Hg3cLEkuv/9ExRVoTIu6bq8MC+MwdYLLt6i8n2wVRUqg8/TC/PCOl5QeoPKIQlUVagMPk8vzDN3
+vKD0GmUhkFWhMvg8vTDPzD9SOp1GIpEgMITyAQtkVagMPk8+EJH0nXlJnJFIBOFwGMFgUED2wUCz
+NjRN0/4DzMl7e/MNq88AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="93ff61d6-520d-440c-93b9-5a14f5d52c29"
+		isrooted="True"
+		name="Form10784"
+		refimgid="f39a7565-f299-4cb3-a61a-51fb286dc83c"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title='10784']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEwSURBVDhPjZJLTsNAEETnCNyIVTBJjNhyHYT4
+CQQCIRAIRAQHicIv/ANHQHJsx3YwYY0ouqc7ZJFEMyWVevVqPl1mqO/3BQzeQgw6Ib7YryHKl7r4
+uY7Pp5p1/7GGoh10FBuJYeSX5AtyA8jOyWfkU6B3Qj4G0iPyIYqHKhQbiU/2gZEeoLifEMDX9oGR
+7COfGEBv9oGR7CFvz48H8Gf5wEh2kd1NDXDDiHemBNCqfGDE28hug/EA3rEP/Buto3cToGzOzigq
+sgEOGPEWlWqJ1rhIIZWmoiJumAtGd9Oe/vOxbKeioj61ywWju4H0eu5/KirierpgRGtIryhAp6Ii
+rqcLRrSKxAbIVFTE9XTBiFaQtDhApqIiricXxJr2zJ/E5rfydflEhuJWZThLY4z5A+YuloRxRSPn
+AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="809b2a57-3f3a-473c-b263-7f961b53b03f"
+		isrooted="True"
+		name="FileExplorer"
+		refimgid="d55eb12e-ea20-4af7-a490-ad21ad3da9c9"
+		refpath="/form[@title='File Explorer']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title='File Explorer']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAACCSURBVDhPY6AY/L5gd+H3RYf/6PjXBbsN/8/b
+C0CV4QYgxVZbn/1HBnCDgIYTNASuGA3/ueL1/9+Dyv//n0/Gif89m3yBAZsEKXi4GbD1yiZwjODD
+IDXIelAMwKYBG0bWQzsDkMXxyVFuACg1EVKESw6cEpEBsiKoEBzgk6MAMDAAAG1jhcWk0kBVAAAA
+AElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="02970618-5940-4d4a-b65b-48d66ecfa233"
+		isrooted="True"
+		name="ConfirmDelete"
+		refpath="/form[@title='Confirm Delete']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="20808783-027d-4b25-84f6-51f2776d5a8d"
+			name="ButtonYes"
+			refimgid="aabfde3c-7d3e-4f0d-a993-58cf164cb3c0"
+			refpath="/form[@title='Confirm Delete']/button[@text='&amp;Yes']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@title='Confirm Delete']/button[@text='&amp;Yes']
+			</item>
+			<basepath>
+				/form[@title='Confirm Delete']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAH9SURBVDhPY6ApCA0NZQZSLNiwvb09iGYEYqyA
+MSoqyqWxsfF0YWHh6qCgoNUBAQEoOCQkZJW3t3cmVD0qCA4Oturr63t37dq1/ykpKf+lpKT+S0pK
+/ldUVPxvYGDwX1NT87+MjMz/xMTE61AtCBAdHa3e3t7+9NatW/+am5v/c3Bw/AcK/+fm5v5fUlLy
+f+/evf/Xrl37X0RE5H9CQsJ9iC4oSEpKkmpqarp55cqVP8uWLfsvJCQE1szCwvI/Pj7+H9CAC+vW
+rXt348aN/2JiYqgGaGlpsdXV1R09efLkj6NHj/5XVlYGa2ZkZPzv7u7+v7W19ZKTk5Pv5s2b72MY
+UF9fz5ScnJwItPXrnTt3/ltbW4M1g7C+vv7/rq6ub8AAqwIZsGXLlmcYBgD97TZlypRPt2/f/g8M
+/f9MTExgzSA6Jibm/6xZs/729va+B+HVq1f/Xbx48X9RUVGIAcC4NgBKvLp///7/2tra/+zs7OAA
+k5CQAIc8LgwPxLa2tutAZ//dvXs3OJoEBQXBkmFhYb+AsdAFjCotYABqgHBgYKDF9u3br718+RIc
+jRkZGfcYSktLW+bOnbsdmGi2A52/PTIycntsbOz2tLS0PmBqEwH7EQo8PDzYKysrG4Be2l5cXLwd
+aGg3AyhJysvLc6BjaFLFAMjqcakZUoCBAQDW3Aqwvo8k8QAAAABJRU5ErkJggg==
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="1fa29823-7bdc-4695-a136-e38267c7eb56"
+		isrooted="True"
+		name="Form99509"
+		refimgid="f39a7565-f299-4cb3-a61a-51fb286dc83c"
+		searchtimeout="30000ms"
+		usecache="True">
+			<basepath>
+				/form[@title='99509']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAEwSURBVDhPjZJLTsNAEETnCNyIVTBJjNhyHYT4
+CQQCIRAIRAQHicIv/ANHQHJsx3YwYY0ouqc7ZJFEMyWVevVqPl1mqO/3BQzeQgw6Ib7YryHKl7r4
+uY7Pp5p1/7GGoh10FBuJYeSX5AtyA8jOyWfkU6B3Qj4G0iPyIYqHKhQbiU/2gZEeoLifEMDX9oGR
+7COfGEBv9oGR7CFvz48H8Gf5wEh2kd1NDXDDiHemBNCqfGDE28hug/EA3rEP/Buto3cToGzOzigq
+sgEOGPEWlWqJ1rhIIZWmoiJumAtGd9Oe/vOxbKeioj61ywWju4H0eu5/KirierpgRGtIryhAp6Ii
+rqcLRrSKxAbIVFTE9XTBiFaQtDhApqIiricXxJr2zJ/E5rfydflEhuJWZThLY4z5A+YuloRxRSPn
+AAAAAElFTkSuQmCC
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="cb59ba07-1b8c-4952-9a08-bd4f804671b8"
+		isrooted="True"
+		name="RFQListingATSSupplierPortal"
+		refpath="/dom[@domain='ca10a2061.atsna.atsauto.net']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,tdtag"
+			capname="tdtag"
+			id="0f3d0b5a-a423-4fd6-9b56-163686d87059"
+			name="Loading"
+			refimgid="e887f6f0-cb17-499d-a744-9c25bc6d042c"
+			refpath="/dom[@domain='ca10a2061.atsna.atsauto.net']//table[#'tblRfqs']/tbody/tr/td[@innertext='Loading...']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net']//table[#'tblRfqs']//td[@innertext='Loading...']
+			</item>
+			<item
+			addcaps="unknown,webelement,dttag"
+			capname="dttag"
+			id="edefdd94-9458-43e1-8034-4701deabb92e"
+			name="PromiseDateText"
+			refimgid="35d8b428-3616-40d5-9242-f1abb822eeee"
+			robustPath=""
+			searchtimeout="30000ms">
+				/dom[@domain='ca10a2061.atsna.atsauto.net']//div[#'noQuoteSlidePanel']/dt[@innertext~'Promise Date:']
+			</item>
+			<basepath>
+				/dom[@domain='ca10a2061.atsna.atsauto.net']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="ceb30d46-f2ba-4521-8fe3-0b3edd4a0601"
+		isrooted="True"
+		name="Chrome"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="4d9bcf39-c69e-46bb-bae1-d7f912393568"
+			name="Paste"
+			refimgid="c3692cc2-52e1-40d7-9101-51b7b98fa877"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form//menuitem[@accessiblename~'Paste']
+			</item>
+			<item
+			capname="button"
+			id="0467e165-1c94-4f61-a6eb-055c0af25966"
+			name="btnContinue"
+			robustPath="/form/element"
+			searchtimeout="30000ms">
+				/form//form[@accessiblename='Confirm Form Resubmission']//button[@accessiblename='Continue']
+			</item>
+			<basepath>
+				/form
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAKpSURBVDhPZdPJTxNxFAfwOUmCURDjgkGoIMjW
+TqFqCJZ2CiogIEQ9mYiJ0XjyD1BBr16kBSSVRYp7TDh6MCIWkDUmjJ64WVO6EZYW0LjM8Pv65tcR
+QV7yyfc3nfdemulU+L/m7RYp7LC45sotvrnyoyCMruWIZPGE7aJBb9taPruYHJYszojDAg2dWVgq
+pvwnZCe2IqfWq4/FS/sgJBXL1MCH6EzNRQjaihjPMjMLbDBrNcmbloRsZic1aY3rAlai5+wJEyOY
+tYramfOXmpx8WHxZb3h8tSx+0yoyP90MX6jCz+mPCMzGsPKDgUW9WJProEwWM5UrAmHKhCgJ5ucN
+nkp3LWYcIm01Ini+kg9e93zDsbsx7qJ7FcGFGNTpKigTRqgTJijjRqaMF7oE05OzsvlpPe7dKMPX
+kgJ8Hx5Ebcsyiu/ESHTdtd5VsNgU1PF8ThnLY8QnGPvqYOyrZSWdZzBZISIYXYPYvMSZm6NEy/h1
+YD5KgzlQRrNpOFtLCIW9NSjQXWmSmN8fhbFpCcbbi4RSO/PrJf481NFM3SFOyO+u9uX3VLO8nmpQ
+Yir0GZe7l5F/a3FdATnXHgNbeAP1Q7ruIJSRNFnI66x05nZVIreriit/0YiZyDIa2qPIvbnANdLC
+mcgKlKnjUIYPkFSoI6m0INUjHHFXSDnuU8h5eBp/0/HsEga+jPGvrC2bDH5C6+saGtwLlShDezh4
+98Vf7ayOCidhhztOaqDJelDBNNrZ1kW/0Nv9UId202AKFG8K1oZ2xV8krTKc9uTMNoec2V6OLKIl
+1+bg+aifnvj7JKZ4d1KSwR0yvEmb/w/akoxWu8vgkmBo1bkkZnWX0tB2XSINJ7q2DG8sWmQgfekt
+Njn9vo296k/D73fbfL8GElzKQIKkt+klCH8ARJYkm8QxdZEAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+		<var
+		id="7436e9b0-026b-4eef-a8da-b2fb0301ee25"
+		name="varUsername">
+		</var>
+		<var
+		id="2a5658e7-dbcd-408c-b807-d7a6ed6f73ba"
+		name="varRFQNumber">
+		</var>
+		<var
+		id="555ee03d-133c-4e87-ae77-4f1c814cb621"
+		name="varcolumnIndex">
+		</var>
+		<var
+		id="5a1a37c1-4c63-49bd-929c-459b16329136"
+		name="varSiteName">
+		</var>
+		<var
+		id="66b92e19-5faf-4d0e-a0b1-36e7d2570648"
+		name="varDetailPrice">
+			[0].DetailCost
+		</var>
+		<var
+		id="030b8f4f-5ccd-400e-bdc7-01557877effc"
+		name="varJDEOrderNo">
+		</var>
+		<var
+		id="59e7a7f4-4cb9-4ad9-9353-9c365d956ad5"
+		name="varJDEOrderNumber">
+		</var>
+		<var
+		id="893a17f0-3089-4fe4-b73c-a000d362aa1a"
+		name="varRowIndex">
+		</var>
+		<var
+		id="72bc8dd9-c2c0-4ce9-8f00-2516451a6d9b"
+		name="varColumnIndexofDetailsTable">
+		</var>
+	</variables>
+</repository>
