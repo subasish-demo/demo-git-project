@@ -60,7 +60,7 @@ namespace UpchainMechDeployTest
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 200;
+            Keyboard.DefaultKeyPressTime = 300;
             Delay.SpeedFactor = 1.0;
             string reportPath = CreatePdfReport();
             Report.Log(ReportLevel.Info, "Report Path: " + reportPath);
